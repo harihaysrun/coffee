@@ -70,13 +70,13 @@ h1{
     font-weight:400;
 }
 
-#main-popup>#main-popup-container>#choose-one{
+#main-popup>#main-popup-container>#main-popup-landing>#choose-one{
     background-color:thistle;
     display:flex;
     flex-direction: column;
 }
 
-#main-popup>#main-popup-container>#choose-one>div{
+#main-popup>#main-popup-container>#main-popup-landing>#choose-one>div{
     background-color:hotpink;
     margin: 10px 0;
     box-sizing: border-box;
@@ -87,12 +87,22 @@ h1{
     align-items: center;
 }
 
-#main-popup>#main-popup-container>#choose-one>div>img{
+#main-popup>#main-popup-container>#main-popup-landing>#choose-one>div>img{
     width:70px;
     margin-bottom:20px;
 }
 
-#main-popup>#main-popup-container>#choose-one>div:hover{
+#main-popup>#main-popup-container>#main-popup-landing>#choose-one>div:hover{
+    background-color:#F0E3D0;
+    color:#482C05;
+    cursor:pointer;
+}
+
+/* #main-popup-randomiser{
+    display:none;
+} */
+
+#back-to-main:hover{
     background-color:#F0E3D0;
     color:#482C05;
     cursor:pointer;
@@ -116,12 +126,12 @@ h1{
         width:768px;
     }
 
-    #main-popup>#main-popup-container>#choose-one{
+    #main-popup>#main-popup-container>#main-popup-landing>#choose-one{
         display:flex;
         flex-direction: row;
     }
 
-    #main-popup>#main-popup-container>#choose-one>div{
+    #main-popup>#main-popup-container>#main-popup-landing>#choose-one>div{
         flex:1;
         margin:15px;
     }
