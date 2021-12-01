@@ -30,11 +30,47 @@ function mainPopup_randomiser(){
     mainPopup_InnerContainer.innerHTML = '';
     const mainPopupRandomiser = document.createElement("div");
     mainPopupRandomiser.id = "main-popup-randomiser";
-    mainPopupRandomiser.innerHTML = `<span id="back-to-main">back</span>
-                                    <p>HI</p>`
-    mainPopup_InnerContainer.appendChild(mainPopupRandomiser);
+    setTimeout(function(){ 
+        mainPopupRandomiser.innerHTML = `<div id="back-to-main">back</div>
+                                        <div id="randomiser-container">
+                                            <span>How about a cup of...</span>
+                                            <div id="coffee-and-shop">
+                                                <div id="random-coffee">
+                                                    <img src="images/coffee-beans.png" alt="">
+                                                    <h2>Iced Americano</h2>
+                                                </div>
+                                                <span>from</span>
+                                                <div id="random-shop">
+                                                    <h2>Shop Name</h2>
+                                                    <p>Shop Address</p>
+                                                </div>
+                                            </div>
+                                        </div>
 
-    backToMain_btn();
+                                        <div id="buttons">
+                                            <button class="btn-green">Take me there!</button>
+                                            <button class="btn-red">Give me another one</button>
+                                        </div>`;
+        mainPopup_InnerContainer.appendChild(mainPopupRandomiser);
+        backToMain_btn();
+        anotherRec();
+        goToShopLocation();
+    }, 0);
+    }
+
+function anotherRec(){
+    const anotherOne = document.getElementsByClassName("btn-red")[0];
+    anotherOne.addEventListener('click', function(){
+        mainPopup_randomiser();
+    })
+}
+
+function goToShopLocation(){
+    const goToShop = document.getElementsByClassName("btn-green")[0];
+    goToShop.addEventListener('click', function(){
+        mainPopup_OuterContainer.innerHTML = "";
+        mainPopup_OuterContainer.style.display = "none";
+    })
 }
 
 function chooseOne(){
@@ -46,6 +82,7 @@ function chooseOne(){
     })
 
     coffeePlaces.addEventListener('click', function(){
+        mainPopup_OuterContainer.innerHTML = "";
         mainPopup_OuterContainer.style.display = "none";
     })
 }
