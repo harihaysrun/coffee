@@ -44,7 +44,7 @@ function chooseOne(){
     })
 }
 
-// insert back button only on the landing page popup, not the nav link popup
+// insert 'back' button only on the landing page popup, not the nav link popup
 function mainPopup_randomiser_backBtn(){
     const backBtn = document.createElement("div");
     backBtn.class = "back-to-main";
@@ -83,7 +83,7 @@ function mainPopup_randomiser(){
     }, 0);
 }
 
-// closes the popup and leads to the shop's coordinates on the map
+// closes the popup and leads user to the shop's coordinates on the map
 function goToShopLocation(){
     const goToShop = document.getElementsByClassName("btn-green")[0];
     goToShop.addEventListener('click', function(){
@@ -92,14 +92,15 @@ function goToShopLocation(){
     })
 }
 
-// refresh the mainPopup_randomiser(),
-// but only include the back button on the landing page and not nav link popup
+// reloads the mainPopup_randomiser(),
+// but only include the 'back' button on the landing page and not nav link popup
 function anotherRec(){
     const anotherOne = document.getElementsByClassName("btn-red")[0];
     anotherOne.addEventListener('click', function(){
 
         const backtoMain = document.getElementsByClassName("back-to-main");
-        // check if back button exists, landing page has it but nav link popup doesn't
+
+        // check if 'back' button exists, landing page has it but nav link popup doesn't
         // if it doesn't exist, don't call the mainPopup_randomiser_backBtn() function
         if(backtoMain.length == 1){
             mainPopup_InnerContainer.innerHTML = '';
@@ -110,9 +111,10 @@ function anotherRec(){
             mainPopup_randomiser();
         }
     })
+
 }
 
-// back button function
+// 'back' button function
 function backToMain_btn(){
     // anotherOne = document.getElementsByClassName("btn-red");
 
@@ -131,7 +133,7 @@ function backToMain_btn(){
     const backtoMain = document.getElementsByClassName("back-to-main");         
     // console.log(backtoMain.length)
 
-    // check if back button exists, landing page has it but nav link popup doesn't
+    // check if 'back' button exists, landing page has it but nav link popup doesn't
     // if it doesn't exist, no actions will take place on click. otherwise will get errors in console log
     if(backtoMain.length == 1){                          
         backtoMain[0].addEventListener('click', function(){

@@ -1,6 +1,6 @@
 body{
     margin:0;
-    background-color:honeydew;
+    background-color:white;
     font-family: 'Rubik', sans-serif;
     overflow:hidden;
 }
@@ -54,6 +54,11 @@ nav>#nav-container>#hamburger-menu{
     color:white;
     margin-left:auto;
     list-style-type: none;
+    cursor: pointer;
+}
+
+#hamburger-menu:hover{
+    opacity:0.7;
 }
 
 nav>#nav-container>#hamburger-menu>li{
@@ -67,8 +72,10 @@ nav>#nav-container>#hamburger-menu>li{
 #hm-dropdown{
     /* background-color:pink; */
     display:none;
+    position:absolute;
+    top:60px;
+    right:15px;
     width:240px;
-    margin-top:-10px;
     margin-left:auto;
     list-style-type: none;
     padding:0;
@@ -97,6 +104,11 @@ nav>#nav-container>#hamburger-menu>li{
     /* animation-fill-mode: forwards; */
     /* animation-iteration-count: 1; */
     animation-iteration-count: 1;
+    cursor: pointer;
+}
+
+#hm-dropdown li:hover{
+    background-color:#F0E3D0;
 }
 
 #hm-dropdown li:first-child{
@@ -264,6 +276,20 @@ button{
     cursor:pointer;
 }
 
+#close-popup{
+    position:absolute;
+    top:12px;
+    right:5%;
+    font-size:25px;
+    /* color:#F0E3D0; */
+    color:#D5BB94;
+    cursor:pointer;
+}
+
+#close-popup:hover{
+    opacity:0.7;
+}
+
 
 /* ipad size & above */
 @media screen and (min-width: 768px) {
@@ -359,6 +385,12 @@ button{
         /* background-color:red; */
         border-bottom:5px solid #826131;
     }
+
+    #close-popup{
+        top:20px;
+        right:20px;
+    }
+    
 
 
     /* main popup */
