@@ -2,6 +2,7 @@ const hamburgerMenu = document.getElementById("hamburger-menu");
 const dropdownMenu = document.getElementById("hm-dropdown");
 const indivNav = document.getElementsByClassName("indiv-nav");
 const mobileCoffeeRandomiser =document.getElementsByClassName("indiv-nav")[0];
+const desktopCoffeeRandomiser =document.getElementsByClassName("desktop-nav")[0];
 
 hamburgerMenu.addEventListener("click", function(){
     dropdownMenu.classList.toggle("mobile-menu-appear");
@@ -24,10 +25,16 @@ hamburgerMenu.addEventListener("click", function(){
 
 mobileCoffeeRandomiser.addEventListener("click", function(){
 
-    console.log("clicked on mobileCoffeeRandomiser")
+    console.log("clicked on mobileCoffeeRandomiser");
 
-    mainPopup_OuterContainer.style.display = "block";
-    mainPopup_OuterContainer.innerHTML = "";
+    mainPopup_OuterContainer.style.display = "flex";
+    mainPopup_randomiser()
+})
 
-    // mainPopup();
+desktopCoffeeRandomiser.addEventListener("click", function(){
+
+    console.log("clicked on desktopCoffeeRandomiser");
+
+    mainPopup_OuterContainer.style.display = "flex";
+    mainPopup_randomiser()
 })

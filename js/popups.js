@@ -68,7 +68,7 @@ function anotherRec(){
 function goToShopLocation(){
     const goToShop = document.getElementsByClassName("btn-green")[0];
     goToShop.addEventListener('click', function(){
-        mainPopup_OuterContainer.innerHTML = "";
+        // mainPopup_OuterContainer.innerHTML = "";
         mainPopup_OuterContainer.style.display = "none";
     })
 }
@@ -82,7 +82,7 @@ function chooseOne(){
     })
 
     coffeePlaces.addEventListener('click', function(){
-        mainPopup_OuterContainer.innerHTML = "";
+        // mainPopup_OuterContainer.innerHTML = "";
         mainPopup_OuterContainer.style.display = "none";
     })
 }
