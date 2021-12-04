@@ -6,6 +6,7 @@ const mainPopup_InnerContainer = document.getElementById("main-popup-container")
 
 mainPopup();
 
+// inserts the 'coffee randomiser' or 'check out coffee places?' into main popup
 function mainPopup(){
     mainPopup_InnerContainer.innerHTML = '';
     const mainPopupLanding = document.createElement("div");
@@ -26,13 +27,37 @@ function mainPopup(){
     chooseOne();
 }
 
+// choose one from 'coffee randomiser' and 'check out coffee places?'
+function chooseOne(){
+    const coffeeRandomiser = document.getElementById("coffee-randomiser");
+    const coffeePlaces = document.getElementById("coffee-places");
+    
+    coffeeRandomiser.addEventListener('click', function(){
+        mainPopup_InnerContainer.innerHTML = '';
+        mainPopup_randomiser_backBtn();
+        mainPopup_randomiser();
+    })
+
+    coffeePlaces.addEventListener('click', function(){
+        // mainPopup_OuterContainer.innerHTML = "";
+        mainPopup_OuterContainer.style.display = "none";
+    })
+}
+
+// insert back button only on the landing page popup, not the nav link popup
+function mainPopup_randomiser_backBtn(){
+    const backBtn = document.createElement("div");
+    backBtn.class = "back-to-main";
+    backBtn.innerHTML = `<div class="back-to-main">back</div>`;
+    mainPopup_InnerContainer.appendChild(backBtn);
+}
+
+// shows the random coffee & shop suggestions
 function mainPopup_randomiser(){
-    mainPopup_InnerContainer.innerHTML = '';
     const mainPopupRandomiser = document.createElement("div");
     mainPopupRandomiser.id = "main-popup-randomiser";
     setTimeout(function(){ 
-        mainPopupRandomiser.innerHTML = `<div id="back-to-main">back</div>
-                                        <div id="randomiser-container">
+        mainPopupRandomiser.innerHTML = `<div id="randomiser-container">
                                             <span>How about a cup of...</span>
                                             <div id="coffee-and-shop">
                                                 <div id="random-coffee">
@@ -52,19 +77,13 @@ function mainPopup_randomiser(){
                                             <button class="btn-red">Give me another one</button>
                                         </div>`;
         mainPopup_InnerContainer.appendChild(mainPopupRandomiser);
-        backToMain_btn();
-        anotherRec();
         goToShopLocation();
+        anotherRec();
+        backToMain_btn();
     }, 0);
-    }
-
-function anotherRec(){
-    const anotherOne = document.getElementsByClassName("btn-red")[0];
-    anotherOne.addEventListener('click', function(){
-        mainPopup_randomiser();
-    })
 }
 
+// closes the popup and leads to the shop's coordinates on the map
 function goToShopLocation(){
     const goToShop = document.getElementsByClassName("btn-green")[0];
     goToShop.addEventListener('click', function(){
@@ -73,23 +92,52 @@ function goToShopLocation(){
     })
 }
 
-function chooseOne(){
-    const coffeeRandomiser = document.getElementById("coffee-randomiser");
-    const coffeePlaces = document.getElementById("coffee-places");
-    
-    coffeeRandomiser.addEventListener('click', function(){
-        mainPopup_randomiser()
-    })
+// refresh the mainPopup_randomiser(),
+// but only include the back button on the landing page and not nav link popup
+function anotherRec(){
+    const anotherOne = document.getElementsByClassName("btn-red")[0];
+    anotherOne.addEventListener('click', function(){
 
-    coffeePlaces.addEventListener('click', function(){
-        // mainPopup_OuterContainer.innerHTML = "";
-        mainPopup_OuterContainer.style.display = "none";
+        const backtoMain = document.getElementsByClassName("back-to-main");
+        // check if back button exists, landing page has it but nav link popup doesn't
+        // if it doesn't exist, don't call the mainPopup_randomiser_backBtn() function
+        if(backtoMain.length == 1){
+            mainPopup_InnerContainer.innerHTML = '';
+            mainPopup_randomiser_backBtn();
+            mainPopup_randomiser();
+        } else{
+            mainPopup_InnerContainer.innerHTML = '';
+            mainPopup_randomiser();
+        }
     })
 }
 
+// back button function
 function backToMain_btn(){
-    const backtoMain = document.getElementById("back-to-main");                                    
-    backtoMain.addEventListener('click', function(){
-        mainPopup();
-    })
+    // anotherOne = document.getElementsByClassName("btn-red");
+
+    // console.log(anotherOne.length)
+    // if(anotherOne.length == 1){
+    //     const backtoMain = document.getElementById("back-to-main");                                    
+    //     backtoMain.addEventListener('click', function(){
+    //         mainPopup();
+    //     })
+    // } else{
+    //     backtoMain.removeEventListener('click', function(){
+    //         mainPopup();
+    //     })
+    // }
+
+    const backtoMain = document.getElementsByClassName("back-to-main");         
+    // console.log(backtoMain.length)
+
+    // check if back button exists, landing page has it but nav link popup doesn't
+    // if it doesn't exist, no actions will take place on click. otherwise will get errors in console log
+    if(backtoMain.length == 1){                          
+        backtoMain[0].addEventListener('click', function(){
+            mainPopup();
+        })
+    } else{
+        return;
+    }
 }

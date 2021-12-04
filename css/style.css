@@ -250,7 +250,7 @@ button{
     margin-top:100px;
 } */
 
-#back-to-main{
+.back-to-main{
     width:100px;
     margin-bottom:20px;
     text-align:left;
@@ -258,7 +258,7 @@ button{
     align-items: center;
 }
 
-#back-to-main:hover{
+.back-to-main:hover{
     background-color:#F0E3D0;
     color:#482C05;
     cursor:pointer;

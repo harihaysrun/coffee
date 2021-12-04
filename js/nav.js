@@ -4,6 +4,7 @@ const indivNav = document.getElementsByClassName("indiv-nav");
 const mobileCoffeeRandomiser =document.getElementsByClassName("indiv-nav")[0];
 const desktopCoffeeRandomiser =document.getElementsByClassName("desktop-nav")[0];
 
+// click to see dropdown mobile hamburger menu
 hamburgerMenu.addEventListener("click", function(){
     dropdownMenu.classList.toggle("mobile-menu-appear");
     dropdownMenu.style.transition = "all 0.2s linear";
@@ -23,18 +24,21 @@ hamburgerMenu.addEventListener("click", function(){
     // }
 })
 
+// user clicks on the link in the mobile hamburger menu
 mobileCoffeeRandomiser.addEventListener("click", function(){
-
     console.log("clicked on mobileCoffeeRandomiser");
-
-    mainPopup_OuterContainer.style.display = "flex";
-    mainPopup_randomiser()
+    randomiserPopup();
 })
 
+// user clicks on the link in the desktop nav menu
 desktopCoffeeRandomiser.addEventListener("click", function(){
-
     console.log("clicked on desktopCoffeeRandomiser");
-
-    mainPopup_OuterContainer.style.display = "flex";
-    mainPopup_randomiser()
+    randomiserPopup();
 })
+
+// repeated steps put into same function
+function randomiserPopup(){
+    mainPopup_OuterContainer.style.display = "flex";
+    mainPopup_InnerContainer.innerHTML = '';
+    mainPopup_randomiser();
+}
