@@ -66,8 +66,8 @@ function mainPopup_randomiser(){
                                                 </div>
                                                 <span>from</span>
                                                 <div id="random-shop">
-                                                    <h2>Shop Name</h2>
-                                                    <p>Shop Address</p>
+                                                    <h2 id="shopName"></h2>
+                                                    <p id="shopAddress">Shop Address</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -77,10 +77,34 @@ function mainPopup_randomiser(){
                                             <button class="btn-red">Give me another one</button>
                                         </div>`;
         mainPopup_InnerContainer.appendChild(mainPopupRandomiser);
+        
+        indivShopName();
+
         goToShopLocation();
         anotherRec();
         backToMain_btn();
     }, 0);
+}
+
+
+
+// get a random shop to recommend user
+function indivShopName(){
+    let shopNumber = Math.round(Math.random() * 11);
+
+    const shopName = document.getElementById("shopName");
+    const shopAddress = document.getElementById("shopAddress");
+
+    shopName.innerText = coffeePlacesList[shopNumber].name;
+
+    shopAddress.innerHTML = `${coffeePlacesList[shopNumber].location.address}`
+    // only insert second line of address if it exists
+    if(coffeePlacesList[shopNumber].location.address_extended != undefined){
+        shopAddress.innerHTML += `<br>${coffeePlacesList[shopNumber].location.address_extended}`
+    } else{
+        shopAddress.innerHTML += ``;
+    }
+    shopAddress.innerHTML += `<br>${coffeePlacesList[shopNumber].location.locality} ${coffeePlacesList[shopNumber].location.postcode}`;
 }
 
 // closes the popup and leads user to the shop's coordinates on the map
@@ -143,3 +167,22 @@ function backToMain_btn(){
         return;
     }
 }
+
+
+coffeePlaces();
+
+let coffeePlacesList;
+// let indivShopName;
+
+async function coffeePlaces() {
+    let response = await axios.get("js/coffee-places-50.json");
+    coffeePlacesList = response.data.results;
+    console.log(coffeePlacesList);
+    
+    // for(shop of coffeePlacesList){
+    //     indivShopName = shop.name;
+    //     // console.log(indivShopName)
+    // }
+}
+
+// coffeePlacesList[0].name

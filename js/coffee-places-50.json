@@ -1,0 +1,2303 @@
+{
+  "results": [
+    {
+      "fsq_id": "5ad56c0ccbcdee2e252630c4",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13040,
+          "name": "Dessert Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/dessert_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1060,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3527896839315896,
+          "longitude": 103.83539130737731
+        }
+      },
+      "location": {
+        "address": "220 Upper Thomson Rd",
+        "country": "SG",
+        "cross_street": "At Sin Ming Road",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Bishan"
+        ],
+        "post_town": "Ang Mo Kio",
+        "postcode": "574352"
+      },
+      "name": "Columbus Coffee",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "52f867bb498ee1151323fae2",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 990,
+      "geocodes": {
+        "main": {
+          "latitude": 1.352875075369612,
+          "longitude": 103.83476597655954
+        }
+      },
+      "location": {
+        "address": "215R Upper Thomson Rd",
+        "country": "SG",
+        "cross_street": "In Crust Pizza Bar",
+        "locality": "Singapore",
+        "post_town": "Ang Mo Kio",
+        "postcode": "574349"
+      },
+      "name": "One Man Coffee",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "59d5dc11acc5f50506719efb",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13040,
+          "name": "Dessert Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/dessert_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 2083,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3726473901053746,
+          "longitude": 103.82954478263855
+        }
+      },
+      "location": {
+        "address": "4 Jln Kuras",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Ang Mo Kio",
+        "postcode": "577723",
+        "region": "Singapore"
+      },
+      "name": "Thus Coffee",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "57ced66f498eb312cf9a5f15",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 3547,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3822120650112213,
+          "longitude": 103.84134650230408
+        }
+      },
+      "location": {
+        "address": "Blk 625 Ang mo kio ave 9",
+        "address_extended": "#01-112",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Ang Mo Kio",
+        "postcode": "560625"
+      },
+      "name": "Prodigal Roasters",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "51f4f0c4498eaedc01b4352a",
+      "categories": [
+        {
+          "id": 13032,
+          "name": "Cafes, Coffee, and Tea Houses",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [
+        {
+          "id": "ab4c54c0-d68a-012e-5619-003048cad9da",
+          "name": "Starbucks"
+        }
+      ],
+      "distance": 2760,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3498487851422194,
+          "longitude": 103.85041472922425
+        }
+      },
+      "location": {
+        "address": "Bishan Community Club, 51 Bishan St 13",
+        "address_extended": "#01-02",
+        "country": "SG",
+        "cross_street": "51 Bishan Street 13",
+        "locality": "Singapore",
+        "post_town": "Ang Mo Kio",
+        "postcode": "579799"
+      },
+      "name": "Starbucks",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4eb8e8dfa17cab61287fd661",
+          "name": "Bishan East Community Centre"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "58e7bd2e5f671735499d3d17",
+      "categories": [
+        {
+          "id": 13032,
+          "name": "Cafes, Coffee, and Tea Houses",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [
+        {
+          "id": "ab4c54c0-d68a-012e-5619-003048cad9da",
+          "name": "Starbucks"
+        }
+      ],
+      "distance": 4532,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3176731682929055,
+          "longitude": 103.84402113019289
+        }
+      },
+      "location": {
+        "address": "#01-01, United Square",
+        "address_extended": "#01-01",
+        "country": "SG",
+        "cross_street": "101 Thomson Rd",
+        "locality": "Singapore",
+        "post_town": "Newton",
+        "postcode": "307591"
+      },
+      "name": "Starbucks Reserve",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4bdfbe2389ca76b0e5c45d5e",
+          "name": "United Square"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "54e1bc88498e0c237b2a40bc",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 4413,
+      "geocodes": {
+        "main": {
+          "latitude": 1.318624,
+          "longitude": 103.843542
+        }
+      },
+      "location": {
+        "address": "189 Thomson Rd",
+        "country": "SG",
+        "cross_street": "189 Thomson Road",
+        "locality": "Singapore",
+        "post_town": "Newton",
+        "postcode": "307631"
+      },
+      "name": "The Clueless Goat",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4bc0667bb492d13ac12ea460",
+          "name": "Goldhill Centre"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "4b08ac7df964a520951023e3",
+      "categories": [
+        {
+          "id": 13310,
+          "name": "Modern European Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 5762,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3045662538017249,
+          "longitude": 103.81107901164047
+        }
+      },
+      "location": {
+        "address": "28B Harding Rd",
+        "country": "SG",
+        "cross_street": "Dempsey Hill",
+        "locality": "Singapore",
+        "post_town": "Tanglin",
+        "postcode": "249549"
+      },
+      "name": "Ps.Cafe",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5d11bc42348eba00235bc341",
+      "categories": [
+        {
+          "id": 13036,
+          "name": "Tea Room",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/tearoom_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13040,
+          "name": "Dessert Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/dessert_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13263,
+          "name": "Japanese Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/japanese_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 6133,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3003447,
+          "longitude": 103.83788
+        }
+      },
+      "location": {
+        "address": "111 Somerset Rd 111 Somerset",
+        "address_extended": "#01-10 Singapore (",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Orchard",
+        "postcode": "238164"
+      },
+      "name": "Hvala",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5b0783a3829b0c002c3ad31e",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13040,
+          "name": "Dessert Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/dessert_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 6719,
+      "geocodes": {
+        "main": {
+          "latitude": 1.303016676458133,
+          "longitude": 103.8580983994367
+        }
+      },
+      "location": {
+        "address": "17 Jln Pinang",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Central Region"
+        ],
+        "post_town": "Beach Road",
+        "postcode": "199149"
+      },
+      "name": "Earlybird",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "4b9c7db1f964a5202e6c36e3",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 5277,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3069064857326376,
+          "longitude": 103.82982858934378
+        }
+      },
+      "location": {
+        "address": "#02-09A Palais Renaissance",
+        "address_extended": "#02-09A Palais Renaissance",
+        "country": "SG",
+        "cross_street": "390 Orchard Rd",
+        "locality": "Singapore",
+        "post_town": "Orchard",
+        "postcode": "238871"
+      },
+      "name": "Ps.Cafe",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b058814f964a520a1b022e3",
+          "name": "Palais Renaissance"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "50227b21e4b02e5c64efc45d",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 6086,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3116143822088109,
+          "longitude": 103.86036068201064
+        }
+      },
+      "location": {
+        "address": "150 Tyrwhitt Rd",
+        "country": "SG",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Kallang"
+        ],
+        "post_town": "Little India",
+        "postcode": "207563"
+      },
+      "name": "Chye Seng Huat Hardware",
+      "related_places": {
+        "children": [
+          {
+            "fsq_id": "51ee46df498e8317b4850cc2",
+            "name": "Papa Palheta"
+          }
+        ]
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "4cc2a1be1e596dcb526bc467",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 5807,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3028994483698388,
+          "longitude": 103.83570003598898
+        }
+      },
+      "location": {
+        "address": "Takashimaya S.C.",
+        "country": "SG",
+        "cross_street": "391 Orchard Road",
+        "locality": "Singapore",
+        "post_town": "Orchard",
+        "postcode": "238872"
+      },
+      "name": "Nespresso Boutique",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b9dcc3cf964a52033be36e3",
+          "name": "Takashimaya S.C"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5abef34d1ffed77a0367575a",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 6344,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3019794326565868,
+          "longitude": 103.84894923473331
+        }
+      },
+      "location": {
+        "address": "28 Wilkie Rd Sophia Flats",
+        "address_extended": ",#01-06",
+        "country": "SG",
+        "cross_street": "Niven Road",
+        "locality": "Newton",
+        "neighborhood": [
+          "Heritage District"
+        ],
+        "post_town": "Orchard",
+        "postcode": "228051",
+        "region": "Singapore"
+      },
+      "name": "Twenty Eight Cafe",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5c37f008f1fdaf002c738362",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7104,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2968624,
+          "longitude": 103.854164
+        }
+      },
+      "location": {
+        "address": "231 Bain St",
+        "address_extended": "#01-05 Bras Basah Complex",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Downtown Core"
+        ],
+        "post_town": "Beach Road",
+        "postcode": "180231"
+      },
+      "name": "Narrative Coffee Stand",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b058816f964a520f1b022e3",
+          "name": "Bras Basah Complex"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "53a2d91b498e9733bb041a19",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7033,
+      "geocodes": {
+        "main": {
+          "latitude": 1.292076832556275,
+          "longitude": 103.83784358703461
+        }
+      },
+      "location": {
+        "address": "Martin No. 38 38 Martin Rd",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Orchard",
+        "postcode": "239072"
+      },
+      "name": "Ps.Cafe",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "4c5e436c6147be9a3da69409",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 5537,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3695127854788631,
+          "longitude": 103.8734096288681
+        }
+      },
+      "location": {
+        "address": "151a Serangoon North Ave 1",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Hougang",
+        "postcode": "551151"
+      },
+      "name": "Chi Yuan Coffee | 祭源咖啡",
+      "related_places": {
+        "children": [
+          {
+            "fsq_id": "4c4a756ef7cc1b8d6d9d6c3e",
+            "name": "151A Fishball Noodle"
+          },
+          {
+            "fsq_id": "4eb0ca1d4690b9be4278d16d",
+            "name": "金记海南鸡饭 - Blk 151A Serangoon North"
+          },
+          {
+            "fsq_id": "4da91cfd6e81162ae7b5e044",
+            "name": "Chindamani Indian Food Stall"
+          }
+        ]
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "4bdfa839e75c0f47a907cc03",
+      "categories": [
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [
+        {
+          "id": "da4020f1-dcac-4c29-adca-ff8ef083c745",
+          "name": "Kopitiam"
+        }
+      ],
+      "distance": 5596,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3505495470490698,
+          "longitude": 103.87619912624359
+        }
+      },
+      "location": {
+        "address": "Blk 3 Lorong Lew Lian",
+        "address_extended": "#01-76",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Hougang",
+        "postcode": "531003"
+      },
+      "name": "Kopitiam",
+      "related_places": {
+        "children": [
+          {
+            "fsq_id": "4e7096fec65b340cde75b4ff",
+            "name": "天丽海鲜鱼头炉"
+          }
+        ]
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "55cae8c9498e7a3a97aeba1f",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13040,
+          "name": "Dessert Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/dessert_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 6193,
+      "geocodes": {
+        "main": {
+          "latitude": 1.321183318754786,
+          "longitude": 103.87084543704987
+        }
+      },
+      "location": {
+        "address": "GB Point, 535 Kallang Bahru",
+        "address_extended": "#01-06",
+        "country": "SG",
+        "cross_street": "535 Kallang Bahru",
+        "locality": "Singapore",
+        "post_town": "Toa Payoh",
+        "postcode": "339351"
+      },
+      "name": "The Ugly Cake Shop",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4fec55a8e4b047239ad28a8c",
+          "name": "Gb Point"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "524e33b511d2dfd3dea7d658",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13236,
+          "name": "Italian Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/italian_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 6749,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3043994220058217,
+          "longitude": 103.86068636290243
+        }
+      },
+      "location": {
+        "address": "Blk 462 Crawford Lane",
+        "address_extended": "#01-63",
+        "country": "SG",
+        "cross_street": "Jalan Sultan",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Central Region"
+        ],
+        "post_town": "Beach Road",
+        "postcode": "190462"
+      },
+      "name": "Tolido's Espresso Nook",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "4b26d224f964a520718124e3",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13072,
+          "name": "Asian Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/asian_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 6312,
+      "geocodes": {
+        "main": {
+          "latitude": 1.299014546078975,
+          "longitude": 103.83927941613379
+        }
+      },
+      "location": {
+        "address": "67 Killiney Rd",
+        "country": "SG",
+        "locality": "Singapore",
+        "post_town": "Orchard",
+        "postcode": "239525"
+      },
+      "name": "Killiney Kopitiam",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5b2e0cd779f6c7002ca1c12c",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13040,
+          "name": "Dessert Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/dessert_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 6966,
+      "geocodes": {
+        "main": {
+          "latitude": 1.297044,
+          "longitude": 103.851625
+        }
+      },
+      "location": {
+        "address": "1 Queen St",
+        "address_extended": "Level 1 Kum Yan Methodist Church",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Beach Road",
+        "postcode": "188534"
+      },
+      "name": "Löwe'f Artisanal",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b9f394af964a520ae1837e3",
+          "name": "Cantonese Methodist Kum Van Church"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "59c48e6c7918717eb36a5466",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7147,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2955222832745867,
+          "longitude": 103.85222446463908
+        }
+      },
+      "location": {
+        "address": "#01-03 CHIJMES",
+        "address_extended": "#01-03 Chijmes",
+        "country": "SG",
+        "cross_street": "30 Victoria Street",
+        "locality": "Singapore",
+        "post_town": "Beach Road",
+        "postcode": "187996"
+      },
+      "name": "The Glasshouse: Specialty Coffee and Toast Bar",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5a92522b345cbe211b1047e3",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13040,
+          "name": "Dessert Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/dessert_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7124,
+      "geocodes": {
+        "main": {
+          "latitude": 1.301162,
+          "longitude": 103.861926
+        }
+      },
+      "location": {
+        "address": "302 Beach Rd Concourse Skyline 002F05 Concourse Skyline",
+        "address_extended": "#01-04/05",
+        "country": "SG",
+        "cross_street": "302 Beach Road",
+        "locality": "Singapore",
+        "post_town": "Beach Road",
+        "postcode": "199600"
+      },
+      "name": "Wakey Wakey",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b25a253f964a520cd7424e3",
+          "name": "The Concourse"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "579ef01fcd10cf6ab9cc4871",
+      "categories": [
+        {
+          "id": 13036,
+          "name": "Tea Room",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/tearoom_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7082,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3004824313654848,
+          "longitude": 103.86020648026422
+        }
+      },
+      "location": {
+        "address": "267 Beach Rd",
+        "address_extended": "Level 1",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Kallang"
+        ],
+        "post_town": "Beach Road",
+        "postcode": "199545"
+      },
+      "name": "Looksee Looksee",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "595b27ae8e886a485ccb3fa2",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 6792,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2989252,
+          "longitude": 103.851974
+        }
+      },
+      "location": {
+        "address": "261 Waterloo St",
+        "address_extended": "#01-24",
+        "country": "SG",
+        "cross_street": "331 North Bridge Road",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Heritage District"
+        ],
+        "post_town": "Beach Road",
+        "postcode": "180261"
+      },
+      "name": "Kurasu",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "4b47ecf8f964a5202e4426e3",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13068,
+          "name": "American Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13236,
+          "name": "Italian Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/italian_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7172,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2910181659978366,
+          "longitude": 103.83896523114004
+        }
+      },
+      "location": {
+        "address": "20 Martin Rd",
+        "address_extended": "#01-02 Seng Kee Building",
+        "country": "SG",
+        "cross_street": "20 Martin Road",
+        "locality": "Singapore",
+        "post_town": "Orchard",
+        "postcode": "239070"
+      },
+      "name": "The Book Cafe",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "59f187ae59c4232293ca0427",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13148,
+          "name": "French Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/french_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7806,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2844122731553032,
+          "longitude": 103.83360542629428
+        }
+      },
+      "location": {
+        "address": "56 Eng Hoon St",
+        "address_extended": "#01-68 Tiong Bahru Estate Tiong Bahru",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Central South",
+        "postcode": "160056",
+        "region": "新加坡"
+      },
+      "name": "Merci Marcel",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "4eb147cbd3e36bac66ef6ea5",
+      "categories": [
+        {
+          "id": 13032,
+          "name": "Cafes, Coffee, and Tea Houses",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [
+        {
+          "id": "ab4c54c0-d68a-012e-5619-003048cad9da",
+          "name": "Starbucks"
+        }
+      ],
+      "distance": 6867,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3055388329016493,
+          "longitude": 103.78790707952479
+        }
+      },
+      "location": {
+        "address": "37 Rochester Dr",
+        "country": "SG",
+        "locality": "Singapore",
+        "post_town": "South West",
+        "postcode": "138640"
+      },
+      "name": "Starbucks",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "51ecc5a87dd2977985a5e8d1",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7072,
+      "geocodes": {
+        "main": {
+          "latitude": 1.29184,
+          "longitude": 103.838476
+        }
+      },
+      "location": {
+        "address": "22 Martin Rd",
+        "address_extended": "#01-00",
+        "country": "SG",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Singapore River"
+        ],
+        "post_town": "Orchard",
+        "postcode": "239058"
+      },
+      "name": "Common Man Coffee Roasters",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5e53443d0bf4380008cba95e",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 5948,
+      "geocodes": {
+        "main": {
+          "latitude": 1.302108,
+          "longitude": 103.838102
+        }
+      },
+      "location": {
+        "address": "250 Orchard Rd",
+        "address_extended": "#03-01 Design Orchard",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Orchard",
+        "postcode": "238905",
+        "region": "Singapore"
+      },
+      "name": "Alchemist",
+      "related_places": {
+        "parent": {
+          "fsq_id": "5c4bedaf1af8520039f4cc2f",
+          "name": "Design Orchard"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "4f9f3ff3e4b01426c55d112b",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 8762,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2766572092129436,
+          "longitude": 103.84007318719618
+        }
+      },
+      "location": {
+        "address": "4 Everton Pk",
+        "address_extended": "#01-40",
+        "country": "SG",
+        "cross_street": "#01-40",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Central Region"
+        ],
+        "post_town": "Central Business District",
+        "postcode": "080004"
+      },
+      "name": "Nylon Coffee Roasters",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5382d35d498e7fa5d0264b68",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7604,
+      "geocodes": {
+        "main": {
+          "latitude": 1.289694879403846,
+          "longitude": 103.80321175571765
+        }
+      },
+      "location": {
+        "address": "Blk 170 Stirling Rd",
+        "address_extended": "#01-1133 .",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Central Region"
+        ],
+        "post_town": "Central South",
+        "postcode": "140170"
+      },
+      "name": "Tiong Hoe Specialty Coffee",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "50b1b577e4b0dabb58a334f0",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7870,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2921046995456154,
+          "longitude": 103.85995848268044
+        }
+      },
+      "location": {
+        "address": "Millenia Walk, 9 Raffles Boulevard",
+        "address_extended": "#01-40",
+        "country": "SG",
+        "cross_street": "9 Raffles Blvd",
+        "locality": "Singapore",
+        "post_town": "Marina Area",
+        "postcode": "039596"
+      },
+      "name": "Patisserie G",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b058815f964a520abb022e3",
+          "name": "Erabelle - Millenia Walk"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "500b5b73e4b042b40668ed81",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13340,
+          "name": "Singaporean Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/asian_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 6849,
+      "geocodes": {
+        "main": {
+          "latitude": 1.30531701338755,
+          "longitude": 103.86345494527164
+        }
+      },
+      "location": {
+        "address": "Blk 10 North Bridge Rd",
+        "address_extended": "#01-5109",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Beach Road",
+        "postcode": "190010"
+      },
+      "name": "Heap Seng Leong",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "517fe9a8e4b08c34b1ad7396",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 6700,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3613976647771602,
+          "longitude": 103.8858507144084
+        }
+      },
+      "location": {
+        "address": "5 Simon Rd",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Hougang",
+        "postcode": "545893"
+      },
+      "name": "Lola's Cafe",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "4c57877d6201e21e49b7e86e",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 8502,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2804684376763578,
+          "longitude": 103.8462642876152
+        }
+      },
+      "location": {
+        "address": "45 Ann Siang Hill",
+        "address_extended": "#02-02",
+        "country": "SG",
+        "cross_street": "Ann Siang Hill Park",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Chinatown"
+        ],
+        "post_town": "Marina Area",
+        "postcode": "069719"
+      },
+      "name": "Ps.Cafe",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4bf7750a4a67c92837c723cf",
+          "name": "Ann Siang Hill Park"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "59e0b785b9ac3863c4aa9edf",
+      "categories": [
+        {
+          "id": 13009,
+          "name": "Cocktail Bar",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/nightlife/cocktails_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13040,
+          "name": "Dessert Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/dessert_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7320,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2895696392328186,
+          "longitude": 103.83851948763483
+        }
+      },
+      "location": {
+        "address": "1 Nanson Rd",
+        "address_extended": "Level 1 InterContinental Singapore Robertson Quay",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Singapore River"
+        ],
+        "post_town": "Orchard",
+        "postcode": "238909"
+      },
+      "name": "Publico Ristorante",
+      "related_places": {
+        "parent": {
+          "fsq_id": "c2bfd9449eea41dc915ace45",
+          "name": "Intercontinental Singapore Robertson Quay, an Ihg Hotel"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5c2c6580dab4b1002cd05f73",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13040,
+          "name": "Dessert Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/dessert_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13263,
+          "name": "Japanese Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/japanese_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 8749,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2776935811720365,
+          "longitude": 103.84439002689504
+        }
+      },
+      "location": {
+        "address": "65 Tras St",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Central Business District",
+        "postcode": "079004"
+      },
+      "name": "Baristart Coffee",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "51fb5afd498e34ca1edf2450",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7902,
+      "geocodes": {
+        "main": {
+          "latitude": 1.310302268693275,
+          "longitude": 103.88189429765927
+        }
+      },
+      "location": {
+        "address": "100 Guillemard Rd",
+        "address_extended": "#01-02",
+        "country": "SG",
+        "cross_street": "#01-02",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Central Region, Singapore"
+        ],
+        "post_town": "Eunos",
+        "postcode": "399718"
+      },
+      "name": "Brawn & Brains",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b66adcef964a5203b272be3",
+          "name": "Guillemard Village"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5906f0411543c754e182a6f5",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 8780,
+      "geocodes": {
+        "main": {
+          "latitude": 1.275833,
+          "longitude": 103.83573
+        }
+      },
+      "location": {
+        "address": "54 Blair Rd",
+        "address_extended": "#01-01",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Central Business District",
+        "postcode": "089954",
+        "region": "Singapore"
+      },
+      "name": "Little Part 1 Cafe",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "575a76e1498ed10a81251ad0",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 8973,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2760671,
+          "longitude": 103.84619
+        }
+      },
+      "location": {
+        "address": "10 Anson Rd",
+        "address_extended": "#01-34 International Plaza",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Financial District"
+        ],
+        "post_town": "Central Business District",
+        "postcode": "079903"
+      },
+      "name": "Alchemist",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b59859ef964a520168b28e3",
+          "name": "International Plaza"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "59033ecdb23dfa5f667d471e",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7666,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2884437239166537,
+          "longitude": 103.84670348315896
+        }
+      },
+      "location": {
+        "address": "6 Eu Tong Sen St The Central Clarke Quay Central",
+        "country": "SG",
+        "cross_street": "6 Eu Tong Sen Street",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Singapore River"
+        ],
+        "post_town": "Marina Area",
+        "postcode": "059817"
+      },
+      "name": "Craftsman Speciality Coffee Shop",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4afa194af964a520b71622e3",
+          "name": "Clarke Quay Central"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "507a994be4b0ce42c6f2478c",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13064,
+          "name": "Pizzeria",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/pizza_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13068,
+          "name": "American Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7885,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2834787454441239,
+          "longitude": 103.83126408008341
+        }
+      },
+      "location": {
+        "address": "78 Guan Chuan St",
+        "address_extended": "#01-41",
+        "country": "SG",
+        "locality": "Singapore",
+        "post_town": "Central South",
+        "postcode": "160078"
+      },
+      "name": "Ps.Cafe Petit",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5a0c0fd04c9be6271f07a6b5",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7766,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2862164,
+          "longitude": 103.809906
+        }
+      },
+      "location": {
+        "address": "28 Jln Bukit Merah Brickworks Estate Brickswork Estate",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Central Region"
+        ],
+        "post_town": "Central South",
+        "postcode": "152028"
+      },
+      "name": "Refuel II",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5a87ec1e340a583102ff04ff",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13040,
+          "name": "Dessert Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/dessert_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 8728,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2775322077045548,
+          "longitude": 103.84286731481552
+        }
+      },
+      "location": {
+        "address": "8 Craig Rd",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Tanjong Pagar",
+        "post_town": "Central Business District",
+        "postcode": "089668",
+        "region": "Singapore"
+      },
+      "name": "Bearded Bella",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "4b5305e3f964a520d98c27e3",
+      "categories": [
+        {
+          "id": 13032,
+          "name": "Cafes, Coffee, and Tea Houses",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [
+        {
+          "id": "ab4c54c0-d68a-012e-5619-003048cad9da",
+          "name": "Starbucks"
+        }
+      ],
+      "distance": 8231,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2856320767718488,
+          "longitude": 103.85388935351173
+        }
+      },
+      "location": {
+        "address": "#01-04 One Fullerton",
+        "address_extended": "#01-04 One Fullerton",
+        "country": "SG",
+        "cross_street": "1 Fullerton Rd",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Central Business District"
+        ],
+        "post_town": "Marina Area",
+        "postcode": "049213"
+      },
+      "name": "Starbucks",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4b20c0b7f964a5206a3424e3",
+          "name": "Regus - Singapore One Fullerton"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5b2246dd4a7aae002c589d23",
+      "categories": [
+        {
+          "id": 13000,
+          "name": "Dining and Drinking",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7482,
+      "geocodes": {
+        "main": {
+          "latitude": 1.2989474678084985,
+          "longitude": 103.78752669768969
+        }
+      },
+      "location": {
+        "address": "1 Fusionopolis Way",
+        "address_extended": "#01-01 Fusionopolis One",
+        "country": "SG",
+        "cross_street": "1 Fusionopolis Way",
+        "locality": "Singapore",
+        "neighborhood": [
+          "Central Region"
+        ],
+        "post_town": "South West",
+        "postcode": "138632",
+        "region": "138632"
+      },
+      "name": "Dutch Colony Coffee",
+      "related_places": {
+        "parent": {
+          "fsq_id": "556992b9498e5bcca4e0f696",
+          "name": "Connexis"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "55e19dc0498e8cb6d2c612da",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 7072,
+      "geocodes": {
+        "main": {
+          "latitude": 1.3011355584166644,
+          "longitude": 103.86104192844122
+        }
+      },
+      "location": {
+        "address": "321 Beach Rd",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Beach Road",
+        "postcode": "199557"
+      },
+      "name": "Jason Niang Dou Fu",
+      "related_places": {},
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "fsq_id": "5205c76d11d2072b2bd3aa80",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13148,
+          "name": "French Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/french_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 8468,
+      "geocodes": {
+        "main": {
+          "latitude": 1.283112539646023,
+          "longitude": 103.85331066421297
+        }
+      },
+      "location": {
+        "address": "80 Collyer Quay",
+        "address_extended": "Level 01 The Fullerton Bay Hotel",
+        "country": "SG",
+        "cross_street": "",
+        "locality": "Singapore",
+        "post_town": "Marina Area",
+        "postcode": "049326"
+      },
+      "name": "La Brasserie",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4e3ce52ce4cdab9b933c525f",
+          "name": "The Fullerton Bay Hotel"
+        }
+      },
+      "timezone": "Asia/Singapore"
+    }
+  ],
+  "context": {
+    "geo_bounds": {
+      "circle": {
+        "center": {
+          "latitude": 1.3542413116753251,
+          "longitude": 103.82595888733805
+        },
+        "radius": 26587
+      }
+    }
+  }
+}
