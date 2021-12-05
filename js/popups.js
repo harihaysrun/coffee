@@ -85,7 +85,7 @@ function mainPopup_randomiser(){
     }, 0);
 }
 
-
+let shopNumber;
 // get a random coffee & shop to recommend user
 function randomise(){
 
@@ -99,7 +99,7 @@ function randomise(){
     coffeeName.innerText = coffeeType[coffeeTypeNumber].type;
 
     // random coffee shop
-    let shopNumber = Math.floor(Math.random() * 50);
+    shopNumber = Math.floor(Math.random() * 50);
 
     const shopName = document.getElementById("shopName");
     const shopAddress = document.getElementById("shopAddress");
@@ -123,6 +123,34 @@ function randomise(){
 function goToShopLocation(){
     const goToShop = document.getElementsByClassName("btn-green")[0];
     goToShop.addEventListener('click', function(){
+
+        console.log("coffeePlacesList: " + coffeePlacesList[shopNumber].name)
+
+        shopCoordinatesLt = coffeePlacesList[shopNumber].geocodes.main.latitude;
+        shopCoordinatesLg = coffeePlacesList[shopNumber].geocodes.main.longitude;
+        console.log(shopCoordinatesLt,shopCoordinatesLg)
+
+        map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 18);
+        marker.openPopup();
+
+        const shopLocation = document.createElement("div");
+        shopLocation.className = "indiv-result";
+        shopLocation.innerHTML = `${coffeePlacesList[shopNumber].name}
+                                    <br>
+                                    <small style="color:hotpink;">${coffeePlacesList[shopNumber].location.address}</small>`;
+
+        historyList.push(shopLocation);
+        console.log("from main page: " + shopLocation);
+
+
+        // for(let i=0; i<historyList.length; i++){
+        //     // console.log("historyList[i] : " + historyList[i].outerHTML)
+        //     document.getElementById("history-list").innerHTML += historyList[i].outerHTML;
+        // }
+
+
+        // console.log("historyList: " + historyList[shopNumber].outerHTML)
+
         // mainPopup_OuterContainer.innerHTML = "";
         mainPopup_OuterContainer.style.display = "none";
     })

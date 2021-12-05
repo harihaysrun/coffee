@@ -49,6 +49,8 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 let historyList = [];
 let historyList_indiv;
+let shopCoordinates;
+let marker;
 
 window.addEventListener('DOMContentLoaded', async function() {
     const coffeeShops = await axios.get("js/coffee-places-50.json");
@@ -57,11 +59,12 @@ window.addEventListener('DOMContentLoaded', async function() {
     let coffeeShopClusterLayer = L.markerClusterGroup();
     for (let i = 0; i < coffeeShopObjects.length; i++) {
         // let info = coffeeShopObjects[i];
-        let shopCoordinates = coffeeShopObjects[i].geocodes.main;
+        shopCoordinates = coffeeShopObjects[i].geocodes.main;
         // console.log(shopCoordinates.latitude, shopCoordinates.longitude)
-        L.marker([shopCoordinates.latitude, shopCoordinates.longitude])
-            .bindPopup(`Shop: ${coffeeShopObjects[i].name}`)
-            .addTo(coffeeShopClusterLayer);
+        marker = L.marker([shopCoordinates.latitude, shopCoordinates.longitude]);
+        marker.bindPopup(`Shop: ${coffeeShopObjects[i].name}`);
+        marker.addTo(coffeeShopClusterLayer);
+        // marker.openPopup();
     }
     coffeeShopClusterLayer.addTo(map);
 
@@ -89,9 +92,25 @@ window.addEventListener('DOMContentLoaded', async function() {
             historyList_indiv = shopListing[x];
             console.log("clicked on " + shopListing[x].innerText)
             updateHistoryList();
+
+            // console.log(coffeePlacesList[x]);
+            let shopCoordinatesLt = coffeePlacesList[x].geocodes.main.latitude;
+            let shopCoordinatesLg = coffeePlacesList[x].geocodes.main.longitude;
+            console.log(shopCoordinatesLt,shopCoordinatesLg)
+            // historyList_indiv.coordinates = eachshop.geocodes.main.latitude,eachshop.geocodes.main.longitude;
+            // console.log("historyList_indiv.coordinates: " + historyList_indiv.coordinates)
+
+            // console.log("historyList_indiv: " + historyList_indiv.outerText)
+
+            map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 18);
+            marker.openPopup();
+
+
+            discoverBox.classList.remove("box-slideup")
+            discoverBox.style.transition = "all 0.5s ease-in";
+
         })
     }
-
 });
 
 function updateHistoryList(){
