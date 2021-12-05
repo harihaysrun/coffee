@@ -87,6 +87,12 @@ desktopHistoryBtn.addEventListener("click", function(){
     historyPopup();
 })
 
+
+// function showHistoryList(){
+//     console.log("hello!")
+//     onetwothree()
+// }
+
 function historyPopup(){
 
     mainPopup_OuterContainer.classList.add('onlyHistoryPopup');
@@ -97,13 +103,20 @@ function historyPopup(){
     mainPopup_OuterContainer.style.backgroundColor = "white";
     mainPopup_OuterContainer.innerHTML = `<div class="history-header">
                                             <h1>History</h1>
-                                        </div>`
+                                        </div>
+                                        <div id="history-list"></div>`
 
     setTimeout(function(){
         mainPopup_OuterContainer.classList.add('onlyHistoryPopup-slideIn');
         // mainPopup_OuterContainer.style.transform = "translateX(0px);";
         mainPopup_OuterContainer.style.transition = "all 0.2s ease-in";
     }, 0)
+    // 
+    console.log("historyList.length: " + historyList.length)
+    for(let i=0; i<historyList.length; i++){
+        console.log("historyList[i] : " + historyList[i].outerHTML)
+        document.getElementById("history-list").innerHTML += historyList[i].outerHTML;
+    }
 
     // if(window.innerWidth > 992){
 

@@ -23,6 +23,21 @@
     text-align:center;
 }
 
+#history-list{
+    /* background-color:pink; */
+    position:absolute;
+    top:120px;
+    width:100%;
+}
+
+.indiv-result{
+    cursor: pointer;
+    text-align:left;
+    color:black;
+    padding:20px 25px;
+    border-bottom:1px solid black;
+}
+
 .onlyHistoryPopup{
     width: 100% !important;
 }

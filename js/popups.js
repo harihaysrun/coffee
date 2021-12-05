@@ -61,7 +61,7 @@ function mainPopup_randomiser(){
                                             <span>How about a cup of...</span>
                                             <div id="coffee-and-shop">
                                                 <div id="random-coffee">
-                                                    <img src="images/coffee-beans.png" alt="">
+                                                    <img src="" alt="">
                                                     <h2>Iced Americano</h2>
                                                 </div>
                                                 <span>from</span>
@@ -77,9 +77,8 @@ function mainPopup_randomiser(){
                                             <button class="btn-red">Give me another one</button>
                                         </div>`;
         mainPopup_InnerContainer.appendChild(mainPopupRandomiser);
-        
-        indivShopName();
-
+     
+        randomise();
         goToShopLocation();
         anotherRec();
         backToMain_btn();
@@ -87,23 +86,36 @@ function mainPopup_randomiser(){
 }
 
 
+// get a random coffee & shop to recommend user
+function randomise(){
 
-// get a random shop to recommend user
-function indivShopName(){
-    let shopNumber = Math.round(Math.random() * 11);
+    // random coffee
+    let coffeeTypeNumber = Math.floor(Math.random() * 34);
+
+    const coffeeImg = document.querySelector("#random-coffee img");
+    const coffeeName = document.querySelector("#random-coffee h2");
+
+    coffeeImg.src = coffeeType[coffeeTypeNumber].img;
+    coffeeName.innerText = coffeeType[coffeeTypeNumber].type;
+
+    // random coffee shop
+    let shopNumber = Math.floor(Math.random() * 50);
 
     const shopName = document.getElementById("shopName");
     const shopAddress = document.getElementById("shopAddress");
 
     shopName.innerText = coffeePlacesList[shopNumber].name;
+    shopAddress.innerHTML = `${coffeePlacesList[shopNumber].location.address}`;
 
-    shopAddress.innerHTML = `${coffeePlacesList[shopNumber].location.address}`
-    // only insert second line of address if it exists
+    // only insert second line of address if it exists, some extended address is a repeat of the first line
     if(coffeePlacesList[shopNumber].location.address_extended != undefined){
         shopAddress.innerHTML += `<br>${coffeePlacesList[shopNumber].location.address_extended}`
+    } else if(coffeePlacesList[shopNumber].location.address_extended == coffeePlacesList[shopNumber].location.address){
+        shopAddress.innerHTML += ``;
     } else{
         shopAddress.innerHTML += ``;
     }
+
     shopAddress.innerHTML += `<br>${coffeePlacesList[shopNumber].location.locality} ${coffeePlacesList[shopNumber].location.postcode}`;
 }
 
@@ -169,20 +181,26 @@ function backToMain_btn(){
 }
 
 
-coffeePlaces();
+// coffees();
 
-let coffeePlacesList;
-// let indivShopName;
+// let coffeePlacesList;
+// let coffeeType;
+// const coffeePlacesList_Array = [];
+// // let coffeePlacesList_Array;
 
-async function coffeePlaces() {
-    let response = await axios.get("js/coffee-places-50.json");
-    coffeePlacesList = response.data.results;
-    console.log(coffeePlacesList);
+// // export default
+// async function coffees() {
+//     let response = await axios.get("js/coffee-places-50.json");
+//     coffeePlacesList = response.data.results;
+
+//     for(let i=0 ; i<coffeePlacesList.length; i++){
+//         let eachshop = coffeePlacesList[i];
+//         coffeePlacesList_Array.push(eachshop);
+//     }
+
+//     console.log(coffeePlacesList_Array)
     
-    // for(shop of coffeePlacesList){
-    //     indivShopName = shop.name;
-    //     // console.log(indivShopName)
-    // }
-}
-
-// coffeePlacesList[0].name
+//     let response2 = await axios.get("js/coffee-type.json");
+//     coffeeType = response2.data.coffee_type;
+//     // console.log(coffeeType);
+// }

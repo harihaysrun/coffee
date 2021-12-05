@@ -1,0 +1,140 @@
+{
+    "coffee_type": [
+        {
+            "type":"Black Coffee",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Iced Black Coffee",
+            "img": "images/map-test.png"
+        },
+        {
+            "type":"Latte",
+            "img": "images/map-test.png"
+        },
+        {
+            "type":"Iced Latte",
+            "img": "images/map-test.png"
+        },
+        {
+            "type":"Cappuccino",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Iced Cappuccino",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Americano",
+            "img": "images/map-test.png"
+        },
+        {
+            "type":"Iced Americano",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Espresso",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Iced Espresso",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Doppio",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Iced Doppio",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Cortado",
+            "img": "images/map-test.png"
+        },
+        {
+            "type":"Iced Cortado",
+            "img": "images/map-test.png"
+        },
+        {
+            "type":"Red Eye",
+            "img": "images/map-test.png"
+        },
+        {
+            "type":"Iced Red Eye",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Lungo",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Iced Lungo",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Macchiato",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Iced Macchiato",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Mocha",
+            "img": "images/map-test.png"
+        },
+        {
+            "type":"Iced Mocha",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Ristretto",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Flat White",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Iced Flat White",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Affogato",
+            "img": "images/map-test.png"
+        },
+        {
+            "type":"Café au Lait",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Iced Café au Lait",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Irish",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Iced Irish",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Iced Coffee",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Cold Brew",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Frappucino",
+            "img": "images/coffee-beans.png"
+        },
+        {
+            "type":"Nitro",
+            "img": "images/coffee-beans.png"
+        }
+    ]
+}

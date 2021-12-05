@@ -1,6 +1,7 @@
 #discover-box{
     position:absolute;
     /* top:95vh; */
+    /* top:0; */
     top:calc(100vh - 35px);
     background-color:#ffffff;
     width:100%;
@@ -50,11 +51,27 @@
     background-color:#F7EFE4;
     box-sizing: border-box;
     padding: 45px 25px 25px 25px;
+    height:120px;
 }
 
 #discover-box h1{
+    /* height:120px; */
     color: #382102;
     margin:0;
+}
+
+.discover-results{
+    background-color:white;
+    position:relative;
+    /* height:calc(100vh - 35px - 195px); */
+    height:calc(100vh - 35px);
+    overflow:auto;
+}
+
+.indiv-result{
+    cursor: pointer;
+    padding:20px 25px;
+    border-bottom:1px solid black;
 }
 
 
@@ -89,5 +106,13 @@
         background-color:#F7EFE4;
         box-sizing: border-box;
         padding: 25px;
+    }
+
+    .discover-results{
+        height:calc(80vh - 30px - 120px);
+    }
+
+    .indiv-result:hover{
+        background-color:pink;
     }
 }
