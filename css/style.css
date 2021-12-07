@@ -310,7 +310,7 @@ footer{
 
     body{
         /* overflow:auto; */
-        background-image:url("./images/bg-pattern.png");
+        background-image:url("../images/bg-pattern.png");
         background-size:cover;
         background-repeat:no-repeat;
     }    
