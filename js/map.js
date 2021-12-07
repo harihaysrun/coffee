@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
-            'Authorization': 'fsq3Y8AfRRmU5KzWq4dY/BpVAmdNtBb5RSGr8Pq9imUKERg='
+            'Authorization': 'fsq3oV4sbVvRReGfIAlURYSJhV8blEB0AYeRNM3Dph2IlU4='
         },
         params: {
             'client_id': 'MDFG0EAFLCZBNSAA0RRUAJQKJDI3E0CZZ1052PZ2XNGF1EIS',
