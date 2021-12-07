@@ -53,7 +53,21 @@ let shopCoordinates;
 let marker;
 
 window.addEventListener('DOMContentLoaded', async function() {
-    const coffeeShops = await axios.get("js/coffee-places-50.json");
+    // const coffeeShops = await axios.get("js/coffee-places-50.json");
+    
+    const coffeeShops = await axios.get("https://api.foursquare.com/v3/places/search?query=coffee&near=singapore&limit=50", {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Authorization': 'fsq3Y8AfRRmU5KzWq4dY/BpVAmdNtBb5RSGr8Pq9imUKERg='
+        },
+        params: {
+            'client_id': 'MDFG0EAFLCZBNSAA0RRUAJQKJDI3E0CZZ1052PZ2XNGF1EIS',
+            'client_secret': 'EDMSUSZKMGPCHLPY2MRRALHZSVG4NLZOB0KGEBKFMAF3Y0V3',
+            'v': '20211207'
+        }
+    })
+
     const coffeeShopObjects = coffeeShops.data.results;
     // console.log("coffeeShopObjects: " + coffeeShopObjects)
     let coffeeShopClusterLayer = L.markerClusterGroup();
