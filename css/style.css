@@ -17,7 +17,7 @@ nav{
     box-sizing: border-box;
     padding:15px;
     z-index:2;
-    background: url('/images/header-tab.svg') no-repeat;
+    background: url('../../images/header-tab.svg') no-repeat;
     background-size:860px;
     /* background-size:992px; */
     /* background: url('/images/header-mobile.svg') no-repeat; */
@@ -465,7 +465,7 @@ footer{
         height:550px;
         width:100%;
         color:#482C05;
-        background: url('/images/footer-bg.png') no-repeat;
+        background: url('../../images/footer-bg.png') no-repeat;
         /* background-size:860px; */
         background-size:cover;
         /* background-color: #F0E3D0; */
