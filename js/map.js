@@ -11,68 +11,67 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw' //demo access token
 }).addTo(map);
 
-// let coffeeCluster = L.layerGroup();
-
-// function addCircleMarkersToLayers(
-//     layer,
-//     data,
-//     color
-// ){
-//     for (let i = 0; i < data.length; i++) {
-//         // let coffeeCoordinates = data[i].geocodes.main;
-//         L.circle(data[i].coordinates, {
-//             color: color,
-//             fillColor:color,
-//             fillOpacity:0.3,
-//             radius: 500
-//         }).addTo(layer).bindPopup(data[i].name);
-//     }
-    
-// }
-
-// const hdb = [
-//     {
-//         "name":"Yishun",
-//         "coordinates":[1.4304, 103.8354]
-//     },
-//     {
-//         "name":"Bedok",
-//         "coordinates":[1.3236, 103.9273]
-//     }
-// ]
-
-
-// addCircleMarkersToLayers(coffeeCluster, kopi, "lime");
-// // console.log("from one: " + coffeePlacesList_Array)
-
-// coffeeCluster.addTo(map);
-
 let historyList = [];
 let historyList_indiv;
 let shopCoordinates;
 let marker;
+let coffeeShops;
 
+let response;
 
+async function generateMap(){
 
-window.addEventListener('DOMContentLoaded', async function() {
-    const coffeeShops = await axios.get("js/coffee-places-50.json");
+    // await generateList();
+    console.log(coffeePlacesList)
 
-    const coffeeShopObjects = coffeeShops.data.results;
-    // console.log("coffeeShopObjects: " + coffeeShopObjects)
     let coffeeShopClusterLayer = L.markerClusterGroup();
-    for (let i = 0; i < coffeeShopObjects.length; i++) {
+    for (let i = 0; i < coffeePlacesList.length; i++) {
         // let info = coffeeShopObjects[i];
-        shopCoordinates = coffeeShopObjects[i].geocodes.main;
+        shopCoordinates = coffeePlacesList[i].location;
         // console.log(shopCoordinates.latitude, shopCoordinates.longitude)
-        marker = L.marker([shopCoordinates.latitude, shopCoordinates.longitude]);
-        marker.bindPopup(`Shop: ${coffeeShopObjects[i].name}`);
+        marker = L.marker([shopCoordinates.lat, shopCoordinates.lng], {
+            icon: L.icon({
+                iconUrl: 'images/coffee-beans.png',
+                iconSize: [50, 50]
+            })
+        });
+
+        // let confirmVenueName = await getVenueDetails(coffeePlacesList[i].id)
+        // console.log("confirmVenueName: " + confirmVenueName.name)
+        
+        marker.bindPopup(`<h2>${coffeePlacesList[i].name}</h2>
+                        <button class="bookmark-btn">Add to Bookmarks</button>`, {
+                            minWidth: 300
+                        });
         marker.addTo(coffeeShopClusterLayer);
         // marker.openPopup();
+
+        marker.on('popupopen', function(){
+            let bookmarkBtn = document.getElementsByClassName("bookmark-btn")[0];
+            console.log(coffeePlacesList[i].name)
+            bookmarkBtn.addEventListener("click", function(){
+                bookmarkBtn.innerText = "Added to bookmarks!";
+                bookmarkBtn.style.backgroundColor = "#789361";
+                bookmarkBtn.style.color = "#ffffff";
+                bookmarkBtn.style.border = "1px solid #526C3B";
+                marker.closePopup();
+                historyList_indiv = coffeePlacesList[i].name;
+                updateHistoryList();
+                console.log("clickeddd on " + historyList_indiv)
+            })
+        });
+
+        marker.on('popupclose', function(){
+            console.log("bye")
+        })
+        
+        
     }
     coffeeShopClusterLayer.addTo(map);
+    // map.closePopupOnClick(true);
 
     let indivShopList;
-    for(let i=0 ; i<coffeeShopObjects.length; i++){
+    for(let i=0 ; i<coffeePlacesList.length; i++){
             eachshop = coffeePlacesList[i];
             // console.log(eachshop)
             indivShopList = document.getElementsByClassName("discover-results")[0];
@@ -81,10 +80,6 @@ window.addEventListener('DOMContentLoaded', async function() {
                                             <br>
                                             <small style="color:hotpink;">${eachshop.location.address}</small>
                                         </div>`;
-            // shopListing.addEventListener("click", function(){
-            //     console.log("clicked on " + eachshop.name)
-            // })
-            // coffeePlacesList_Array2.set({'name': eachshop.name}, {'location': [eachshop.geocodes.main.latitude, eachshop.geocodes.main.latitude]});
     }
 
     let shopListing = document.querySelectorAll(".indiv-result");
@@ -94,27 +89,21 @@ window.addEventListener('DOMContentLoaded', async function() {
         shopListing[x].addEventListener("click", function(){
             historyList_indiv = shopListing[x];
             console.log("clicked on " + shopListing[x].innerText)
-            updateHistoryList();
 
             // console.log(coffeePlacesList[x]);
-            let shopCoordinatesLt = coffeePlacesList[x].geocodes.main.latitude;
-            let shopCoordinatesLg = coffeePlacesList[x].geocodes.main.longitude;
+            let shopCoordinatesLt = coffeePlacesList[x].location.lat;
+            let shopCoordinatesLg = coffeePlacesList[x].location.lng;
             console.log(shopCoordinatesLt,shopCoordinatesLg)
-            // historyList_indiv.coordinates = eachshop.geocodes.main.latitude,eachshop.geocodes.main.longitude;
-            // console.log("historyList_indiv.coordinates: " + historyList_indiv.coordinates)
-
-            // console.log("historyList_indiv: " + historyList_indiv.outerText)
 
             map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 18);
             marker.openPopup();
-
 
             discoverBox.classList.remove("box-slideup")
             discoverBox.style.transition = "all 0.5s ease-in";
 
         })
     }
-});
+};
 
 function updateHistoryList(){
     // console.log(historyList_indiv)

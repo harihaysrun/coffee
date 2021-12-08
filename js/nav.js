@@ -14,18 +14,6 @@ hamburgerMenu.addEventListener("click", function(){
     dropdownMenu.style.transition = "all 0.2s linear";
 
     console.log(indivNav.length)
-
-    // indivNav.classList.toggle("mobile-menu-appear");
-
-    // for (nav of indivNav){
-    //     setTimeout(function(){
-    //         nav.classList.toggle("mobile-menu-appear")
-    //     }, 300);
-    // }
-    // for(i=0; i<indivNav.length; i++){
-    //     indivNav = i;
-    //     indivNav.classList.toggle("mobile-menu-appear");
-    // }
 })
 
 // user clicks on the link in the mobile hamburger menu
@@ -88,11 +76,6 @@ desktopHistoryBtn.addEventListener("click", function(){
 })
 
 
-// function showHistoryList(){
-//     console.log("hello!")
-//     onetwothree()
-// }
-
 function historyPopup(){
 
     mainPopup_OuterContainer.classList.add('onlyHistoryPopup');
@@ -102,7 +85,8 @@ function historyPopup(){
     mainPopup_OuterContainer.style.display = "block";
     mainPopup_OuterContainer.style.backgroundColor = "white";
     mainPopup_OuterContainer.innerHTML = `<div class="history-header">
-                                            <h1>History</h1>
+                                            <h1>My Bookmarks</h1>
+                                            <small>Browser based. Refreshing the window will cause bookmarks to be gone</small>
                                         </div>
                                         <div id="history-list"></div>`
 
@@ -114,33 +98,9 @@ function historyPopup(){
     // 
     console.log("historyList.length: " + historyList.length)
     for(let i=0; i<historyList.length; i++){
-        console.log("historyList[i] : " + historyList[i].outerHTML)
-        document.getElementById("history-list").innerHTML += historyList[i].outerHTML;
+        console.log("historyList[i] : " + historyList[i])
+        document.getElementById("history-list").innerHTML += `<div class="indiv-result">${historyList[i]}</div>`;
     }
-
-    // if(window.innerWidth > 992){
-
-        // // create entirely new mainpopup box
-        // const desktopHistory = document.createElement("div");
-        // desktopHistory.id = "desktop-history";
-        // desktopHistory.style = "position:absolute; right:-550px;"
-        // desktopHistory.innerHTML = `<div id="close-popup">
-        //                                 <i class="fas fa-times"></i>
-        //                             </div>
-        //                             <div class="history-header">
-        //                                 <h1>History</h1>
-        //                             </div>`
-        // setTimeout(function(){
-        //     desktopHistory.style.transform = "translateX(-500px)"
-        //     desktopHistory.style.transition = "all 1s ease-in";
-        //     document.body.appendChild(desktopHistory);
-        // }, 0);
-
-        // mainPopup_OuterContainer.classList.add('onlyHistoryPopup');
-        // mainPopup_OuterContainer.style = "background-color:white;width: 500px; right:0;";
-
-
-    // }
 
     closeButton();
 

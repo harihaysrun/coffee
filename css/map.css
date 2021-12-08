@@ -10,6 +10,31 @@
     z-index:1;
 }
 
+.bookmark-btn{
+    background-color:#F7EFE4;
+    border:1px solid #F0E3D0;
+}
+
+.bookmark-btn:hover{
+    background-color:#F0E3D0;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+    background-color:white;
+}
+
+.leaflet-popup-content{
+    margin:20px 25px;
+    /* text-align:center; */
+    color:#482C05;
+}
+
+.leaflet-popup-content h2{
+    margin-bottom:25px;
+    line-height:35px;
+    font-weight:700;
+}
+
 
 /* ipad size & above */
 @media screen and (min-width: 768px) {

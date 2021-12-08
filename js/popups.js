@@ -1,9 +1,6 @@
 const mainPopup_OuterContainer = document.getElementById("main-popup");
 const mainPopup_InnerContainer = document.getElementById("main-popup-container");
 
-// const mainPopupLanding = document.getElementById("main-popup-landing");
-// const mainPopupRandomiser = document.getElementById("main-popup-randomiser");
-
 mainPopup();
 
 // inserts the 'coffee randomiser' or 'check out coffee places?' into main popup
@@ -28,20 +25,27 @@ function mainPopup(){
 }
 
 // choose one from 'coffee randomiser' and 'check out coffee places?'
-function chooseOne(){
+async function chooseOne(){
     const coffeeRandomiser = document.getElementById("coffee-randomiser");
     const coffeePlaces = document.getElementById("coffee-places");
     
     coffeeRandomiser.addEventListener('click', function(){
         mainPopup_InnerContainer.innerHTML = '';
+        // generateShopList();
         mainPopup_randomiser_backBtn();
         mainPopup_randomiser();
+        generateMap();
     })
 
     coffeePlaces.addEventListener('click', function(){
         // mainPopup_OuterContainer.innerHTML = "";
         mainPopup_OuterContainer.style.display = "none";
+        // generateShopList();
+        generateMap();
     })
+
+    await generateList();
+    console.log(coffeePlacesList)
 }
 
 // insert 'back' button only on the landing page popup, not the nav link popup
@@ -77,7 +81,7 @@ function mainPopup_randomiser(){
                                             <button class="btn-red">Give me another one</button>
                                         </div>`;
         mainPopup_InnerContainer.appendChild(mainPopupRandomiser);
-     
+        
         randomise();
         goToShopLocation();
         anotherRec();
@@ -86,8 +90,14 @@ function mainPopup_randomiser(){
 }
 
 let shopNumber;
+let coffeePlacesList;
+
 // get a random coffee & shop to recommend user
-function randomise(){
+async function randomise(){
+
+    let coffeeTypeResponse = await axios.get("js/coffee-type.json");
+    let coffeeType = coffeeTypeResponse.data.coffee_type;
+    // console.log('coffeeType ' + coffeeType);
 
     // random coffee
     let coffeeTypeNumber = Math.floor(Math.random() * 34);
@@ -97,26 +107,16 @@ function randomise(){
 
     coffeeImg.src = coffeeType[coffeeTypeNumber].img;
     coffeeName.innerText = coffeeType[coffeeTypeNumber].type;
-
+    
     // random coffee shop
     shopNumber = Math.floor(Math.random() * 50);
 
     const shopName = document.getElementById("shopName");
     const shopAddress = document.getElementById("shopAddress");
 
-    shopName.innerText = coffeePlacesList[shopNumber].name;
-    shopAddress.innerHTML = `${coffeePlacesList[shopNumber].location.address}`;
-
-    // only insert second line of address if it exists, some extended address is a repeat of the first line
-    if(coffeePlacesList[shopNumber].location.address_extended != undefined){
-        shopAddress.innerHTML += `<br>${coffeePlacesList[shopNumber].location.address_extended}`
-    } else if(coffeePlacesList[shopNumber].location.address_extended == coffeePlacesList[shopNumber].location.address){
-        shopAddress.innerHTML += ``;
-    } else{
-        shopAddress.innerHTML += ``;
-    }
-
-    shopAddress.innerHTML += `<br>${coffeePlacesList[shopNumber].location.locality} ${coffeePlacesList[shopNumber].location.postcode}`;
+    let shopID = coffeePlacesList[shopNumber];
+    shopName.innerText = shopID.name;
+    shopAddress.innerHTML = `${shopID.location.formattedAddress}`;
 }
 
 // closes the popup and leads user to the shop's coordinates on the map
@@ -126,8 +126,9 @@ function goToShopLocation(){
 
         console.log("coffeePlacesList: " + coffeePlacesList[shopNumber].name)
 
-        shopCoordinatesLt = coffeePlacesList[shopNumber].geocodes.main.latitude;
-        shopCoordinatesLg = coffeePlacesList[shopNumber].geocodes.main.longitude;
+        let shopID =  coffeePlacesList[shopNumber];
+        shopCoordinatesLt = shopID.location.lat;
+        shopCoordinatesLg = shopID.location.lng;
         console.log(shopCoordinatesLt,shopCoordinatesLg)
 
         map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 18);
@@ -139,8 +140,8 @@ function goToShopLocation(){
                                     <br>
                                     <small style="color:hotpink;">${coffeePlacesList[shopNumber].location.address}</small>`;
 
-        historyList.push(shopLocation);
-        console.log("from main page: " + shopLocation);
+        // historyList.push(shopLocation);
+        // console.log("from main page: " + shopLocation);
 
 
         // for(let i=0; i<historyList.length; i++){
@@ -180,19 +181,6 @@ function anotherRec(){
 
 // 'back' button function
 function backToMain_btn(){
-    // anotherOne = document.getElementsByClassName("btn-red");
-
-    // console.log(anotherOne.length)
-    // if(anotherOne.length == 1){
-    //     const backtoMain = document.getElementById("back-to-main");                                    
-    //     backtoMain.addEventListener('click', function(){
-    //         mainPopup();
-    //     })
-    // } else{
-    //     backtoMain.removeEventListener('click', function(){
-    //         mainPopup();
-    //     })
-    // }
 
     const backtoMain = document.getElementsByClassName("back-to-main");         
     // console.log(backtoMain.length)
@@ -207,28 +195,3 @@ function backToMain_btn(){
         return;
     }
 }
-
-
-// coffees();
-
-// let coffeePlacesList;
-// let coffeeType;
-// const coffeePlacesList_Array = [];
-// // let coffeePlacesList_Array;
-
-// // export default
-// async function coffees() {
-//     let response = await axios.get("js/coffee-places-50.json");
-//     coffeePlacesList = response.data.results;
-
-//     for(let i=0 ; i<coffeePlacesList.length; i++){
-//         let eachshop = coffeePlacesList[i];
-//         coffeePlacesList_Array.push(eachshop);
-//     }
-
-//     console.log(coffeePlacesList_Array)
-    
-//     let response2 = await axios.get("js/coffee-type.json");
-//     coffeeType = response2.data.coffee_type;
-//     // console.log(coffeeType);
-// }
