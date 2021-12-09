@@ -86,9 +86,17 @@ function historyPopup(){
     mainPopup_OuterContainer.style.backgroundColor = "white";
     mainPopup_OuterContainer.innerHTML = `<div class="history-header">
                                             <h1>My Bookmarks</h1>
-                                            <small>Browser based. Refreshing the window will cause bookmarks to be gone</small>
+                                            <span>Refreshing the window will remove all bookmarks</span>
                                         </div>
                                         <div id="history-list"></div>`
+
+    console.log("height of history header" + document.getElementsByClassName("history-header")[0].offsetHeight);
+    const historyHeaderHeight = document.getElementsByClassName("history-header")[0].offsetHeight;
+
+    const historyListHeight = document.getElementById("history-list");
+    historyListHeight.style.top = historyHeaderHeight + "px";
+    historyListHeight.style.height = "calc(100% - " + historyHeaderHeight + "px)";
+    console.log(historyListHeight)
 
     setTimeout(function(){
         mainPopup_OuterContainer.classList.add('onlyHistoryPopup-slideIn');

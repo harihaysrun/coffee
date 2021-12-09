@@ -9,12 +9,27 @@ async function generate(query, near){
             client_secret: 'RWNKFGT3VXLSBBP0MUL55FV3FXTS4IFXBV20QBOGMV4XFNEY',
             'v': '20211207',
             query: query,
-            near: near,
+            near: near + ', Singapore',
             limit: '50',
             // 'country': 'Singapore'
         },
         headers: {Accept: 'application/json'}
     })
+
+    // let response = await axios.get('https://api.foursquare.com/v3/places/nearby', {
+    //     params: {
+    //         'll': '1.3521%2C103.8198',
+    //         query: query,
+    //         near: near,
+    //         limit: '50',
+    //         // 'country': 'Singapore'
+    //     },
+    //     headers: {
+    //       Accept: 'application/json',
+    //       Authorization: 'fsq3qlO22TTCOwniWpAEhg3DBD6zM4OGgFxi1C/8YuSQpuI='
+    //     }
+    // })
+
 
     // let responseDetails = await axios.get('https://api.foursquare.com/v2/venues/', {
     //     params: {
@@ -31,8 +46,8 @@ async function generate(query, near){
     return response.data.response.venues;
 }
 
-
-async function generateList(){
+let near ;
+async function generateList(near){
     let queries = ['kopi', 'coffee', 'cafe', 'bistro'];
     let randomQuery;
     let query;
@@ -42,7 +57,9 @@ async function generateList(){
     query = queries[randomQuery];
     console.log(query)
     // let query = "kopi";
-    let near = "Singapore, Singapore"
+    // near = "Singapore, Singapore"
+    // other e.g let near = "Bedok, Singapore"
+    console.log('near: '+ near)
     coffeePlacesList = await generate(query, near);
     console.log(coffeePlacesList)
     return coffeePlacesList;

@@ -1,10 +1,13 @@
 #discover-box{
     position:absolute;
-    top:calc(100vh - 35px);
+    /* top:calc(100vh - 35px); */
     /* bottom:-87vh; */
+    /* top:80vh; */
+    /* bottom:0vh; */
+    bottom:-67vh;
     background-color:#ffffff;
     width:100%;
-    height:100%;
+    height:90vh;
     /* height:calc(100vh - 145px); */
     border-radius:15px 15px 0 0;
     z-index:3;
@@ -13,21 +16,9 @@
 }
 
 .box-slideup{
-    transform: translateY(calc(-100vh + 90px));
+    transform: translateY(-67vh);
+    /* transform: translateY(calc(-100vh + 90px)); */
     /* transition: all 0.5s ease-in; */
-}
-
-#arrow-up{
-    position:absolute;
-    top:0;
-    /* background-color: thistle; */
-    width:100%;
-    display:flex;
-    justify-content: center;
-    margin-top:10px;
-    color:#D5BB94;
-    font-size:20px;
-    cursor: pointer;
 }
 
 #arrow-up:hover #arrow-icon{
@@ -49,21 +40,68 @@
 .discover-section{
     background-color:#F7EFE4;
     box-sizing: border-box;
-    padding: 45px 25px 25px 25px;
-    height:120px;
+    padding: 10px 25px 30px 25px;
+    /* height:120px; */
+}
+
+#arrow-up{
+    /* background-color: thistle; */
+    width:100%;
+    display:flex;
+    justify-content: center;
+    /* margin-bottom:15px; */
+    color:#D5BB94;
+    font-size:20px;
+    cursor: pointer;
 }
 
 #discover-box h1{
     /* height:120px; */
     color: #382102;
+    margin:15px 0 15px 0;
+}
+
+/* #dropdownMenuButton1{
     margin:0;
+    border:0;
+    background-color:#F0E3D0;
+    color: #D5BB94;
+    text-align:left;
+    padding:15px 20px;
+    border-radius:15px;
+    font-size:20px;
+}
+
+#dropdownMenuButton1::after{
+    background-color:pink;
+    border:0;
+    content: '<i class="fas fa-chevron-down"></i>';
+} */
+
+.form-select{
+    background-image: url('../images/arrow.png');
+    background-position: right 20px center;
+    background-size: 16px;
+    cursor: pointer;
+}
+
+#change-region{
+    margin:0;
+    border:0;
+    background-color:#F0E3D0;
+    color: #D5BB94;
+    text-align:left;
+    padding:15px 20px;
+    border-radius:15px;
+    font-size:16px;
 }
 
 .discover-results{
     background-color:white;
     position:relative;
     /* height:calc(100vh - 35px - 195px); */
-    height:calc(100vh - 35px);
+    /* height:calc(100vh - 35px); */
+    height:calc(100% - 192px);
     overflow:auto;
 }
 
@@ -71,6 +109,10 @@
     cursor: pointer;
     padding:20px 25px;
     border-bottom:1px solid black;
+}
+
+.indiv-result:last-child{
+    border:0;
 }
 
 
@@ -97,6 +139,12 @@
         display:none;
     }
 
+    #discover-box h1{
+        /* height:120px; */
+        color: #382102;
+        margin:0px 0 15px 0;
+    }    
+
     .box-slideup{
         transform: translateY(0);
     }
@@ -108,7 +156,7 @@
     }
 
     .discover-results{
-        height:calc(80vh - 30px - 120px);
+        height:calc(80vh - 30px - 167px);
     }
 
     .indiv-result:hover{

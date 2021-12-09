@@ -44,15 +44,16 @@ async function chooseOne(){
         generateMap();
     })
 
-    await generateList();
+    await generateList('Singapore');
     console.log(coffeePlacesList)
+    
 }
 
 // insert 'back' button only on the landing page popup, not the nav link popup
 function mainPopup_randomiser_backBtn(){
     const backBtn = document.createElement("div");
     backBtn.class = "back-to-main";
-    backBtn.innerHTML = `<div class="back-to-main">back</div>`;
+    backBtn.innerHTML = `<div class="back-to-main"><i class="fas fa-long-arrow-alt-left"></i> &nbsp Back</div>`;
     mainPopup_InnerContainer.appendChild(backBtn);
 }
 

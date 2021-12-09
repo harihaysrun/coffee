@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1000 1334" style="enable-background:new 0 0 1000 1334;" xml:space="preserve">
+	 viewBox="0 0 1100 1334" style="enable-background:new 0 0 1100 1334;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#482C05;}
 </style>
 <g>
-	<path id="Union_1" class="st0" d="M209.15,73h97.35V0h-428v144.54c6.36-3.75,12.91-7.14,19.64-10.17
-		c19.58-8.94,39.71-16.59,60.29-22.91c33.74-10.41,68.15-18.51,102.98-24.25C103.09,80.17,152.22,74.8,209.15,73z"/>
-	<rect x="285.5" class="st0" width="836" height="73"/>
+	<path id="Union_1" class="st0" d="M330.6,73H428V0H0v144.5c6.4-3.8,12.9-7.1,19.6-10.2c19.6-8.9,39.7-16.6,60.3-22.9
+		c33.7-10.4,68.2-18.5,103-24.2C224.6,80.2,273.7,74.8,330.6,73z"/>
+	<rect x="407" class="st0" width="836" height="73"/>
 </g>
 </svg>

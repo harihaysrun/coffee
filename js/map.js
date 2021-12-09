@@ -1,15 +1,21 @@
-let singapore = [1.34,103.81]; // #1 Singapore latlng
-let map = L.map('map-container').setView(singapore, 12.5); // #2 Set the center point
+// function initMap(){
+    let singapore = [1.34,103.81]; // #1 Singapore latlng
+    let map = L.map('map-container').setView(singapore, 12.5); // #2 Set the center point
 
-// setup the tile layers
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw' //demo access token
-}).addTo(map);
+    // setup the tile layers
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 25,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw' //demo access token
+    }).addTo(map);
+
+//     return map;
+// }
+
+// initMap();
 
 let historyList = [];
 let historyList_indiv;
@@ -18,13 +24,32 @@ let marker;
 let coffeeShops;
 
 let response;
+const indivShopList = document.getElementsByClassName("discover-results")[0];
+// let coffeeShopClusterLayer;
 
-async function generateMap(){
 
-    // await generateList();
-    console.log(coffeePlacesList)
+function generateMap(){
 
-    let coffeeShopClusterLayer = L.markerClusterGroup();
+    indivShopList.innerHTML = '';
+    resetMap();
+
+};
+
+
+let coffeeShopClusterLayer = L.markerClusterGroup();
+
+
+function resetMap(){
+
+    map.flyTo(singapore, 12.5)
+
+    console.log("generateMap: " + coffeePlacesList.length)
+
+    // clear markers from the map for every region selection
+    coffeeShopClusterLayer.clearLayers();
+    
+    console.log("coffeeShopClusterLayer: " + coffeeShopClusterLayer)
+
     for (let i = 0; i < coffeePlacesList.length; i++) {
         // let info = coffeeShopObjects[i];
         shopCoordinates = coffeePlacesList[i].location;
@@ -40,24 +65,30 @@ async function generateMap(){
         // console.log("confirmVenueName: " + confirmVenueName.name)
         
         marker.bindPopup(`<h2>${coffeePlacesList[i].name}</h2>
-                        <button class="bookmark-btn">Add to Bookmarks</button>`, {
+                        <button class="bookmark-btn"><i class="fas fa-star"></i> Add to Bookmarks</button>`, {
                             minWidth: 300
                         });
         marker.addTo(coffeeShopClusterLayer);
         // marker.openPopup();
+        // coffeeShopArray.push(marker);
 
         marker.on('popupopen', function(){
             let bookmarkBtn = document.getElementsByClassName("bookmark-btn")[0];
             console.log(coffeePlacesList[i].name)
             bookmarkBtn.addEventListener("click", function(){
-                bookmarkBtn.innerText = "Added to bookmarks!";
+                
+                bookmarkBtn.innerHTML = `<i class="fas fa-star"></i> Added to bookmarks!`;
                 bookmarkBtn.style.backgroundColor = "#789361";
                 bookmarkBtn.style.color = "#ffffff";
                 bookmarkBtn.style.border = "1px solid #526C3B";
-                marker.closePopup();
                 historyList_indiv = coffeePlacesList[i].name;
                 updateHistoryList();
-                console.log("clickeddd on " + historyList_indiv)
+                console.log("clickeddd on " + historyList_indiv);
+
+                setTimeout( function(){
+                    map.closePopup();
+                }, 700)
+
             })
         });
 
@@ -67,14 +98,14 @@ async function generateMap(){
         
         
     }
+
     coffeeShopClusterLayer.addTo(map);
+    // map.addLayer(coffeeShopClusterLayer)
     // map.closePopupOnClick(true);
 
-    let indivShopList;
     for(let i=0 ; i<coffeePlacesList.length; i++){
             eachshop = coffeePlacesList[i];
             // console.log(eachshop)
-            indivShopList = document.getElementsByClassName("discover-results")[0];
             indivShopList.innerHTML += `<div class="indiv-result">
                                             ${eachshop.name}
                                             <br>
@@ -97,13 +128,15 @@ async function generateMap(){
 
             map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 18);
             marker.openPopup();
-
+            // map.openPopup();
+            
             discoverBox.classList.remove("box-slideup")
             discoverBox.style.transition = "all 0.5s ease-in";
 
         })
     }
-};
+
+}
 
 function updateHistoryList(){
     // console.log(historyList_indiv)

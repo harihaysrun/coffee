@@ -3,6 +3,8 @@ body{
     background-color:white;
     font-family: 'Rubik', sans-serif;
     overflow:hidden;
+    /* line-height: auto !important;
+    font-size:auto !important; */
 }
 
 nav{
@@ -17,8 +19,8 @@ nav{
     box-sizing: border-box;
     padding:15px;
     z-index:2;
-    background: url('../images/header-tab.svg') no-repeat;
-    background-size:860px;
+    background: url('../images/header-tab2.svg') no-repeat;
+    background-size:992px;
     /* background-size:992px; */
     /* background: url('/images/header-mobile.svg') no-repeat; */
     /* background-size:100%; */
@@ -156,7 +158,7 @@ nav>#nav-container>#hamburger-menu>li{
 }
 
 #main-popup>#main-popup-container{
-    background-color: black;
+    /* background-color: black; */
     width:90vw;
     height:auto;
 }
@@ -174,13 +176,13 @@ h2{
 }
 
 #main-popup>#main-popup-container>#main-popup-landing>#choose-one, #randomiser-container{
-    background-color:thistle;
+    /* background-color:thistle; */
     display:flex;
     flex-direction: column;
 }
 
 #main-popup>#main-popup-container>#main-popup-landing>#choose-one>div, #randomiser-container>#coffee-and-shop>div{
-    background-color:hotpink;
+    background-color:#412804;
     margin: 10px 0;
     box-sizing: border-box;
     padding:30px;
@@ -264,10 +266,13 @@ button{
 
 .back-to-main{
     width:100px;
+    padding:10px;
     margin-bottom:20px;
     text-align:left;
     display:flex;
+    justify-content: center;
     align-items: center;
+    border-radius:15px;
 }
 
 .back-to-main:hover{
@@ -330,8 +335,8 @@ footer{
     }
     nav>#nav-container{
         display:flex;
-        align-items:center;
-        /* align-items:flex-end; */
+        /* align-items:center; */
+        align-items:flex-end;
     }
 
     #hamburger-menu, #hm-dropdown, .mobile-menu-appear{
@@ -426,7 +431,7 @@ footer{
     }
 
     #coffee-and-shop{
-        margin:30px 0;
+        margin:50px 0;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
@@ -435,12 +440,13 @@ footer{
     }
 
     #coffee-and-shop>span{
-        margin:0 20px;
+        margin:0 50px;
     }
 
     #random-coffee, #random-shop{
         flex:1;
-        min-height:346.25px;
+        /* min-height:346.25px; */
+        min-height:300px;
         display:flex;
         justify-content: center;
         align-items: center;
