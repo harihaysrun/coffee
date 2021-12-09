@@ -8,7 +8,7 @@ function mainPopup(){
     mainPopup_InnerContainer.innerHTML = '';
     const mainPopupLanding = document.createElement("div");
     mainPopupLanding.id = "main-popup-landing";
-    mainPopupLanding.innerHTML =  `<h1>What can I serve you today?</h1>
+    mainPopupLanding.innerHTML =  `<h1>Choose one</h1>
                                     <div id="choose-one">
                                         <div id="coffee-randomiser">
                                             <img src="images/coffee-beans.png" alt="">
