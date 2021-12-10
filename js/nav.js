@@ -13,6 +13,11 @@ hamburgerMenu.addEventListener("click", function(){
     dropdownMenu.classList.toggle("mobile-menu-appear");
     dropdownMenu.style.transition = "all 0.2s linear";
 
+    document.getElementsByClassName("hm")[0].classList.toggle('hm-close');
+    document.getElementsByClassName("hm")[1].classList.toggle('hm-close');
+    document.getElementsByClassName("hm")[2].classList.toggle('hm-close');
+
+
     console.log(indivNav.length)
 })
 
@@ -30,6 +35,9 @@ desktopCoffeeRandomiser.addEventListener("click", function(){
 
 // repeated steps put into same function
 function randomiserPopup(){
+    
+    // mainPopup_OuterContainer.classList.remove("fade-out");
+    mainPopup_OuterContainer.classList.add("fade-in");
 
     // mainPopup_OuterContainer.style = "width:100%";
     mainPopup_OuterContainer.appendChild(mainPopup_InnerContainer);
@@ -54,12 +62,23 @@ function closeButton(){
     closePopupBox();
     function closePopupBox(){
         closePopup.addEventListener("click", function(){
+
+            // mainPopup_OuterContainer.classList.remove("fade-in");
+            // mainPopup_OuterContainer.classList.add("fade-out");
+
             mainPopup_OuterContainer.classList.remove('onlyHistoryPopup');
             mainPopup_OuterContainer.classList.remove('onlyHistoryPopup-slideIn');
             mainPopup_OuterContainer.style = "right:0";
+
             mainPopup_OuterContainer.innerHTML = '';
             mainPopup_InnerContainer.innerHTML = '';
-            mainPopup_OuterContainer.style.display = "none";
+
+            // mainPopup_OuterContainer.classList.remove("fade-in");
+            // mainPopup_OuterContainer.classList.add("fade-out");
+            // setTimeout(function(){
+                mainPopup_OuterContainer.style.display = "none";
+            //     mainPopup_OuterContainer.style.pointerEvents = "none";
+            // },300)
         })
     } 
 
@@ -78,7 +97,10 @@ desktopHistoryBtn.addEventListener("click", function(){
 
 function historyPopup(){
 
-    mainPopup_OuterContainer.classList.add('onlyHistoryPopup');
+    mainPopup_OuterContainer.classList.add("fade-in");
+
+    mainPopup_OuterContainer.classList.add('onlyHistoryPopup');    
+    // mainPopup_OuterContainer.classList.remove("fade-out");
     // console.log(window.innerWidth);
 
     // mainPopup_OuterContainer.style.display = "";

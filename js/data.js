@@ -1,19 +1,20 @@
-// let coffeePlacesList;
+let coffeePlacesList;
 
 async function generate(query, near){
-    
+    // fsq3pYjput0x4EnKxsOzkX0RCtfoOdMDOGRK2FU+ZGgoROc=
     let response = await axios.get('https://api.foursquare.com/v2/venues/search', {
         params: {
             'll': '1.3521,103.8198',
-            client_id: 'RG1YLZYPE3WKDMPDD1XW34GQ2C4JGITBH3AH2WWD5KL5ZAEZ',
-            client_secret: 'RWNKFGT3VXLSBBP0MUL55FV3FXTS4IFXBV20QBOGMV4XFNEY',
-            'v': '20211207',
-            query: query,
+            'client_id': 'RG1YLZYPE3WKDMPDD1XW34GQ2C4JGITBH3AH2WWD5KL5ZAEZ',
+            'client_secret': 'RWNKFGT3VXLSBBP0MUL55FV3FXTS4IFXBV20QBOGMV4XFNEY',
+            'v': '20211113',
+            'query': query,
             near: near + ', Singapore',
             limit: '50',
             // 'country': 'Singapore'
-        },
-        headers: {Accept: 'application/json'}
+        }
+        // headers: {Accept: 'application/json'}
+        // Authorization: 'fsq3qlO22TTCOwniWpAEhg3DBD6zM4OGgFxi1C/8YuSQpuI='}
     })
 
     // let response = await axios.get('https://api.foursquare.com/v3/places/nearby', {

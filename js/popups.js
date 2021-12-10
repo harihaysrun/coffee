@@ -1,40 +1,73 @@
 const mainPopup_OuterContainer = document.getElementById("main-popup");
 const mainPopup_InnerContainer = document.getElementById("main-popup-container");
 
+let coffeeLoaded = 0;
 mainPopup();
 
 // inserts the 'coffee randomiser' or 'check out coffee places?' into main popup
-function mainPopup(){
+async function mainPopup(){
     mainPopup_InnerContainer.innerHTML = '';
     const mainPopupLanding = document.createElement("div");
     mainPopupLanding.id = "main-popup-landing";
-    mainPopupLanding.innerHTML =  `<h1>Choose one</h1>
-                                    <div id="choose-one">
-                                        <div id="coffee-randomiser">
-                                            <img src="images/coffee-beans.png" alt="">
-                                            Coffee Randomiser
-                                        </div>
-                                        <div id="coffee-places">
-                                            <img src="images/coffee-beans.png" alt="">
-                                            Check out coffee places
-                                        </div>
-                                    </div>`;
-    mainPopup_InnerContainer.appendChild(mainPopupLanding);
     
-    chooseOne();
+    mainPopup_InnerContainer.appendChild(mainPopupLanding);
+        
+    if(coffeeLoaded == 0){ 
+        mainPopupLanding.innerHTML = `<div id="loader-box">
+                                        <img src="images/cup.svg">
+                                        <img class="coffee-steam" src="images/steam.svg">
+                                    </div>
+                                        Brewing some coffee...`
+
+        setTimeout(function(){
+            loadChoices()
+        }, 1500);
+
+    } else{
+        loadChoices()
+    }
+
+    function loadChoices(){
+        mainPopupLanding.classList.add("fade-in");
+                
+        mainPopupLanding.innerHTML =  `<h1>Choose one</h1>
+        <div id="choose-one">
+            <div id="coffee-randomiser">
+                <img src="images/coffee-beans.png" alt="">
+                Coffee Randomiser
+            </div>
+            <div id="coffee-places">
+                <img src="images/coffee-beans.png" alt="">
+                Check out coffee places
+            </div>
+        </div>`;
+    
+        chooseOne();
+    }
+
+    await generateList('Singapore');
+    console.log(coffeePlacesList)
 }
 
 // choose one from 'coffee randomiser' and 'check out coffee places?'
-async function chooseOne(){
+function chooseOne(){
+
     const coffeeRandomiser = document.getElementById("coffee-randomiser");
     const coffeePlaces = document.getElementById("coffee-places");
     
     coffeeRandomiser.addEventListener('click', function(){
         mainPopup_InnerContainer.innerHTML = '';
-        // generateShopList();
-        mainPopup_randomiser_backBtn();
-        mainPopup_randomiser();
-        generateMap();
+
+        // setTimeout(function(){
+
+            // const mainPopupLanding = document.getElementById("main-popup-landing");
+            mainPopup_InnerContainer.classList.add("fade-in");
+
+            mainPopup_randomiser_backBtn();
+            mainPopup_randomiser();
+            generateMap();
+        // }, 500);
+
     })
 
     coffeePlaces.addEventListener('click', function(){
@@ -43,9 +76,6 @@ async function chooseOne(){
         // generateShopList();
         generateMap();
     })
-
-    await generateList('Singapore');
-    console.log(coffeePlacesList)
     
 }
 
@@ -59,6 +89,7 @@ function mainPopup_randomiser_backBtn(){
 
 // shows the random coffee & shop suggestions
 function mainPopup_randomiser(){
+
     const mainPopupRandomiser = document.createElement("div");
     mainPopupRandomiser.id = "main-popup-randomiser";
     setTimeout(function(){ 
@@ -91,7 +122,7 @@ function mainPopup_randomiser(){
 }
 
 let shopNumber;
-let coffeePlacesList;
+// let coffeePlacesList;
 
 // get a random coffee & shop to recommend user
 async function randomise(){
@@ -188,7 +219,8 @@ function backToMain_btn(){
 
     // check if 'back' button exists, landing page has it but nav link popup doesn't
     // if it doesn't exist, no actions will take place on click. otherwise will get errors in console log
-    if(backtoMain.length == 1){                          
+    if(backtoMain.length == 1){                      
+        coffeeLoaded++;    
         backtoMain[0].addEventListener('click', function(){
             mainPopup();
         })
