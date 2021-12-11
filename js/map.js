@@ -17,8 +17,8 @@
 
 // initMap();
 
-let historyList = [];
-let historyList_indiv;
+let bookmarksList = [];
+let bookmarksList_indiv;
 let shopCoordinates;
 let marker;
 let coffeeShops;
@@ -91,21 +91,16 @@ function resetMap(){
             bookmarkBtn.addEventListener("click", function(){
                      
                 bookmarkBtn.innerHTML = `<i class="fas fa-star"></i> Added to bookmarks!`;
-                bookmarkBtn.style.backgroundColor = "#789361";
-                bookmarkBtn.style.color = "#ffffff";
-                bookmarkBtn.style.border = "1px solid #526C3B";
-                // historyList_indiv = eachshop.name;
-            
-                historyList_indiv = {
+                bookmarkBtn.classList.add('clicked-on-bookmark')
+
+                bookmarksList_indiv = {
                     'shopName' : eachshop.name,
                     'shopAddress': address,
                     'shopCoordinatesLt': shopCoordinatesLt,
                     'shopCoordinatesLg': shopCoordinatesLg
                 };
-                // console.log(historyList_indiv)
 
-                updateHistoryList();
-                // console.log("clicked on " + historyList_indiv);
+                updateBooksmarksList();
 
                 setTimeout( function(){
                     map.closePopup();
@@ -131,9 +126,6 @@ function resetMap(){
                                 <small>${address}</small>`;
 
         shopListing.addEventListener("click", function(){
-
-            // historyList_indiv = shopListing;
-            // console.log(historyList_indiv)
 
             console.log("clicked on " + shopListing.innerText)
 
@@ -162,18 +154,18 @@ function resetMap(){
                 //         bookmarkBtn.style.backgroundColor = "#789361";
                 //         bookmarkBtn.style.color = "#ffffff";
                 //         bookmarkBtn.style.border = "1px solid #526C3B";
-                //         // historyList_indiv = eachshop.name;
+                //         // bookmarksList_indiv = eachshop.name;
                     
-                //         historyList_indiv = {
+                //         bookmarksList_indiv = {
                 //             'shopName' : eachshop.name,
                 //             'shopAddress': address,
                 //             'shopCoordinatesLt': shopCoordinatesLt,
                 //             'shopCoordinatesLg': shopCoordinatesLg
                 //         };
-                //         // console.log(historyList_indiv)
+                //         // console.log(bookmarksList_indiv)
 
-                //         updateHistoryList();
-                //         // console.log("clicked on " + historyList_indiv);
+                //         updateBooksmarksList();
+                //         // console.log("clicked on " + bookmarksList_indiv);
 
                 //         setTimeout( function(){
                 //             map.closePopup();
@@ -200,7 +192,7 @@ function resetMap(){
 
 }
 
-function updateHistoryList(){
-    console.log(historyList_indiv)
-    historyList.push(historyList_indiv);
+function updateBooksmarksList(){
+    console.log(bookmarksList_indiv)
+    bookmarksList.push(bookmarksList_indiv);
 }

@@ -1,13 +1,13 @@
-#desktop-history{
+#desktop-bookmarks{
     display:none;
 }
 
-.onlyHistoryPopup{
+.onlyBookmarksPopup{
     background-color:white;
     width: 100%;
 }
 
-.history-header{
+.bookmarks-header{
     width:100%;
     position:absolute;
     top:0;
@@ -17,19 +17,19 @@
     padding: 45px 25px 30px 25px;
 }
 
-.history-header h1{
+.bookmarks-header h1{
     color: #382102;
     margin:0 0 5px 0;
     text-align:center;
 }
 
-.history-header span{
+.bookmarks-header span{
     color: #382102;
     opacity:0.3;
     font-size:14px;
 }
 
-#history-list{
+#bookmarks-list{
     /* background-color:pink; */
     position:absolute;
     /* top:150px; */
@@ -92,18 +92,15 @@
     cursor: auto;
 }
 
-.onlyHistoryPopup{
+.onlyBookmarksPopup{
     width: 100% !important;
 }
 
-/* .desktop-history-appear{
-    display:none;
-} */
     
 /* desktop size */
 @media screen and (min-width: 992px) {
 
-    #desktop-history{
+    #desktop-bookmarks{
         display:block;
         background-color:white;
         position:absolute;
@@ -114,19 +111,19 @@
         box-shadow: 0 2px 10px rgb(72, 44, 5, 0.15);
     }
 
-    .onlyHistoryPopup{
+    .onlyBookmarksPopup{
         transform: translateX(500px);
         width: 500px !important;
         right:0;
         box-shadow: 0 2px 10px rgb(72, 44, 5, 0.15);
     }
 
-    .onlyHistoryPopup-slideIn{
+    .onlyBookmarksPopup-slideIn{
         transform: translateX(0px);
         /* transition: all 0.3s ease-in; */
     }
 
-    .onlyHistoryPopup-slideOut{
+    .onlyBookmarksPopup-slideOut{
         transform:translateX(500px);
     }
 

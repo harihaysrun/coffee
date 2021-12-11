@@ -4,8 +4,8 @@ const indivNav = document.getElementsByClassName("indiv-nav");
 const mobileCoffeeRandomiser = document.getElementsByClassName("indiv-nav")[0];
 const desktopCoffeeRandomiser = document.getElementsByClassName("desktop-nav")[0];
 
-const mobileHistoryBtn = document.getElementsByClassName("indiv-nav")[1];
-const desktopHistoryBtn = document.getElementsByClassName("desktop-nav")[1];
+const mobileBookmarkBtn = document.getElementsByClassName("indiv-nav")[1];
+const desktopBookmarkBtn = document.getElementsByClassName("desktop-nav")[1];
 
 
 // click to see dropdown mobile hamburger menu
@@ -16,7 +16,6 @@ hamburgerMenu.addEventListener("click", function(){
     document.getElementsByClassName("hm")[0].classList.toggle('hm-close');
     document.getElementsByClassName("hm")[1].classList.toggle('hm-close');
     document.getElementsByClassName("hm")[2].classList.toggle('hm-close');
-
 
     console.log(indivNav.length)
 })
@@ -66,8 +65,8 @@ function closeButton(){
             // mainPopup_OuterContainer.classList.remove("fade-in");
             // mainPopup_OuterContainer.classList.add("fade-out");
 
-            mainPopup_OuterContainer.classList.remove('onlyHistoryPopup');
-            mainPopup_OuterContainer.classList.remove('onlyHistoryPopup-slideIn');
+            mainPopup_OuterContainer.classList.remove('onlyBookmarksPopup');
+            mainPopup_OuterContainer.classList.remove('onlyBookmarksPopup-slideIn');
             mainPopup_OuterContainer.style = "right:0";
 
             mainPopup_OuterContainer.innerHTML = '';
@@ -84,61 +83,61 @@ function closeButton(){
 
 }
 
-mobileHistoryBtn.addEventListener("click", function(){
-    historyPopup();
+mobileBookmarkBtn.addEventListener("click", function(){
+    bookmarksPopup();
 })
 
-desktopHistoryBtn.addEventListener("click", function(){
+desktopBookmarkBtn.addEventListener("click", function(){
 
     // mainPopup_OuterContainer.style = "transform: translateX(500px)";
-    historyPopup();
+    bookmarksPopup();
 })
 
 
-function historyPopup(){
+function bookmarksPopup(){
 
     mainPopup_OuterContainer.classList.add("fade-in");
 
-    mainPopup_OuterContainer.classList.add('onlyHistoryPopup');    
+    mainPopup_OuterContainer.classList.add('onlyBookmarksPopup');    
     // mainPopup_OuterContainer.classList.remove("fade-out");
     // console.log(window.innerWidth);
 
     // mainPopup_OuterContainer.style.display = "";
     mainPopup_OuterContainer.style.display = "block";
     mainPopup_OuterContainer.style.backgroundColor = "white";
-    mainPopup_OuterContainer.innerHTML = `<div class="history-header">
+    mainPopup_OuterContainer.innerHTML = `<div class="bookmarks-header">
                                             <h1>My Bookmarks</h1>
                                             <span>Refreshing the window will remove all bookmarks</span>
                                         </div>
-                                        <div id="history-list">
+                                        <div id="bookmarks-list">
                                             <div id="search-bar-container">
                                                 <input id="search-bar" type="text" placeholder="Search"/>
                                                 <button id="search-bookmarks"><i class="fas fa-search"></i></button>
                                                 <button id="reset-bookmarks"><i class="fas fa-history"></i></button>
                                             </div>
-                                            <div id="history-list-box"></div>
+                                            <div id="bookmarks-list-box"></div>
                                         </div>`
 
-    console.log("height of history header" + document.getElementsByClassName("history-header")[0].offsetHeight);
-    const historyHeaderHeight = document.getElementsByClassName("history-header")[0].offsetHeight;
+    console.log("height of bookmarks header" + document.getElementsByClassName("bookmarks-header")[0].offsetHeight);
+    const bookmarksHeaderHeight = document.getElementsByClassName("bookmarks-header")[0].offsetHeight;
 
-    const historyListHeight = document.getElementById("history-list");
-    historyListHeight.style.top = historyHeaderHeight + "px";
-    historyListHeight.style.height = "calc(100% - " + historyHeaderHeight + "px)";
-    // console.log(historyListHeight)
+    const bookmarksListHeight = document.getElementById("bookmarks-list");
+    bookmarksListHeight.style.top = bookmarksHeaderHeight + "px";
+    bookmarksListHeight.style.height = "calc(100% - " + bookmarksHeaderHeight + "px)";
+    // console.log(bookmarksListHeight)
 
     setTimeout(function(){
-        mainPopup_OuterContainer.classList.add('onlyHistoryPopup-slideIn');
+        mainPopup_OuterContainer.classList.add('onlyBookmarksPopup-slideIn');
         // mainPopup_OuterContainer.style.transform = "translateX(0px);";
         mainPopup_OuterContainer.style.transition = "all 0.2s ease-in";
     }, 0)
     // 
-    console.log("historyList.length: " + historyList.length)
-    for(let i=0; i<historyList.length; i++){
-        console.log(historyList[i])
-        document.getElementById("history-list-box").innerHTML += `<div class="indiv-result bookmarked">
-                                                                <h4>${historyList[i].shopName}</h4>
-                                                                <small>${historyList[i].shopAddress}</small>
+    console.log("bookmarksList.length: " + bookmarksList.length)
+    for(let i=0; i<bookmarksList.length; i++){
+        console.log(bookmarksList[i])
+        document.getElementById("bookmarks-list-box").innerHTML += `<div class="indiv-result bookmarked">
+                                                                <h4>${bookmarksList[i].shopName}</h4>
+                                                                <small>${bookmarksList[i].shopAddress}</small>
                                                                 </div>`;
         
         // const bookmarkedShop = document.querySelectorAll('.bookmarked');
@@ -147,31 +146,31 @@ function historyPopup(){
         // const bookmarkedShop = document.createElement("div");
         // bookmarkedShop.className = "indiv-result"
         // bookmarkedShop.classList.add('bookmarked');
-        // bookmarkedShop.innerHTML = `<h4>${historyList[i].shopName}</h4>
-        //                             <small>${historyList[i].shopAddress}</small>`;
-        // document.getElementById("history-list").appendChild(bookmarkedShop);
+        // bookmarkedShop.innerHTML = `<h4>${bookmarksList[i].shopName}</h4>
+        //                             <small>${bookmarksList[i].shopAddress}</small>`;
+        // document.getElementById("bookmarks-list").appendChild(bookmarkedShop);
 
         // bookmarkedShop.addEventListener("click", function(){
-        //     // console.log(historyList[i])
-        //     console.log("coordinates: " + historyList[i].shopCoordinatesLt + historyList[i].shopCoordinatesLg)
-        //     map.flyTo([historyList[i].shopCoordinatesLt, historyList[i].shopCoordinatesLg], 20);
+        //     // console.log(bookmarksList[i])
+        //     console.log("coordinates: " + bookmarksList[i].shopCoordinatesLt + bookmarksList[i].shopCoordinatesLg)
+        //     map.flyTo([bookmarksList[i].shopCoordinatesLt, bookmarksList[i].shopCoordinatesLg], 20);
         // })
 
 
         // for (let shop of bookmarkedShop){
         //     shop.addEventListener("click", function(){
-        //         console.log(historyList[i])
-        //         console.log("coordinates: " + historyList[i].shopCoordinatesLt + historyList[i].shopCoordinatesLg)
-        //         map.flyTo([historyList[i].shopCoordinatesLt, historyList[i].shopCoordinatesLg], 20);
+        //         console.log(bookmarksList[i])
+        //         console.log("coordinates: " + bookmarksList[i].shopCoordinatesLt + bookmarksList[i].shopCoordinatesLg)
+        //         map.flyTo([bookmarksList[i].shopCoordinatesLt, bookmarksList[i].shopCoordinatesLg], 20);
         //     })
         // }
     
         // const bookmarkedShop = document.querySelectorAll('.bookmarked');
         // for (x=0; x<bookmarkedShop.length; x++){
         //     bookmarkedShop[x].addEventListener("click", function(){
-        //         console.log(historyList[i])
-        //         console.log("coordinates: " + historyList[i].shopCoordinatesLt + historyList[i].shopCoordinatesLg)
-        //         map.flyTo([historyList[i].shopCoordinatesLt, historyList[i].shopCoordinatesLg], 20);
+        //         console.log(bookmarksList[i])
+        //         console.log("coordinates: " + bookmarksList[i].shopCoordinatesLt + bookmarksList[i].shopCoordinatesLg)
+        //         map.flyTo([bookmarksList[i].shopCoordinatesLt, bookmarksList[i].shopCoordinatesLg], 20);
         //     })
         // }
 
@@ -183,39 +182,39 @@ function historyPopup(){
         let searchingFor = document.getElementById("search-bar").value;
         document.getElementById("search-bar").value = '';
         console.log("search for ... " + searchingFor);
-        document.getElementById("history-list-box").innerHTML = "";
+        document.getElementById("bookmarks-list-box").innerHTML = "";
 
-        for(let i=0;i<historyList.length; i++){
+        for(let i=0;i<bookmarksList.length; i++){
 
-            console.log(historyList[i].shopName)
+            console.log(bookmarksList[i].shopName)
             console.log(searchingFor)
 
-            // let shopName = historyList[i].shopName;
+            // let shopName = bookmarksList[i].shopName;
             // let lowerCase = shopName.toLowercase();
 
-            console.log("lowercase " + historyList[i].shopName.toLowerCase())
-            if(historyList[i].shopName.toLowerCase().includes(searchingFor.toLowerCase())){
-                console.log("historyList[i].shopName: " + historyList[i].shopName)
+            console.log("lowercase " + bookmarksList[i].shopName.toLowerCase())
+            if(bookmarksList[i].shopName.toLowerCase().includes(searchingFor.toLowerCase())){
+                console.log("bookmarksList[i].shopName: " + bookmarksList[i].shopName)
 
-                document.getElementById("history-list-box").innerHTML += `<div class="indiv-result bookmarked">
-                                                                            <h4>${historyList[i].shopName}</h4>
-                                                                            <small>${historyList[i].shopAddress}</small>
+                document.getElementById("bookmarks-list-box").innerHTML += `<div class="indiv-result bookmarked">
+                                                                            <h4>${bookmarksList[i].shopName}</h4>
+                                                                            <small>${bookmarksList[i].shopAddress}</small>
                                                                             </div>`;
             }
         }
 
-        // document.getElementById("history-list-box").innerHTML += "";
+        // document.getElementById("bookmarks-list-box").innerHTML += "";
     })
 
     document.getElementById("reset-bookmarks").addEventListener("click", function(){
 
 
-        document.getElementById("history-list-box").innerHTML = "";
+        document.getElementById("bookmarks-list-box").innerHTML = "";
 
-        for(let i=0; i<historyList.length; i++){
-            document.getElementById("history-list-box").innerHTML += `<div class="indiv-result bookmarked">
-                                                                    <h4>${historyList[i].shopName}</h4>
-                                                                    <small>${historyList[i].shopAddress}</small>
+        for(let i=0; i<bookmarksList.length; i++){
+            document.getElementById("bookmarks-list-box").innerHTML += `<div class="indiv-result bookmarked">
+                                                                    <h4>${bookmarksList[i].shopName}</h4>
+                                                                    <small>${bookmarksList[i].shopAddress}</small>
                                                                     </div>`;
 
         }
