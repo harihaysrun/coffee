@@ -118,7 +118,7 @@ function historyPopup(){
     const historyListHeight = document.getElementById("history-list");
     historyListHeight.style.top = historyHeaderHeight + "px";
     historyListHeight.style.height = "calc(100% - " + historyHeaderHeight + "px)";
-    console.log(historyListHeight)
+    // console.log(historyListHeight)
 
     setTimeout(function(){
         mainPopup_OuterContainer.classList.add('onlyHistoryPopup-slideIn');
@@ -128,8 +128,11 @@ function historyPopup(){
     // 
     console.log("historyList.length: " + historyList.length)
     for(let i=0; i<historyList.length; i++){
-        console.log("historyList[i] : " + historyList[i])
-        document.getElementById("history-list").innerHTML += `<div class="indiv-result">${historyList[i]}</div>`;
+        console.log(historyList[i])
+        document.getElementById("history-list").innerHTML += `<div class="indiv-result bookmarked">
+                                                                <h4>${historyList[i].shopName}</h4>
+                                                                <small>${historyList[i].shopAddress}</small>
+                                                                </div>`;
     }
 
     closeButton();

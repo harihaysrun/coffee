@@ -14,8 +14,8 @@ async function mainPopup(){
         
     if(coffeeLoaded == 0){ 
         mainPopupLanding.innerHTML = `<div id="loader-box">
-                                        <img src="images/cup.svg">
-                                        <img class="coffee-steam" src="images/steam.svg">
+                                        <img class="cup-shadow" src="images/cup-shadow.png">
+                                        <img class="coffee-cup" src="images/cup.svg">
                                     </div>
                                         Brewing some coffee...`
 
@@ -163,8 +163,8 @@ function goToShopLocation(){
         shopCoordinatesLg = shopID.location.lng;
         console.log(shopCoordinatesLt,shopCoordinatesLg)
 
-        map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 18);
-        marker.openPopup();
+        map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 20);
+        // marker.openPopup();
 
         const shopLocation = document.createElement("div");
         shopLocation.className = "indiv-result";

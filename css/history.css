@@ -39,11 +39,12 @@
 }
 
 .indiv-result{
-    cursor: pointer;
     text-align:left;
-    color:black;
-    padding:20px 25px;
-    border-bottom:1px solid black;
+    color:#482C05;;
+}
+
+.bookmarked{
+    cursor: auto;
 }
 
 .onlyHistoryPopup{
