@@ -28,8 +28,26 @@ for(let i=0; i < regions.length; i++){
 regionDropdown.addEventListener("change", async function(){
     console.log("clicked on " + regionDropdown.value)
     // location = regionDropdown.value;
+
+    const dialogBox = document.createElement("div");
+    dialogBox.className = "change-success";
+    dialogBox.innerHTML = `Changing to <b>${regionDropdown.value}...</b>`
+    document.body.appendChild(dialogBox);
+
     coffeePlacesList = await generateList(regionDropdown.value);
     generateMap();
+
+    setTimeout(function(){
+        dialogBox.innerHTML = `You are now viewing coffee shops in <b>${regionDropdown.value}!</b>`
+    }, 800)
+
+
+    setTimeout(function(){
+        // dialogBox.classList.add("dialog-box-slideout")
+        // dialogBox.style.display = "none";
+        dialogBox.style = "transform:translateY(-100px); transition: all 0.3s ease-out";
+    }, 2500)
+
     // discoverBox.classList.remove("box-slideup")
     // discoverBox.style.transition = "all 0.5s ease-in";
 })

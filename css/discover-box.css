@@ -139,6 +139,39 @@
     border:0;
 }
 
+.change-success{
+    position:absolute;
+    background-color:rgb(120, 147, 97, 0.9);
+    border:1px solid #789361;
+    border-radius:15px;
+    width: 90%;
+    padding:20px 25px;
+    color:#ffffff;
+    z-index:10;
+    top:25px;
+    left:0;
+    right:0;
+    margin:auto;
+    animation-name: slideIn;
+    animation-duration: 0.2s;
+    animation-direction: forwards;
+}
+
+@keyframes slideIn{
+    0%{transform:translateY(-100px)}
+    100%{transform:translateY(0);}
+}
+
+.dialog-box-slideout{
+    animation-name: slideOut;
+    animation-duration: 0.2s;
+    animation-direction: forwards;
+}
+
+@keyframes slideOut{
+    0%{transform:translateY(0);}
+    100%{transform:translateY(-100px)}
+}
 
 /* ipad size & above */
 @media screen and (min-width: 768px) {
@@ -186,4 +219,16 @@
     .indiv-result:hover{
         background-color:#F7F7F7;
     }
+
+
+
+    .change-success{
+        width: 500px;
+        z-index:10;
+        /* top:140px; */
+        /* margin:0; */
+        /* left:calc(5% + 20px); */
+        /* animation:none; */
+    }
+
 }

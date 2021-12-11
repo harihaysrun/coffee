@@ -148,15 +148,17 @@ async function randomise(){
 
     let shopID = coffeePlacesList[shopNumber];
     shopName.innerText = shopID.name;
-    shopAddress.innerHTML = `${shopID.location.formattedAddress}`;
+    shopAddress.innerText = shopID.location.formattedAddress;
 }
 
 // closes the popup and leads user to the shop's coordinates on the map
 function goToShopLocation(){
     const goToShop = document.getElementsByClassName("btn-green")[0];
+    marker.closePopup();
+
     goToShop.addEventListener('click', function(){
 
-        console.log("coffeePlacesList: " + coffeePlacesList[shopNumber].name)
+        // console.log("coffeePlacesList: " + coffeePlacesList[shopNumber].name)
 
         let shopID =  coffeePlacesList[shopNumber];
         shopCoordinatesLt = shopID.location.lat;
@@ -164,28 +166,20 @@ function goToShopLocation(){
         console.log(shopCoordinatesLt,shopCoordinatesLg)
 
         map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 20);
-        // marker.openPopup();
+        // marker.openPopup([shopCoordinatesLt, shopCoordinatesLg]);
+        
+        // setTimeout(function(){
+        //     marker.openPopup();
+        // },2000);
 
-        const shopLocation = document.createElement("div");
-        shopLocation.className = "indiv-result";
-        shopLocation.innerHTML = `${coffeePlacesList[shopNumber].name}
-                                    <br>
-                                    <small style="color:hotpink;">${coffeePlacesList[shopNumber].location.address}</small>`;
+        // const shopLocation = document.createElement("div");
+        // shopLocation.className = "indiv-result";
+        // shopLocation.innerHTML = `${coffeePlacesList[shopNumber].name}
+        //                             <br>
+        //                             <small style="color:hotpink;">${coffeePlacesList[shopNumber].location.formattedAddress}</small>`;
 
-        // historyList.push(shopLocation);
-        // console.log("from main page: " + shopLocation);
-
-
-        // for(let i=0; i<historyList.length; i++){
-        //     // console.log("historyList[i] : " + historyList[i].outerHTML)
-        //     document.getElementById("history-list").innerHTML += historyList[i].outerHTML;
-        // }
-
-
-        // console.log("historyList: " + historyList[shopNumber].outerHTML)
-
-        // mainPopup_OuterContainer.innerHTML = "";
         mainPopup_OuterContainer.style.display = "none";
+
     })
 }
 
