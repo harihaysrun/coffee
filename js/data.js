@@ -9,8 +9,8 @@ async function generate(query, near){
             'client_secret': 'RWNKFGT3VXLSBBP0MUL55FV3FXTS4IFXBV20QBOGMV4XFNEY',
             'v': '20211113',
             'query': query,
-            near: near + ', Singapore',
-            limit: '50',
+            'near': near + ', Singapore',
+            'limit': '50',
             // 'country': 'Singapore'
         }
         // headers: {Accept: 'application/json'}

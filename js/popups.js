@@ -102,7 +102,7 @@ function mainPopup_randomiser(){
                                                 </div>
                                                 <span>from</span>
                                                 <div id="random-shop">
-                                                    <h2 id="shopName"></h2>
+                                                    <h4 id="shopName"></h4>
                                                     <p id="shopAddress">Shop Address</p>
                                                 </div>
                                             </div>

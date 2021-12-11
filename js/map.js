@@ -39,8 +39,8 @@ function generateMap(){
 };
 
 
-let coffeeShopClusterLayer = L.layerGroup();
-// let coffeeShopClusterLayer = L.markerClusterGroup();
+// let coffeeShopClusterLayer = L.layerGroup();
+let coffeeShopClusterLayer = L.markerClusterGroup();
 
 function resetMap(){
 
@@ -115,7 +115,6 @@ function resetMap(){
         })
 
         marker.addTo(coffeeShopClusterLayer);
-
 
 
         // discover box results

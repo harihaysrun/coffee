@@ -2,6 +2,7 @@ body{
     margin:0;
     background-color:white;
     font-family: 'Rubik', sans-serif;
+    height:100vh;
     overflow:hidden;
     /* line-height: auto !important;
     font-size:auto !important; */
@@ -294,6 +295,10 @@ h2{
     margin: 20px 0 !important;
 }
 
+#random-coffee img{
+    width:50px !important;
+}
+
 #random-coffee{
     animation-delay:0.5s;
 }
@@ -305,7 +310,8 @@ h2{
 #random-shop>p{
     color:#F0E3D0;
     opacity:0.2;
-    margin:10px 0 0 0;
+    margin:0px 0 0 0;
+    line-height:20px;
 }
 
 @keyframes fadeIn{
@@ -315,7 +321,7 @@ h2{
 
 button{
     width:100%;
-    padding: 20px;
+    padding: 15px;
     margin: 5px 0;
     border:0;
     border-radius:15px;
