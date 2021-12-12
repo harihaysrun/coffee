@@ -13,6 +13,62 @@ Include a URL to the deployed version of the project -->
 
 
 
+# UX/UI
+<!-- User stories & acceptance criteria -->
+
+<!-- Share wireframes links, mockups, diagrams etc. can be pushed to github or be places in separate PDF file as part of the repository
+
+describe the considerations for the five planes of ui/ux, such as the choice of color & fonts, or information strategy for the structure plane. -->
+
+## What I want to achieve with this application
+Putting myself in the shoes of the end user, I would want to:
+- easily check out coffee shops
+- add shops with interesting names to my bookmarks so that I won't have to search through the map again later on
+- have a machine decide for me a drink I should try out
+- UI that's pleasing to look at so it won't repel me/drive me away from using it
+
+
+## Wireframes
+It's important to start with the wireframes before starting with the development.
+
+**Inspiration**
+Taking inspiration from Hince's website, a korean beauty brand, I decided to implement the rounded navbar design.
+
+Here are the wireframes I've done up, some of which have been omitted along the way as I worked on the codes: <a>link here</a>
+
+
+**Responsive design features**
+1. Mobile & Tab:
+    - Hamburger menu for mobile & tablet views
+    - A collapsible discover box due to the lack of screen real estate
+
+2. Desktop:
+    - Full nav bar for desktop view
+    - Due to the design, only footer is visible on desktop
+    - the curved navbar design is removed, but is implemented in the background
+    - implementation of :hover styling in the css
+
+
+## Colours
+- Mainly hues of brown and beige to represent coffee and cream
+- A tinge of desaturated green for my fellow matcha lovers out there
+- The edges of the boxes have a border-radius of 15px, which is neither too rounded or sharp, to imitate the roundness of a coffee bean/cup
+
+## Font choice
+- Just like the rounded egdes of boxes, I wanted a font that's rounded to match the overall look and feel
+- Some fonts that were shortlisted:
+    1. Inter
+    2. Nunik???
+    3. Rubik
+    Decided to go with Rubik because it's in between the first two – not too sharp or rounded
+
+## Icons
+- Rather than using realistic images, I chose to use icons as they're simpler, and don't interfere/clash with the complicatedness/intricatedness of the map
+- Icons were either made on Illustrator or sourced from Flaticons and Fontawesome
+
+
+
+
 # Project Complexity Matrix
 1. Consume the GET endpoint of an API, or consume a CSV/JSON file
 2. Adding or removing DOM elements to the display (map, DOM tree, game screen) base on user's actions
@@ -29,42 +85,12 @@ Include a URL to the deployed version of the project -->
 
 
 
-# UX/UI
-<!-- User stories & acceptance criteria -->
-
-<!-- Share wireframes links, mockups, diagrams etc. can be pushed to github or be places in separate PDF file as part of the repository
-
-describe the considerations for the five planes of ui/ux, such as the choice of color & fonts, or information strategy for the structure plane. -->
-
-## What I want to achieve with this application
-Putting myself in the shoes of the end user, I would want to:
-- easily check out coffee shops
-- add shops with interesting names to my bookmarks so that I won't have to search through the map again later on
-- have a machine decide for me what drink I should try out
-
-
-## Wireframes
-It's important to start with the wireframes before coding it out
-Here's the wireframes I drew:
-
-**Responsive design"**
-1. Hamburger menu for mobile & tablet views
-2. Full nav bar for desktop view
-
-## Colours
-- Mainly hues of brown and beige to represent coffee and cream
-- A tinge of desaturated green for my fellow matcha lovers out there
-- The edges of the boxes have a border-radius of 15px, which is neither too rounded or sharp, to imitate the roundness of a coffee bean/cup
-
-
-
-
 # Features
 <!-- list down major features of the application, and also the algorithms you have used to implement those features. if there are any limitations or bugs, please describe them as well. if you have any features pending implementation, you can also take the opportunity to discuss them here -->
 
-## Problems
+## Problems & limitations
 **Limitations of Foursquare API**
-- only 50 queries per session, meaning it's not possible to have the full list of coffee shops
+- only 50 queries per session, which it's not possible to have the full list of coffee shops at one go
 - Even though a specific region is chosen, shops from other areas(and even countries – Malaysia & Indonesia) show up
     - with this, I had to manually exclude anything that's not in Singapore by including this line in ___.js
     > line where shows to exclude anything else other than singapore
@@ -108,9 +134,13 @@ Here's the wireframes I drew:
 1. Clicking on the "Coffee Randomiser" or "Check out coffee places" buttons even before the API has finished calling the endpoint, which causes multiple errors and the application to not function as expected
     - to fix this error, I have added a short loader animation of a floating cup, which lasts for 0.3s, so that the array will already be loaded when user is presented with the two buttons
 
-2. used console.log on everything to make sure that everything's working
+2. Fourqsuare had a major update (V2 -> V3), causing things to work differently than what was taught during class. The Client ID & Client Secret keys that were generated on my own account do not work
+    - After extensive testing, I discovered that this seems to be a Foursquare issue, so I've contacted Foursquare's support for help. I'm still waiting for a response for them to this day
+    - Thank you Neel for letting me use your keys & taking some time out to figure out what went wrong, appreciate your help very much
 
-3. Tested my project on these browsers on Mac OS:
+3. Used console.log on everything to make sure that everything's working
+
+4. Tested my project on these browsers on Mac OS:
     - Google Chrome
     - Safari
     - Microsoft Edge
@@ -121,18 +151,32 @@ Here's the wireframes I drew:
     - Samsung ???
     - iPad Pro 2018
 
+5. UI not working as smoothly on iOS 15
+    - when Apple shifted the position of the search bar in Safari to the bottom, it made my UI work not as smoothly as I thought it would. Here's the thing that bugs me the most:
+        - The discover box is hidden below the 100% height of the browser window
+        - If you're not familiar with how iOS 15 works, when you scroll up, the search bar collapses
+        - And when it collapses, it exposes the rest of my discover box (which I've purposely hidden for aesthetic purposes)
 
+
+**Feedback I've received**
+1. Other than the regions, perhaps I could add in another dropdown to sort the shops according to types of coffee (like the ones in the randomiser)
+    - **Did I implement this feature?** No
+    - **Why?** Based on Foursquare Venue API's information for each location, it's not extensive enough and doesn't include further info like shop specialties and menus
+    - **What could I have done?** My initial plan was to use the Places API, since it seems to have more information, however due to unexpected errors I've faced when trying to make the API call (authorization keys, Client ID & Client Secret not working, CORS errors), I've decided to stick to the Venues API since it was working for me
+2. Make some indication for CTA buttons
+    - **Did I implement this feature?** Yes
+    - **What did I implement?** Whenever user changes regions, a green popup at the top will show appear when it's loading & done (it takes a around 0.5seconds for the map to reset & generate new markers)
 
 
 # Test Cases
-<!-- provide descroption of test case
+<!-- provide description of test case
 steps for performing the test
 the expected results
 any assumptions or prerequisites
 
 examiner must be able to follow your test case -->
 
-## Test Case 1: Basic Coffee Shop Explorer
+## Test Case 1: "Wow shops""
 1. From the main page, click on "Check out coffee places"
 2. Pan and zoom on the map
 3. Click on the coffee beans to see shop name, address & bookmarks button
@@ -140,12 +184,12 @@ examiner must be able to follow your test case -->
 5. Sift through the listings in the discover box
 6. Change regions to see shops in specific locations
 
-## Test Case 2A: Coffee Randomiser
+## Test Case 2A: "I'm just here for the coffee, not the shops"
 1. From the main page, click on the "Coffee Randomiser" button
 2. If you're not interested in the recommendation, click on "Give me another one" to generate another suggestion
 3. Once satisfied, click on "Take Me There"
 
-## Test Case 2B: Coffee Randomiser
+## Test Case 2B: "Cool shops, now what should I drink?"
 1. Click on the "Coffee Randomiser" button on the top right hand corner of the nav bar
 2. If you're not interested in the recommendation, click on "Give me another one" to generate another suggestion
 3. Once satisfied, click on "Take Me There"
@@ -168,10 +212,17 @@ examiner must be able to follow your test case -->
 <!-- describe the process you used to host your website. -->
 
 1. Used Visual Studio Code
-2. Pushed to Github repository by using the Github Desktop Client (has a GUI)
+2. Pushed to Github repository by using the Github Desktop Client (lovely and intuitive GUI)
 3. Used the Live Server extension to view UI updates in real time on browser
 4. From Github, make the repository public
 5. Set pages to generate project URL
 
+
+
+
 # Credits
 <!-- put all the code, content and assets that you have used. acknowledge and provide links to those. -->
+
+**Images & Icons**
+- Flaticons
+- Fontawesome
