@@ -93,8 +93,9 @@
         right:0;
         margin:auto;
         border-radius:15px;
-        height:80vh;
-        box-shadow: 0 2px 10px rgb(72, 44, 5, 0.15);
+        /* height:59vw; */
+        height:calc(100% - 190px);
+        box-shadow: 0 5px 20px rgb(72, 44, 5, 0.15);
     }
 
 }

@@ -37,7 +37,7 @@ regionDropdown.addEventListener("change", async function(){
     generateMap();
 
     setTimeout(function(){
-        dialogBox.innerHTML = `You are now viewing coffee shops in <b>${regionDropdown.value}!</b>`
+        dialogBox.innerHTML = `You are now viewing coffee shops near <b>${regionDropdown.value}!</b>`
     }, 800)
 
 

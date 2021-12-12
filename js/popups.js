@@ -31,17 +31,17 @@ async function mainPopup(){
         mainPopupLanding.classList.add("fade-in");
                 
         mainPopupLanding.innerHTML =  `<h1>Choose one</h1>
-        <div id="choose-one">
-            <div id="coffee-randomiser">
-                <img src="images/coffee-beans.png" alt="">
-                Coffee Randomiser
-            </div>
-            <div id="coffee-places">
-                <img src="images/coffee-beans.png" alt="">
-                Check out coffee places
-            </div>
-        </div>`;
-    
+                                        <div id="choose-one">
+                                            <div id="coffee-randomiser">
+                                                <img src="images/randomiser.png" alt="">
+                                                Coffee Randomiser
+                                            </div>
+                                            <div id="coffee-places">
+                                                <img src="images/coffee-places.png" alt="">
+                                                Check out coffee places
+                                            </div>
+                                        </div>`;
+                                    
         chooseOne();
     }
 

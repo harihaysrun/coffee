@@ -8,6 +8,14 @@ body{
     font-size:auto !important; */
 }
 
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
 nav{
     position:absolute;
     top:0;
@@ -56,7 +64,7 @@ nav>#nav-container{
     display:none;
 }
 
-nav>#nav-container>#hamburger-menu{
+#hamburger-menu{
     margin:0;
     padding:0;
     /* background-color:honeydew; */
@@ -258,13 +266,13 @@ h2{
     font-weight:400;
 }
 
-#main-popup>#main-popup-container>#main-popup-landing>#choose-one, #randomiser-container{
+#choose-one, #randomiser-container{
     /* background-color:thistle; */
     display:flex;
     flex-direction: column;
 }
 
-#main-popup>#main-popup-container>#main-popup-landing>#choose-one>div, #randomiser-container>#coffee-and-shop>div{
+#choose-one>div, #randomiser-container>#coffee-and-shop>div{
     background-color:#412804;
     margin: 10px 0;
     box-sizing: border-box;
@@ -275,17 +283,22 @@ h2{
     align-items: center;
 }
 
-#main-popup>#main-popup-container>#main-popup-landing>#choose-one>div>img, #randomiser-container>#coffee-and-shop>div>img{
+#choose-one>div>img{
+    /* width:70px; */
+    height:70px;
+    margin-bottom:20px;
+}
+
+#randomiser-container>#coffee-and-shop>div>img{
     width:70px;
     margin-bottom:20px;
 }
 
-#main-popup>#main-popup-container>#main-popup-landing>#choose-one>div:hover{
+#choose-one>div:hover{
     background-color:#F0E3D0;
     color:#482C05;
     cursor:pointer;
 }
-
 #random-coffee, #random-shop{
     opacity:0;
     animation-fill-mode: forwards;
@@ -295,8 +308,17 @@ h2{
     margin: 20px 0 !important;
 }
 
+#random-coffee{
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+}
+
 #random-coffee img{
-    width:50px !important;
+    width:40px !important;
+    display:inline-block;
+    margin-bottom:5px !important;
+    margin-right:15px;
 }
 
 #random-coffee{
@@ -405,8 +427,9 @@ footer{
 
     body{
         background-image:url("../images/bg-pattern.png");
-        background-size:cover;
+        background-size:contain;
         background-repeat:no-repeat;
+        /* background-color: #789361; */
     }    
 
     /* nav */
@@ -422,6 +445,7 @@ footer{
         display:flex;
         align-items:flex-end;
     }
+    
     nav>#nav-container{
         display:flex;
         /* align-items:center; */
@@ -496,17 +520,22 @@ footer{
         width:768px;
     }
 
-    #main-popup>#main-popup-container>#main-popup-landing>#choose-one{
+    #choose-one{
         /* background-color:peachpuff; */
         display:flex;
         flex-direction: row;
     }
 
-    #main-popup>#main-popup-container>#main-popup-landing>#choose-one>div{
+    #choose-one>div{
         flex:1;
         margin:15px;
     }
 
+    #choose-one>div>img{
+        /* width:70px; */
+        height:100px;
+        margin-bottom:20px;
+    }
 
 
     #main-popup-randomiser{
@@ -541,6 +570,17 @@ footer{
         align-items: center;
     }
 
+    #random-coffee{
+        flex-direction: column !important;
+    }
+    
+    #random-coffee img{
+        width:50px !important;
+        display:inline-block;
+        margin-bottom:15px !important;
+        margin-right:0px;
+    }
+
     #buttons{
         display:flex;
         justify-content: center;
@@ -553,21 +593,39 @@ footer{
 
 
     /* footer */
-    footer{
+    /* footer{
         position:absolute;
         top:calc(97vh - 450px);
         height:550px;
         width:100%;
         color:#482C05;
         background: url('../images/footer-bg.png') no-repeat;
-        /* background-size:860px; */
         background-size:cover;
-        /* background-color: #F0E3D0; */
         box-sizing:border-box;
         padding:50px;
         display:flex;
         align-items: flex-end;
         justify-content: center;
+    } */
+
+    footer{
+        width:90%;
+        position:absolute;
+        /* bottom:0; */
+        top:calc(100% - 50px);
+        left:0;
+        right:0;
+        margin:auto;
+        /* background-color:pink; */
+        /* z-index:10; */
+        display:flex;
+        justify-content: space-between;
+        color:#482C05;
+    }
+
+    footer img{
+        height:25px;
+        margin-right:15px;
     }
     
 }
