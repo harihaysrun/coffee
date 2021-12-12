@@ -4,7 +4,7 @@ Can't decide which coffee to drink?
 # Project name and summary
 "What coffee should I drink today?" is a question I found myself asking rather frequently. Drinking the same coffee over and over again gets pretty mundane over time. On weekdays, cold brew. On weekends, cold brew again. Life won't be too interesting if I were to keep drinking the same coffee every day for the rest of my life.
 
-This inspired me to start "Where's my coffee?", a randomiser that recommends users a type of coffee and shop, so that they can go on to explore that shop's menu or perhaps even make an order with them. There's more than just Starbucks and Coffee Bean, people...
+This inspired me to start "Where's my coffee?", a randomiser that recommends users a type of coffee and shop, so that they can go on to explore that shop's menu or perhaps even make an order with them. There's more to life than just Starbucks and Coffee Bean...
 
 <!-- Make sure to justify why the project should exist
 
@@ -29,10 +29,10 @@ Putting myself in the shoes of the end user, I would want to:
 
 
 ## Wireframes
-It's important to start with the wireframes before starting with the development.
+It's important to start with the wireframes before moving on with the development.
 
 **Inspiration**
-Taking inspiration from Hince's website, a korean beauty brand, I decided to implement the rounded navbar design.
+Taking inspiration from Hince's website, a korean beauty brand, I decided to adopt the rounded navbar design.
 
 Here are the wireframes I've done up, some of which have been omitted along the way as I worked on the codes: <a>link here</a>
 
@@ -90,7 +90,7 @@ Here are the wireframes I've done up, some of which have been omitted along the 
 
 ## Problems & limitations
 **Limitations of Foursquare API**
-- only 50 queries per session, which it's not possible to have the full list of coffee shops at one go
+- only 50 queries per session, which means that it's not possible to see the full list of coffee shops at one go
 - Even though a specific region is chosen, shops from other areas(and even countries – Malaysia & Indonesia) show up
     - with this, I had to manually exclude anything that's not in Singapore by including this line in ___.js
     > line where shows to exclude anything else other than singapore
@@ -134,8 +134,8 @@ Here are the wireframes I've done up, some of which have been omitted along the 
 1. Clicking on the "Coffee Randomiser" or "Check out coffee places" buttons even before the API has finished calling the endpoint, which causes multiple errors and the application to not function as expected
     - to fix this error, I have added a short loader animation of a floating cup, which lasts for 0.3s, so that the array will already be loaded when user is presented with the two buttons
 
-2. Fourqsuare had a major update (V2 -> V3), causing things to work differently than what was taught during class. The Client ID & Client Secret keys that were generated on my own account do not work
-    - After extensive testing, I discovered that this seems to be a Foursquare issue, so I've contacted Foursquare's support for help. I'm still waiting for a response for them to this day
+2. Foursquare had a major update (V2 -> V3), causing things to work differently than what was taught during class. The Client ID & Client Secret keys that were generated on my own account do not work
+    - After extensive testing, I discovered that this seems to be a Foursquare issue, so I've contacted Foursquare's support for help. I'm still waiting for a response from them to this day
     - Thank you Neel for letting me use your keys & taking some time out to figure out what went wrong, appreciate your help very much
 
 3. Used console.log on everything to make sure that everything's working
@@ -146,7 +146,7 @@ Here are the wireframes I've done up, some of which have been omitted along the 
     - Microsoft Edge
     - Mozilla Firefox
 
-    Mobile/Tablet Decives:
+    Mobile/Tablet Devices:
     - iPhone 12 Mini (ios 15)
     - Samsung ???
     - iPad Pro 2018
@@ -165,7 +165,7 @@ Here are the wireframes I've done up, some of which have been omitted along the 
     - **What could I have done?** My initial plan was to use the Places API, since it seems to have more information, however due to unexpected errors I've faced when trying to make the API call (authorization keys, Client ID & Client Secret not working, CORS errors), I've decided to stick to the Venues API since it was working for me
 2. Make some indication for CTA buttons
     - **Did I implement this feature?** Yes
-    - **What did I implement?** Whenever user changes regions, a green popup at the top will show appear when it's loading & done (it takes a around 0.5seconds for the map to reset & generate new markers)
+    - **What did I implement?** Whenever user changes regions, a green popup at the top will appear when it's loading & done (it takes a around 0.5seconds for the map to reset & generate new markers)
 
 
 # Test Cases
@@ -199,7 +199,7 @@ examiner must be able to follow your test case -->
     1. Click on the hamburger menu icon at the top right
     2. Click on "Bookmarks" tab
 2. **On desktop**
-    1. Click on the "Bookmarks" button on or navbar
+    1. Click on the "Bookmarks" button in the navbar
 3. Scroll through whole list
 4. In the case that there's an interesting name that stays on your mind (but you can't remember its full name), type what you remember in the search bar
 5. Click on the search icon button next to it & the result will show up
@@ -226,3 +226,4 @@ examiner must be able to follow your test case -->
 **Images & Icons**
 - Flaticons
 - Fontawesome
+- link to that website for the coffee types
