@@ -112,8 +112,8 @@ function bookmarksPopup(){
                                         <div id="bookmarks-list">
                                             <div id="search-bar-container">
                                                 <input id="search-bar" type="text" placeholder="Search"/>
-                                                <button id="search-bookmarks"><i class="fas fa-search"></i></button>
-                                                <button id="reset-bookmarks"><i class="fas fa-history"></i></button>
+                                                <button id="search-bookmarks" title="Press to search"><i class="fas fa-search"></i></button>
+                                                <button id="reset-bookmarks" title="Reset search"><i class="fas fa-history"></i></button>
                                             </div>
                                             <div id="bookmarks-list-box"></div>
                                         </div>`
