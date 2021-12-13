@@ -2,7 +2,6 @@
 Can't decide which coffee to drink?
 <!-- Insert the iamge of the design across the 3 devices here -->
 
-[create an anchor][#ux-ui]
 
 # Project name and summary
 "What coffee should I drink today?" is a question I found myself asking rather frequently. Drinking the same coffee over and over again gets pretty mundane over time. On weekdays, cold brew. On weekends, cold brew again. Life won't be too interesting if I were to keep drinking the same coffee every day for the rest of my life.
@@ -45,7 +44,7 @@ It's important to start with the wireframes before moving on with the developmen
 <!-- sitemap pic here -->
 
 **Inspiration**
-Taking inspiration from <a href="">Hince</href>'s website, I decided to adopt the rounded navbar design.
+Taking inspiration from <a href="">Hince</a>'s website, I decided to adopt the rounded navbar design.
 
 Here are the wireframes I've done up, some of which have been omitted along the way as I worked on the codes: <a href="">link here</a>
 
@@ -108,19 +107,23 @@ My choice of colours is very self-explanatory:
 **Limitations of Foursquare API**
 - only 50 queries per session, which means that it's not possible to see the full list of coffee shops at one go
 - Even though a specific region is chosen, shops from other areas(and even countries – Malaysia & Indonesia) show up
-    - with this, I had to manually exclude anything that's not in Singapore by including this line in ___.js
-    > line where shows to exclude anything else other than singapore
+    - setting a radius in the parameters of the API call helped to narrow it down
 
-**Leaflet marker not working as expected**
+**Leaflet marker not popping up automatically**
 - couldn't get the markers to open automatically when clicking on the shop in the discover box
+- added some instructions so that user know what to do
 
 ## Pending Implementions
 - A form for user to submit a shop that's not on the list
 - Setting up a database for the bookmarks so they will be stored somewhere and won't be gone once the user refreshes the browser
 
 ## Bugs
-- While testing on various browsers, I came across an error on Mozilla Firefox saying:
->  "Uncaught (in promise) ReferenceError: can't access lexical declaratio'coffeePlacesList' before initialization"
+<!-- - While testing on various browsers, I came across an error on Mozilla Firefox saying:
+>  "Uncaught (in promise) ReferenceError: can't access lexical declaratio'coffeePlacesList' before initialization" -->
+- For the bookmarks feature to work seamlessly, user is advised
+    - not to immediately click on other shop markers while one is opened (bookmark button has to "reset" before it works)
+    - click on the 'close' or anywhere on the map for the bookmarks button to reset and function when opening the marker again
+
 
 
 
@@ -138,6 +141,34 @@ My choice of colours is very self-explanatory:
 # Technologies Used
 <!-- /provide overview of the languages, frameworks, libraries or other tools you have used to produce the project. provide short description of where in the project the technology is used, and a URL to its github repository -->
 
+1. HTML
+    - to set the bare bones of the website
+
+2. CSS
+    - stylise according to my wireframes
+    - allow simple animations and transitions to happen
+
+3. Vanilla Javascript
+    - Make the whole website work (Effects, clicking on a button will result to e.g a box popping up)
+    - 90% of the content is handled by JS (innerHTML/innerText)
+
+4. JSON
+    - able to handle lots of information in one file without compromising the file size
+    - easy to update information in the future if needed (without touching any front-end or back-end codes, easy even for those who are not familiar with coding)
+
+5. Axios
+    - used to make the end call to a third-party API (Foursquare)
+
+6. Foursquare API
+    - Retrieve array of location information to display on the website – the shop name, address & coordinates
+
+7. Leaflet
+    - Provide markers to be placed on the map
+    - Has a popup feature for each marker to make it more intuitive
+
+8. Mapbox
+    - to stylise the map tiles
+    - able to choose from certain premade styles or make our own ones
 
 
 
@@ -227,15 +258,21 @@ examiner must be able to follow your test case -->
 7. Click on the close button to go back to the map
 
 
+**Rationale for adding a search bar in the bookmarks and not in the discover box**
+- Adding a search function in the discover box might be redundant because I, as the site owner, assume that users are here to look for new shops
+- If they don't know that a certain shop exists, they won't search for it
+- Get the users to click on the markers and not rely heavily on the discover box (that's what shopping malls do - the hidden agenda of making shoppers walk through the whole mall by placing escalators on opposite ends)
+- But when they've already bookmarked certain shops, they would be more inclined to search for the name that intrigues them the most
+
 
 # Deployment
 <!-- describe the process you used to host your website. -->
 
 1. Used Visual Studio Code
 2. Pushed to Github repository by using the Github Desktop Client (lovely and intuitive GUI)
-3. Used the Live Server extension to view UI updates in real time on browser
-4. From Github, make the repository public
-5. Publish GitHub page for project
+3. Utilised the Live Server extension to view UI updates in real time on browser upon saving the files
+4. From Github, make the repository public (if it's private)
+5. Publish GitHub page to view project on a live URL
 
 
 
@@ -248,3 +285,5 @@ examiner must be able to follow your test case -->
 - Fontawesome
 - link to that website for the coffee types
 - https://developer.foursquare.com/reference/v2-venues-search
+- wikipedia of sg neighbourhoods
+- Neel
