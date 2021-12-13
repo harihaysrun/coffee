@@ -1,5 +1,6 @@
-# Coffee
+# Where's my coffee?
 Can't decide which coffee to drink?
+<!-- Insert the iamge of the design across the 3 devices here -->
 
 # Project name and summary
 "What coffee should I drink today?" is a question I found myself asking rather frequently. Drinking the same coffee over and over again gets pretty mundane over time. On weekdays, cold brew. On weekends, cold brew again. Life won't be too interesting if I were to keep drinking the same coffee every day for the rest of my life.
@@ -21,9 +22,16 @@ Include a URL to the deployed version of the project -->
 describe the considerations for the five planes of ui/ux, such as the choice of color & fonts, or information strategy for the structure plane. -->
 
 ## What I want to achieve with this application
+
+As the site owner, I want to:
+- Pre-set some search terms for the users so they won't have to do so (in this case, 'coffee', 'cafe', 'bistro')
+- decide type of coffee to drink for the user
+- introduce user to different types of coffee
+
+
 Putting myself in the shoes of the end user, I would want to:
 - easily check out coffee shops
-- add shops with interesting names to my bookmarks so that I won't have to search through the map again later on
+- find interesting shops and add them to my bookmarks so that I won't have to search through the map again later on
 - have a machine decide for me a drink I should try out
 - UI that's pleasing to look at so it won't repel me/drive me away from using it
 
@@ -31,10 +39,13 @@ Putting myself in the shoes of the end user, I would want to:
 ## Wireframes
 It's important to start with the wireframes before moving on with the development.
 
-**Inspiration**
-Taking inspiration from Hince's website, a korean beauty brand, I decided to adopt the rounded navbar design.
+**Flow/Sitemap**
+<!-- sitemap pic here -->
 
-Here are the wireframes I've done up, some of which have been omitted along the way as I worked on the codes: <a>link here</a>
+**Inspiration**
+Taking inspiration from <a href="">Hince</href>'s website, I decided to adopt the rounded navbar design.
+
+Here are the wireframes I've done up, some of which have been omitted along the way as I worked on the codes: <a href="">link here</a>
 
 
 **Responsive design features**
@@ -50,37 +61,39 @@ Here are the wireframes I've done up, some of which have been omitted along the 
 
 
 ## Colours
+My choice of colours is very self-explanatory:
 - Mainly hues of brown and beige to represent coffee and cream
 - A tinge of desaturated green for my fellow matcha lovers out there
+- and red to represent the dissatisfactory button/function
 - The edges of the boxes have a border-radius of 15px, which is neither too rounded or sharp, to imitate the roundness of a coffee bean/cup
 
 ## Font choice
-- Just like the rounded egdes of boxes, I wanted a font that's rounded to match the overall look and feel
+- Again, the key visual of my moodboard is roundedness. I wanted a font that portrays this well to match the overall look and feel
 - Some fonts that were shortlisted:
     1. Inter
-    2. Nunik???
-    3. Rubik
-    Decided to go with Rubik because it's in between the first two – not too sharp or rounded
+    2. Nunik???/Nunito
+    3. Rubik º Decided to go with this because it's the perfect in between – not too sharp or rounded
 
 ## Icons
-- Rather than using realistic images, I chose to use icons as they're simpler, and don't interfere/clash with the complicatedness/intricatedness of the map
+- Rather than using realistic images, I chose to use icons as they're simpler, and don't interfere/clash with the complicatedness/intricateness of the map
 - Icons were either made on Illustrator or sourced from Flaticons and Fontawesome
 
 
 
 
 # Project Complexity Matrix
-1. Consume the GET endpoint of an API, or consume a CSV/JSON file
-2. Adding or removing DOM elements to the display (map, DOM tree, game screen) base on user's actions
-3. Modifying the CSS of DOM elements based on the user's actions
-4. Use of 1D traversal of array
-5. -
-6. Each use of CSS layout technique (Bootstrap columns, flex box, grid)
-7. Each possible search or filtering criteria in the user interface
-8. Each case of the map updating base on the user's actions
-9. Each group of layers in the Leaflet map
-10. Each group of marker clustering
-11. Each type of custom marker (using images or custom behaviour)
+No. | Description | Implemented? Y/N
+1 | Consume the GET endpoint of an API, or consume a CSV/JSON file | Yes <br> 1 foursquare API + 1 local JSON file
+2 | Adding or removing DOM elements to the display (map, DOM tree, game screen) base on user's actions | Yes
+3 | Modifying the CSS of DOM elements based on the user's actions | Yes
+4 | Use of 1D traversal of array | Yes
+5 | -
+6 | Each use of CSS layout technique (Bootstrap columns, flex box, grid) | Yes <br> flex box
+7 | Each possible search or filtering criteria in the user interface | Yes <br> Search box in bookmarks tab
+8 | Each case of the map updating base on the user's actions | Yes <br> Map & markers reset when user changes regions
+9 | Each group of layers in the Leaflet map | Yes <br> 1 group
+10 | Each group of marker clustering | Yes <br> 1 marker clustering
+11 | Each type of custom marker (using images or custom behaviour) | Yes <br> Used coffee bean image, added a bookmark button inside of popup
 
 
 
@@ -145,6 +158,10 @@ Here are the wireframes I've done up, some of which have been omitted along the 
     - Safari
     - Microsoft Edge
     - Mozilla Firefox
+
+    Windows 10:
+    - Google Chrome
+    – Microsoft Edge
 
     Mobile/Tablet Devices:
     - iPhone 12 Mini (ios 15)
@@ -215,7 +232,7 @@ examiner must be able to follow your test case -->
 2. Pushed to Github repository by using the Github Desktop Client (lovely and intuitive GUI)
 3. Used the Live Server extension to view UI updates in real time on browser
 4. From Github, make the repository public
-5. Set pages to generate project URL
+5. Publish GitHub page for project
 
 
 
@@ -227,3 +244,4 @@ examiner must be able to follow your test case -->
 - Flaticons
 - Fontawesome
 - link to that website for the coffee types
+- https://developer.foursquare.com/reference/v2-venues-search
