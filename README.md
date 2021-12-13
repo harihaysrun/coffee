@@ -2,6 +2,8 @@
 Can't decide which coffee to drink?
 <!-- Insert the iamge of the design across the 3 devices here -->
 
+[create an anchor][#ux-ui]
+
 # Project name and summary
 "What coffee should I drink today?" is a question I found myself asking rather frequently. Drinking the same coffee over and over again gets pretty mundane over time. On weekdays, cold brew. On weekends, cold brew again. Life won't be too interesting if I were to keep drinking the same coffee every day for the rest of my life.
 
