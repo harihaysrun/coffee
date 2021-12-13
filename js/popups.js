@@ -1,11 +1,17 @@
 const mainPopup_OuterContainer = document.getElementById("main-popup");
 const mainPopup_InnerContainer = document.getElementById("main-popup-container");
 
+// used to check if API call has already been made (from line 218) so that the loader animation won't appear when user clicks 'back'
 let coffeeLoaded = 0;
+
 mainPopup();
 
 // inserts the 'coffee randomiser' or 'check out coffee places?' into main popup
 async function mainPopup(){
+
+    await generateList('Singapore');
+    console.log(coffeePlacesList);
+    
     mainPopup_InnerContainer.innerHTML = '';
     const mainPopupLanding = document.createElement("div");
     mainPopupLanding.id = "main-popup-landing";
@@ -13,6 +19,7 @@ async function mainPopup(){
     mainPopup_InnerContainer.appendChild(mainPopupLanding);
         
     if(coffeeLoaded == 0){ 
+        // loader animation
         mainPopupLanding.innerHTML = `<div id="loader-box">
                                         <img class="cup-shadow" src="images/cup-shadow.png">
                                         <img class="coffee-cup" src="images/cup.svg">
@@ -20,11 +27,11 @@ async function mainPopup(){
                                         Brewing some coffee...`
 
         setTimeout(function(){
-            loadChoices()
+            loadChoices();
         }, 1500);
 
     } else{
-        loadChoices()
+        loadChoices();
     }
 
     function loadChoices(){
@@ -44,9 +51,6 @@ async function mainPopup(){
                                     
         chooseOne();
     }
-
-    await generateList('Singapore');
-    console.log(coffeePlacesList)
 }
 
 // choose one from 'coffee randomiser' and 'check out coffee places?'
@@ -97,12 +101,15 @@ function mainPopup_randomiser(){
                                             <span>How about a cup of...</span>
                                             <div id="coffee-and-shop">
                                                 <div id="random-coffee">
-                                                    <img src="" alt="">
-                                                    <h2>Iced Americano</h2>
+                                                    <div>
+                                                        <img src="" alt="">
+                                                        <h4>Iced Americano</h4>
+                                                    </div>
+                                                    <p id="coffee-description"></p>
                                                 </div>
                                                 <span>from</span>
                                                 <div id="random-shop">
-                                                    <h4 id="shopName"></h4>
+                                                    <h3 id="shopName"></h3>
                                                     <p id="shopAddress">Shop Address</p>
                                                 </div>
                                             </div>
@@ -135,10 +142,12 @@ async function randomise(){
     let coffeeTypeNumber = Math.floor(Math.random() * 34);
 
     const coffeeImg = document.querySelector("#random-coffee img");
-    const coffeeName = document.querySelector("#random-coffee h2");
+    const coffeeName = document.querySelector("#random-coffee h4");
+    const coffeeDescription = document.querySelector("#random-coffee p");
 
     coffeeImg.src = coffeeType[coffeeTypeNumber].img;
     coffeeName.innerText = coffeeType[coffeeTypeNumber].type;
+    coffeeDescription.innerText = coffeeType[coffeeTypeNumber].description;
     
     // random coffee shop
     shopNumber = Math.floor(Math.random() * 50);

@@ -192,22 +192,25 @@ function bookmarksPopup(){
             // let shopName = bookmarksList[i].shopName;
             // let lowerCase = shopName.toLowercase();
 
-            console.log("lowercase " + bookmarksList[i].shopName.toLowerCase())
+            console.log("lowercase " + bookmarksList[i].shopName.toLowerCase());
+
             if(bookmarksList[i].shopName.toLowerCase().includes(searchingFor.toLowerCase())){
                 console.log("bookmarksList[i].shopName: " + bookmarksList[i].shopName)
-
                 document.getElementById("bookmarks-list-box").innerHTML += `<div class="indiv-result bookmarked">
                                                                             <h4>${bookmarksList[i].shopName}</h4>
                                                                             <small>${bookmarksList[i].shopAddress}</small>
                                                                             </div>`;
+
+                                                                            console.log("results found")
+                                                            
             }
         }
 
         // document.getElementById("bookmarks-list-box").innerHTML += "";
     })
 
+    // reset search
     document.getElementById("reset-bookmarks").addEventListener("click", function(){
-
 
         document.getElementById("bookmarks-list-box").innerHTML = "";
 

@@ -308,17 +308,23 @@ h2{
     margin: 20px 0 !important;
 }
 
-#random-coffee{
+#random-coffee>div{
+    display: flex;
+    width:100%;
     flex-direction: row !important;
     align-items: center;
     justify-content: center;
+    margin-bottom:15px;
 }
 
-#random-coffee img{
+#random-coffee h4{
+    margin:0;
+}
+
+#random-coffee>div>img{
     width:40px !important;
-    display:inline-block;
     margin-bottom:5px !important;
-    margin-right:15px;
+    margin-right:5px;
 }
 
 #random-coffee{
@@ -329,11 +335,16 @@ h2{
     animation-delay:1.5s;
 }
 
-#random-shop>p{
+#random-coffee>p, #random-shop>p{
     color:#F0E3D0;
     opacity:0.2;
     margin:0px 0 0 0;
-    line-height:20px;
+    line-height:19px;
+}
+
+#random-coffee>p{
+    width:100%;
+    /* flex-grow:1; */
 }
 
 @keyframes fadeIn{
@@ -570,11 +581,11 @@ footer{
         align-items: center;
     }
 
-    #random-coffee{
+    #random-coffee>div{
         flex-direction: column !important;
     }
     
-    #random-coffee img{
+    #random-coffee>div>img{
         width:50px !important;
         display:inline-block;
         margin-bottom:15px !important;
