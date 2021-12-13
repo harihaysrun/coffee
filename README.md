@@ -8,6 +8,8 @@ Can't decide which coffee to drink?
 
 This inspired me to start "Where's my coffee?", a randomiser that recommends users a type of coffee and shop, so that they can go on to explore that shop's menu or perhaps even make an order with them. There's more to life than just Starbucks and Coffee Bean...
 
+If you find yourself asking the same question like I do, then this is for you.
+
 <!-- Make sure to justify why the project should exist
 
 Include a URL to the deployed version of the project -->
@@ -103,6 +105,11 @@ My choice of colours is very self-explanatory:
 # Features
 <!-- list down major features of the application, and also the algorithms you have used to implement those features. if there are any limitations or bugs, please describe them as well. if you have any features pending implementation, you can also take the opportunity to discuss them here -->
 
+## Features
+- randomiser (for both coffee type & shop)
+- coffee shop bookmarks
+
+
 ## Problems & limitations
 **Limitations of Foursquare API**
 - only 50 queries per session, which means that it's not possible to see the full list of coffee shops at one go
@@ -121,8 +128,8 @@ My choice of colours is very self-explanatory:
 <!-- - While testing on various browsers, I came across an error on Mozilla Firefox saying:
 >  "Uncaught (in promise) ReferenceError: can't access lexical declaratio'coffeePlacesList' before initialization" -->
 - For the bookmarks feature to work seamlessly, user is advised
-    - not to immediately click on other shop markers while one is opened (bookmark button has to "reset" before it works)
-    - click on the 'close' or anywhere on the map for the bookmarks button to reset and function when opening the marker again
+    - not to immediately click on other shop markers while one is opened (bookmark button has to "reset" before it works on another marker)
+    - or click on the 'close' or anywhere on the map for the bookmarks button to reset and function when opening the marker again
 
 
 
@@ -150,7 +157,7 @@ My choice of colours is very self-explanatory:
 
 3. Vanilla Javascript
     - Make the whole website work (Effects, clicking on a button will result to e.g a box popping up)
-    - 90% of the content is handled by JS (innerHTML/innerText)
+    - 90% of the content is inserted via javascript (innerHTML/innerText)
 
 4. JSON
     - able to handle lots of information in one file without compromising the file size
@@ -168,7 +175,7 @@ My choice of colours is very self-explanatory:
 
 8. Mapbox
     - to stylise the map tiles
-    - able to choose from certain premade styles or make our own ones
+    - able to choose from certain premade styles or customise our own ones
 
 
 
