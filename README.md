@@ -82,18 +82,19 @@ My choice of colours is very self-explanatory:
 
 
 # Project Complexity Matrix
-No. | Description | Implemented? Y/N
-1 | Consume the GET endpoint of an API, or consume a CSV/JSON file | Yes <br> 1 foursquare API + 1 local JSON file
-2 | Adding or removing DOM elements to the display (map, DOM tree, game screen) base on user's actions | Yes
-3 | Modifying the CSS of DOM elements based on the user's actions | Yes
-4 | Use of 1D traversal of array | Yes
-5 | -
-6 | Each use of CSS layout technique (Bootstrap columns, flex box, grid) | Yes <br> flex box
-7 | Each possible search or filtering criteria in the user interface | Yes <br> Search box in bookmarks tab
-8 | Each case of the map updating base on the user's actions | Yes <br> Map & markers reset when user changes regions
-9 | Each group of layers in the Leaflet map | Yes <br> 1 group
-10 | Each group of marker clustering | Yes <br> 1 marker clustering
-11 | Each type of custom marker (using images or custom behaviour) | Yes <br> Used coffee bean image, added a bookmark button inside of popup
+| No. | Description | Implemented? Y/N |
+|-----|-------------|------------------|
+| 1 | Consume the GET endpoint of an API, or consume a CSV/JSON file | Yes <br> 1 foursquare API + 1 local JSON file |
+| 2 | Adding or removing DOM elements to the display (map, DOM tree, game screen) base on user's actions | Yes |
+| 3 | Modifying the CSS of DOM elements based on the user's actions | Yes |
+| 4 | Use of 1D traversal of array | Yes |
+| 5 | - |
+| 6 | Each use of CSS layout technique (Bootstrap columns, flex box, grid) | Yes <br> flex box |
+| 7 | Each possible search or filtering criteria in the user interface | Yes <br> Search box in bookmarks tab | 
+| 8 | Each case of the map updating base on the user's actions | Yes <br> Map & markers reset when user changes regions |
+| 9 | Each group of layers in the Leaflet map | Yes <br> 1 group |
+| 10 | Each group of marker clustering | Yes <br> 1 marker clustering |
+| 11 | Each type of custom marker (using images or custom behaviour) | Yes <br> Used coffee bean image, added a functional bookmark button inside of popup |
 
 
 
