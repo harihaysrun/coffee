@@ -4,16 +4,53 @@ const arrowIcon = document.getElementById("arrow-icon");
 const regionDropdown = document.getElementById("change-region");
 
 arrowUpBtn.addEventListener("click", function(){
-    // discoverBox.style.bottom = "0";
-    // discoverBox.style.transition = "0.5s ease-in";
-    // discoverBox.style.transform = "-77vh";
     discoverBox.classList.toggle("box-slideup")
     discoverBox.style.transition = "all 0.5s ease-in";
     arrowUpBtn.classList.toggle("arrow-spin");
     arrowUpBtn.style.transition = "all 0.2s linear";
 })
 
-let regions = ['Bedok', 'Tampines', 'Ang Mo Kio', 'Jurong', 'Geylang', 'Toa Payoh']
+let regions = [
+    'Bishan',
+    'Bukit Merah',
+    'Bukit Timah',
+    'Geylang',
+    'Kallang',
+    'Marine Parade',
+    'Newton',
+    'Novena',
+    'Orchard',
+    'Outram',
+    'Queenstown',
+    'Rochor',
+    'Tanglin',
+    'Toa Payoh',
+    'Bedok',
+    'Changi',
+    'Pasir Ris',
+    'Paya Lebar',
+    'Tampines',
+    'Lim Chu Kang',
+    'Sembawang',
+    'Woodlands',
+    'Yishun',
+    'Ang Mo Kio',
+    'Hougang',
+    'Punggol',
+    'Seletar',
+    'Sengkang',
+    'Serangoon',
+    'Boon Lay',
+    'Bukit Batok',
+    'Bukit Panjang',
+    'Choa Chu Kang',
+    'Clementi',
+    'Jurong East',
+    'Jurong West',
+    'Pioneer',
+    'Tengah',
+    'Tuas'
+]
 console.log("regions.length: " + regions.length)
 
 // <option value="1">One</option>

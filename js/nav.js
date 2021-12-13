@@ -35,10 +35,8 @@ desktopCoffeeRandomiser.addEventListener("click", function(){
 // repeated steps put into same function
 function randomiserPopup(){
     
-    // mainPopup_OuterContainer.classList.remove("fade-out");
     mainPopup_OuterContainer.classList.add("fade-in");
 
-    // mainPopup_OuterContainer.style = "width:100%";
     mainPopup_OuterContainer.appendChild(mainPopup_InnerContainer);
     mainPopup_OuterContainer.style.display = "flex";
     mainPopup_OuterContainer.style.backgroundColor = "#482C05";
@@ -62,9 +60,6 @@ function closeButton(){
     function closePopupBox(){
         closePopup.addEventListener("click", function(){
 
-            // mainPopup_OuterContainer.classList.remove("fade-in");
-            // mainPopup_OuterContainer.classList.add("fade-out");
-
             mainPopup_OuterContainer.classList.remove('onlyBookmarksPopup');
             mainPopup_OuterContainer.classList.remove('onlyBookmarksPopup-slideIn');
             mainPopup_OuterContainer.style = "right:0";
@@ -72,12 +67,7 @@ function closeButton(){
             mainPopup_OuterContainer.innerHTML = '';
             mainPopup_InnerContainer.innerHTML = '';
 
-            // mainPopup_OuterContainer.classList.remove("fade-in");
-            // mainPopup_OuterContainer.classList.add("fade-out");
-            // setTimeout(function(){
-                mainPopup_OuterContainer.style.display = "none";
-            //     mainPopup_OuterContainer.style.pointerEvents = "none";
-            // },300)
+            mainPopup_OuterContainer.style.display = "none";
         })
     } 
 
@@ -139,40 +129,6 @@ function bookmarksPopup(){
                                                                 <h4>${bookmarksList[i].shopName}</h4>
                                                                 <small>${bookmarksList[i].shopAddress}</small>
                                                                 </div>`;
-        
-        // const bookmarkedShop = document.querySelectorAll('.bookmarked');
-
-
-        // const bookmarkedShop = document.createElement("div");
-        // bookmarkedShop.className = "indiv-result"
-        // bookmarkedShop.classList.add('bookmarked');
-        // bookmarkedShop.innerHTML = `<h4>${bookmarksList[i].shopName}</h4>
-        //                             <small>${bookmarksList[i].shopAddress}</small>`;
-        // document.getElementById("bookmarks-list").appendChild(bookmarkedShop);
-
-        // bookmarkedShop.addEventListener("click", function(){
-        //     // console.log(bookmarksList[i])
-        //     console.log("coordinates: " + bookmarksList[i].shopCoordinatesLt + bookmarksList[i].shopCoordinatesLg)
-        //     map.flyTo([bookmarksList[i].shopCoordinatesLt, bookmarksList[i].shopCoordinatesLg], 20);
-        // })
-
-
-        // for (let shop of bookmarkedShop){
-        //     shop.addEventListener("click", function(){
-        //         console.log(bookmarksList[i])
-        //         console.log("coordinates: " + bookmarksList[i].shopCoordinatesLt + bookmarksList[i].shopCoordinatesLg)
-        //         map.flyTo([bookmarksList[i].shopCoordinatesLt, bookmarksList[i].shopCoordinatesLg], 20);
-        //     })
-        // }
-    
-        // const bookmarkedShop = document.querySelectorAll('.bookmarked');
-        // for (x=0; x<bookmarkedShop.length; x++){
-        //     bookmarkedShop[x].addEventListener("click", function(){
-        //         console.log(bookmarksList[i])
-        //         console.log("coordinates: " + bookmarksList[i].shopCoordinatesLt + bookmarksList[i].shopCoordinatesLg)
-        //         map.flyTo([bookmarksList[i].shopCoordinatesLt, bookmarksList[i].shopCoordinatesLg], 20);
-        //     })
-        // }
 
     }
 

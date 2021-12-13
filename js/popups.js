@@ -53,37 +53,32 @@ async function mainPopup(){
     }
 }
 
-// choose one from 'coffee randomiser' and 'check out coffee places?'
+// choose one from 'coffee randomiser' and 'check out coffee places'
 function chooseOne(){
 
     const coffeeRandomiser = document.getElementById("coffee-randomiser");
     const coffeePlaces = document.getElementById("coffee-places");
     
     coffeeRandomiser.addEventListener('click', function(){
+
         mainPopup_InnerContainer.innerHTML = '';
 
-        // setTimeout(function(){
+        mainPopup_InnerContainer.classList.add("fade-in");
 
-            // const mainPopupLanding = document.getElementById("main-popup-landing");
-            mainPopup_InnerContainer.classList.add("fade-in");
-
-            mainPopup_randomiser_backBtn();
-            mainPopup_randomiser();
-            generateMap();
-        // }, 500);
+        mainPopup_randomiser_backBtn();
+        mainPopup_randomiser();
+        generateMap();
 
     })
 
     coffeePlaces.addEventListener('click', function(){
-        // mainPopup_OuterContainer.innerHTML = "";
         mainPopup_OuterContainer.style.display = "none";
-        // generateShopList();
         generateMap();
     })
     
 }
 
-// insert 'back' button only on the landing page popup, not the nav link popup
+// insert 'back' button only on the landing page popup, not the navbar link popup
 function mainPopup_randomiser_backBtn(){
     const backBtn = document.createElement("div");
     backBtn.class = "back-to-main";
@@ -103,13 +98,13 @@ function mainPopup_randomiser(){
                                                 <div id="random-coffee">
                                                     <div>
                                                         <img src="" alt="">
-                                                        <h4>Iced Americano</h4>
+                                                        <h4>Coffee</h4>
                                                     </div>
                                                     <p id="coffee-description"></p>
                                                 </div>
                                                 <span>from</span>
                                                 <div id="random-shop">
-                                                    <h3 id="shopName"></h3>
+                                                    <h3 id="shopName">Shop Name</h3>
                                                     <p id="shopAddress">Shop Address</p>
                                                 </div>
                                             </div>
@@ -129,14 +124,12 @@ function mainPopup_randomiser(){
 }
 
 let shopNumber;
-// let coffeePlacesList;
 
-// get a random coffee & shop to recommend user
+// get a random coffee & shop to recommend to user
 async function randomise(){
 
     let coffeeTypeResponse = await axios.get("js/coffee-type.json");
     let coffeeType = coffeeTypeResponse.data.coffee_type;
-    // console.log('coffeeType ' + coffeeType);
 
     // random coffee
     let coffeeTypeNumber = Math.floor(Math.random() * 34);
@@ -167,8 +160,6 @@ function goToShopLocation(){
 
     goToShop.addEventListener('click', function(){
 
-        // console.log("coffeePlacesList: " + coffeePlacesList[shopNumber].name)
-
         let shopID =  coffeePlacesList[shopNumber];
         shopCoordinatesLt = shopID.location.lat;
         shopCoordinatesLg = shopID.location.lng;
@@ -193,14 +184,14 @@ function goToShopLocation(){
 }
 
 // reloads the mainPopup_randomiser(),
-// but only include the 'back' button on the landing page and not nav link popup
+// but only include the 'back' button on the landing page and not navbar link popup
 function anotherRec(){
     const anotherOne = document.getElementsByClassName("btn-red")[0];
     anotherOne.addEventListener('click', function(){
 
         const backtoMain = document.getElementsByClassName("back-to-main");
 
-        // check if 'back' button exists, landing page has it but nav link popup doesn't
+        // check if 'back' button exists, landing page has it but navbar link popup doesn't
         // if it doesn't exist, don't call the mainPopup_randomiser_backBtn() function
         if(backtoMain.length == 1){
             mainPopup_InnerContainer.innerHTML = '';
@@ -220,7 +211,7 @@ function backToMain_btn(){
     const backtoMain = document.getElementsByClassName("back-to-main");         
     // console.log(backtoMain.length)
 
-    // check if 'back' button exists, landing page has it but nav link popup doesn't
+    // check if 'back' button exists, landing page has it but navbar link popup doesn't
     // if it doesn't exist, no actions will take place on click. otherwise will get errors in console log
     if(backtoMain.length == 1){                      
         coffeeLoaded++;    

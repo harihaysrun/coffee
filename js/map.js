@@ -9,7 +9,7 @@
         id: 'mapbox/streets-v11',
         tileSize: 512,
         zoomOffset: -1,
-        accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw' //demo access token
+        accessToken: 'pk.eyJ1Ijoic3k0aGlyNGgiLCJhIjoiY2t4NHI2aTNlMmVnczJvcDg0NzdlMWR6ZyJ9.FNxiyWC8GR1yEf04rcC_-A'
     }).addTo(map);
 
 //     return map;
@@ -28,7 +28,6 @@ let shopCoordinatesLg;
 
 let response;
 const indivShopList = document.getElementsByClassName("discover-results")[0];
-// let coffeeShopClusterLayer;
 
 
 function generateMap(){
@@ -38,8 +37,6 @@ function generateMap(){
 
 };
 
-
-// let coffeeShopClusterLayer = L.layerGroup();
 let coffeeShopClusterLayer = L.markerClusterGroup();
 
 function resetMap(){
@@ -134,48 +131,6 @@ function resetMap(){
 
             // map.closePopup();
             map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 20);
-
-            // setTimeout(function(){
-    
-                // marker.bindPopup(`<h2>${eachshop.name}</h2>
-                //                     <p>${address}</p>
-                //                     <button class="bookmark-btn"><i class="fas fa-star"></i> Add to Bookmarks</button>`, {
-                //                         // minWidth: 300
-                //                     });
-
-                // marker.on('popupopen', function(){
-                //     let bookmarkBtn = document.getElementsByClassName("bookmark-btn")[0];
-                //     console.log("line 160: " + eachshop.name)
-
-                //     bookmarkBtn.addEventListener("click", function(){
-                            
-                //         bookmarkBtn.innerHTML = `<i class="fas fa-star"></i> Added to bookmarks!`;
-                //         bookmarkBtn.style.backgroundColor = "#789361";
-                //         bookmarkBtn.style.color = "#ffffff";
-                //         bookmarkBtn.style.border = "1px solid #526C3B";
-                //         // bookmarksList_indiv = eachshop.name;
-                    
-                //         bookmarksList_indiv = {
-                //             'shopName' : eachshop.name,
-                //             'shopAddress': address,
-                //             'shopCoordinatesLt': shopCoordinatesLt,
-                //             'shopCoordinatesLg': shopCoordinatesLg
-                //         };
-                //         // console.log(bookmarksList_indiv)
-
-                //         updateBooksmarksList();
-                //         // console.log("clicked on " + bookmarksList_indiv);
-
-                //         setTimeout( function(){
-                //             map.closePopup();
-                //         }, 700)
-
-                //     })
-
-                // });
-
-                // marker.openPopup([shopCoordinatesLt, shopCoordinatesLg]);
-            // },1500)
             
             discoverBox.classList.remove("box-slideup")
             discoverBox.style.transition = "all 0.5s ease-in";
