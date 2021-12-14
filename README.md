@@ -226,7 +226,7 @@ Search function in the bookmarks popup
 
 | Step No. | Description | Expected result |
 | --------- | ---------- | --------------- |
-| 1. | **On mobile & tab:** <br> 1. Click on the hamburger menu icon at the top right <br> 2. Click on "Bookmarks" tab <br><br> **On desktop:**<br>Click on the "Bookmarks" button in the navbar  | **On mobile & tab:** <br> Hamburger menu drops down, bookmarks window will pop up <br><br> **On desktop:** <br> Bookmarks window will pop up| 
+| 1. | **On mobile:** <br> 1. Click on the hamburger menu icon at the top right <br> 2. Click on "Bookmarks" tab <br><br> **On tab & desktop:**<br>Click on the "Bookmarks" button in the navbar  | **On mobile:** <br> Hamburger menu drops down, bookmarks window will pop up <br><br> **On tab & desktop:** <br> Bookmarks window will pop up| 
 | 2. | Scroll through whole list | Listing is not clickable |
 | 3. | In the case that there's an interesting name that stays on your mind (but you can't remember its full name), type what you remember in the search bar | Search results won't automatically appear |
 | 4. | Click on the search icon button | Relevant results will appear |
@@ -275,7 +275,7 @@ Search function in the bookmarks popup
 
 ## Errors I ran into:
 
-1. Clicking on the "Coffee Randomiser" or "Check out coffee places" buttons even before the API has been called, which causes multiple errors and the application to not function
+1. Clicking on the "Coffee Randomiser" or "Check out coffee places" buttons even before the API has been called causes multiple errors and the application to not function
     - to fix this error, I have added a short loader animation of a floating cup, which lasts for 0.3s, so that the array will already be loaded when user is presented with the two buttons
 
 2. Foursquare had an update (V2 -> V3) shortly after learning it in class, causing things to work differently. The Client ID & Client Secret keys that were generated on my own account do not work
