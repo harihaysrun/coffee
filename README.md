@@ -213,10 +213,7 @@ examiner must be able to follow your test case -->
 
 | Step No. | Description | Expected result |
 | --------- | ---------- | --------------- |
-| 1. | **On mobile & tab:** |                                       **On mobile & tab:** |
-|    |  1. Click on the hamburger menu icon at the top right           | hamburger menu drops down, bookmarks window will popup
-|    |  2. Click on "Bookmarks" tab                                    |
-|    | **On desktop:** Click on the "Bookmarks" button in the navbar   |
+| 1. | **On mobile & tab:** <br> 1. Click on the hamburger menu icon at the top right <br> 2. Click on "Bookmarks" tab <br> **On desktop:** Click on the "Bookmarks" button in the navbar  | **On mobile & tab:** <br> Hamburger menu drops down, bookmarks window will pop up <br> **On desktop:** <br> Bookmarks window will pop up| 
 | 2. | Scroll through whole list | Listing is not clickable |
 | 3. | In the case that there's an interesting name that stays on your mind (but you can't remember its full name), type what you remember in the search bar | Search results won't automatically appear |
 | 4. | Click on the search icon button | Relevant results will appear |
@@ -227,8 +224,8 @@ examiner must be able to follow your test case -->
 
 **Rationale for adding a search bar in the bookmarks and not in the discover box**
 - I, the site owner, assume that users are here to look for new shops
-- If they don't know that a certain shop exists, they won't know or have any keywords to search up on the discover box
-- Get the users to click on the markers and not rely heavily on the discover box
+- If they don't know that a certain shop exists, they won't know or have any keywords to search up in the discover box
+- I would want the users to click on the shop markers and not rely heavily on the discover box
 - When they've already bookmarked certain shops, they would be more inclined to search for the names that intrigue them
 
 
@@ -246,16 +243,21 @@ examiner must be able to follow your test case -->
 <!-- - While testing on various browsers, I came across an error on Mozilla Firefox saying:
 >  "Uncaught (in promise) ReferenceError: can't access lexical declaratio'coffeePlacesList' before initialization" -->
 
-- Leaflet marker not popping up automatically
+1. Leaflet marker not popping up automatically
     - couldn't get the markers to open automatically when clicking on the shop in the discover box
     - added some instructions so that they'll have to click on the icons first
 
-- For the bookmarks feature to work seamlessly, user is advised either
+2. For the bookmarks feature to work seamlessly, user is advised either
     - not to immediately click on other shop markers while one is opened
     - or click on the 'close' or anywhere on the map before clicking on others (bookmark button has to "reset" before it works on another marker)
 
-- Even though a specific region is chosen, shops from other areas (and even countries – Malaysia & Indonesia) show up
+3. Even though a specific region is chosen, shops from other areas (and even countries – Malaysia & Indonesia) show up
     - setting a radius in the parameters of the API call helped to narrow it down
+
+5. UI not appearing as intended on iOS 15
+    - The bottom position of the search bar in Safari causes issues with the UI
+    - The discover box is supposed to be hidden below the 100% height of the browser window (overflow:hidden)
+        - In iOS 15, when you scroll up, the search bar collapses downwards, exposing the rest of the discover box (a small issue but still bugs me)
 
 
 ## Errors I ran into:
@@ -267,18 +269,12 @@ examiner must be able to follow your test case -->
     - After extensive testing, I discovered that this seems to be a Foursquare issue, so I've contacted Foursquare's support for help. I'm still waiting for a response from them to this day
     - Thank you Neel for letting me use your keys & taking some time out to figure out what went wrong, appreciate your help very much
 
-3. UI not working as smoothly on iOS 15
-    - when Apple shifted the position of the search bar in Safari to the bottom, it made my UI work not as smoothly as I thought it would. Here's the thing that bugs me the most:
-        - The discover box is hidden below the 100% height of the browser window
-        - If you're not familiar with how iOS 15 works, when you scroll up, the search bar collapses
-        - And when it collapses, it exposes the rest of my discover box (which I've purposely hidden for aesthetic purposes)
-
 
 ## Feedbacks I've received
 1. Other than the regions, perhaps I could add in another dropdown to sort the shops according to types of coffee (like the ones in the randomiser)
     - **Did I implement this feature?** No
-    - **Why?** Information derivedfrom Foursquare Venue API is not extensive enough and doesn't include further info
-    - **What could I have done?** My initial plan was to use Foursquare Places API, since it seems to have more information, however due to unexpected errors I faced when trying to make the API call (authorization keys, Client ID & Client Secret not working, CORS errors), I've decided to stick to the Venues API since it was working for me
+    - **Why?** Information derived from Foursquare Venue API is not extensive enough
+    - **What could I have done?** My initial plan was to use Foursquare Places API, since it contains more information. However, due to unexpected errors I faced (authorization keys, Client ID & Client Secret not working, CORS errors), I've decided to stick to the Venues API since it was working for me
 
 2. Make some indication for CTA buttons
     - **Did I implement this feature?** Yes
@@ -297,14 +293,13 @@ examiner must be able to follow your test case -->
 
 
 # This project has been tested on:
-| Mac OS:             | Windows 10       |
-| ------------------- | ---------------- |
-| Google Chrome       | Google Chrome    |
-| Safari              | Microsoft Edge   |
-| Microsoft Edge      |                  |
-| Mozilla Firefox     |                  |
-|----------------------------------------|
-| iPhone 12 Mini (ios 15) | Samsung ??? | 11" iPad Pro 2018 |
+| Macbook Pro         | Windows 10       | Other Devices           |
+| ------------------- | ---------------- | ----------------------- |
+| Google Chrome       | Google Chrome    | iPhone 12 Mini (iOS 15) |
+| Safari              | Microsoft Edge   | Samsung ???             |
+| Microsoft Edge      |                  | 11" iPad Pro 2018       |
+| Mozilla Firefox     |                  |                         |
+
 
 
 
