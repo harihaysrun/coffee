@@ -1,9 +1,10 @@
 # Where's my coffee?
-Can't decide which coffee to drink?
+<!-- Can't decide which coffee to drink? -->
 <!-- Insert the iamge of the design across the 3 devices here -->
 
+<img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/main.png">
 
-# Project name and summary
+<!-- # Project name and summary -->
 "What coffee should I drink today?" is a question I find myself asking rather frequently. I tend to stick to the same order (cold brew) at the same two shops (Starbucks / Coffee Bean). Life won't be interesting if we keep drinking the same coffee every day for the rest of our lives.
 
 This inspired me to start "Where's my coffee?", a coffee shop explorer and randomiser that recommends users a type of coffee and shop, so that they can go on to explore the shop's menu and perhaps even make an order with them.
@@ -14,7 +15,6 @@ If you find yourself asking the same question like I do, then this is for you.
 
 **As the site owner, I want to:**
 - Allow users to discover coffee shops
-- Pre-set some search terms for the users so they won't have to do so (in this case, 'coffee', 'cafe', 'bistro')
 - decide type of coffee to drink for the user
 - introduce user to different types of coffee
 
@@ -76,7 +76,8 @@ My choice of colours is very self-explanatory:
 ## Font choice
 - As mentioned, the key word for my design is 'round'. I wanted a font that matches the overall look and feel but at the same be legible on smaller body text
 - Some fonts that were shortlisted:
-<img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/fonts.jpg">
+
+    <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/fonts.jpg">
     1. Poppins
     2. Nunito
     3. Rubik - Decided to go with this. It's not too wide, rounded but has a slight sharpness to it, and the font weight makes it the most legible of the bunch 
@@ -91,9 +92,11 @@ My choice of colours is very self-explanatory:
 <!-- list down major features of the application, and also the algorithms you have used to implement those features. if there are any limitations or bugs, please describe them as well. if you have any features pending implementation, you can also take the opportunity to discuss them here -->
 
 ## Features
-- coffee shop map explorer
-- randomiser (for both coffee type & shop)
-- bookmarks function
+- Coffee shop map explorer
+    - explore by regions (dropdown)
+    - Pre-set some search terms in the code so the users won't have to do so (in this case, 'coffee', 'cafe', 'bistro')
+- Randomiser (for both coffee type & shop)
+- Bookmarks function
 
 ## Pending Implementions
 - (If Foursquare API isn't used in this website) A form for user to submit a shop that's not on the list
@@ -235,7 +238,7 @@ examiner must be able to follow your test case -->
 
 # Limitations, bugs and errors
 
-## Limitations of Foursquare API**
+## Limitations of Foursquare API
 
 - only 50 queries per second, which means that it's not possible to see the full list of coffee shops at one go
 
