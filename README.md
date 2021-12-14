@@ -6,7 +6,7 @@ Can't decide which coffee to drink?
 # Project name and summary
 "What coffee should I drink today?" is a question I found myself asking rather frequently. Drinking the same coffee over and over again gets pretty mundane over time. On weekdays, cold brew. On weekends, cold brew again. Life won't be too interesting if I were to keep drinking the same coffee every day for the rest of my life.
 
-This inspired me to start "Where's my coffee?", a randomiser that recommends users a type of coffee and shop, so that they can go on to explore that shop's menu or perhaps even make an order with them. There's more to life than just Starbucks and Coffee Bean...
+This inspired me to start "Where's my coffee?", a randomiser that recommends users a type of coffee and shop, so that they can go on to explore the shop's menu and perhaps even make an order with them.
 
 If you find yourself asking the same question like I do, then this is for you.
 
@@ -14,6 +14,22 @@ If you find yourself asking the same question like I do, then this is for you.
 
 Include a URL to the deployed version of the project -->
 
+
+
+## What I want to achieve with this application
+
+As the site owner, I want to:
+- allow users to discover new shops
+- Pre-set some search terms for the users so they won't have to do so (in this case, 'coffee', 'cafe', 'bistro')
+- decide type of coffee to drink for the user
+- introduce user to different types of coffee
+
+
+Putting myself in the shoes of the end user, I would want to:
+- easily check out coffee shops
+- find interesting shops and add them to my bookmarks <!-- so that I won't have to search through the map again later on -->
+- have a machine decide for me a drink I should try out
+- UI that's pleasing to look at so it won't repel me/drive me away from using it
 
 
 
@@ -24,26 +40,13 @@ Include a URL to the deployed version of the project -->
 
 describe the considerations for the five planes of ui/ux, such as the choice of color & fonts, or information strategy for the structure plane. -->
 
-## What I want to achieve with this application
-
-As the site owner, I want to:
-- Pre-set some search terms for the users so they won't have to do so (in this case, 'coffee', 'cafe', 'bistro')
-- decide type of coffee to drink for the user
-- introduce user to different types of coffee
-
-
-Putting myself in the shoes of the end user, I would want to:
-- easily check out coffee shops
-- find interesting shops and add them to my bookmarks so that I won't have to search through the map again later on
-- have a machine decide for me a drink I should try out
-- UI that's pleasing to look at so it won't repel me/drive me away from using it
-
-
 ## Wireframes
 It's important to start with the wireframes before moving on with the development.
 
 **Flow/Sitemap**
 <!-- sitemap pic here -->
+
+<img src="../images/readme/sitemap.jpg">
 
 **Inspiration**
 Taking inspiration from <a href="">Hince</a>'s website, I decided to adopt the rounded navbar design.
@@ -177,6 +180,7 @@ My choice of colours is very self-explanatory:
     - to stylise the map tiles
     - able to choose from certain premade styles or customise our own ones
 
+9. Google Fonts, FontAwesome
 
 
 # Testing
@@ -194,7 +198,7 @@ My choice of colours is very self-explanatory:
 
 3. Used console.log on everything to make sure that everything's working
 
-4. Tested my project on these browsers on Mac OS:
+4. This project has been tested on these browsers on Mac OS:
     - Google Chrome
     - Safari
     - Microsoft Edge
@@ -216,7 +220,7 @@ My choice of colours is very self-explanatory:
         - And when it collapses, it exposes the rest of my discover box (which I've purposely hidden for aesthetic purposes)
 
 
-**Feedback I've received**
+**Feedbacks I've received**
 1. Other than the regions, perhaps I could add in another dropdown to sort the shops according to types of coffee (like the ones in the randomiser)
     - **Did I implement this feature?** No
     - **Why?** Based on Foursquare Venue API's information for each location, it's not extensive enough and doesn't include further info like shop specialties and menus
@@ -234,7 +238,7 @@ any assumptions or prerequisites
 
 examiner must be able to follow your test case -->
 
-## Test Case 1: "Wow shops""
+## Test Case 1: "Wow shops"
 1. From the main page, click on "Check out coffee places"
 2. Pan and zoom on the map
 3. Click on the coffee beans to see shop name, address & bookmarks button
@@ -266,9 +270,9 @@ examiner must be able to follow your test case -->
 
 
 **Rationale for adding a search bar in the bookmarks and not in the discover box**
-- Adding a search function in the discover box might be redundant because I, as the site owner, assume that users are here to look for new shops
-- If they don't know that a certain shop exists, they won't search for it
-- Get the users to click on the markers and not rely heavily on the discover box (that's what shopping malls do - the hidden agenda of making shoppers walk through the whole mall by placing escalators on opposite ends)
+- Adding a search function in the discover box might be redundant because I, as the site owner, automatically assume that users are here to look for new shops
+- If they don't know that a certain shop exists, they won't know or have any keywords to search it up
+- Get the users to click on the markers and not rely heavily on the discover box (free roam)
 - But when they've already bookmarked certain shops, they would be more inclined to search for the name that intrigues them the most
 
 
@@ -276,8 +280,8 @@ examiner must be able to follow your test case -->
 <!-- describe the process you used to host your website. -->
 
 1. Used Visual Studio Code
-2. Pushed to Github repository by using the Github Desktop Client (lovely and intuitive GUI)
-3. Utilised the Live Server extension to view UI updates in real time on browser upon saving the files
+2. Utilised the Live Server extension to view UI updates on the browser in real time upon saving the files
+3. Pushed to Github repository via Github Desktop Client (lovely and intuitive GUI)
 4. From Github, make the repository public (if it's private)
 5. Publish GitHub page to view project on a live URL
 
@@ -294,3 +298,4 @@ examiner must be able to follow your test case -->
 - https://developer.foursquare.com/reference/v2-venues-search
 - wikipedia of sg neighbourhoods
 - Neel
+- Google Fonts
