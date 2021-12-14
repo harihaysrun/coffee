@@ -78,9 +78,9 @@ My choice of colours is very self-explanatory:
     <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/fonts.jpg">
     <br>
     1. Poppins
-
+    <br>
     2. Nunito
-    
+    <br>
     3. Rubik - Decided to go with this. It's not too wide, rounded but has a slight sharpness to it, and the font weight makes it the most legible of the bunch 
 
 ## Icons
