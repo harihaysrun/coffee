@@ -12,15 +12,15 @@ If you find yourself asking the same question like I do, then this is for you.
 
 <!-- Make sure to justify why the project should exist -->
 
-###### As the site owner, I want to:
+**As the site owner, I want to:**
 - Allow users to discover coffee shops
 - Pre-set some search terms for the users so they won't have to do so (in this case, 'coffee', 'cafe', 'bistro')
 - decide type of coffee to drink for the user
 - introduce user to different types of coffee
 
-###### Putting myself in the shoes of the end user, I would want to:
+**Putting myself in the shoes of the end user, I would want to:**
 - easily check out coffee shops
-- find interesting shops and add them to my bookmark
+- find interesting shops and add them to my bookmarks list
 - have a machine decide for me a drink I should try out
 - UI that's pleasing to look at so it won't repel me/drive me away from using it
 
@@ -35,51 +35,52 @@ If you find yourself asking the same question like I do, then this is for you.
 
 describe the considerations for the five planes of ui/ux, such as the choice of color & fonts, or information strategy for the structure plane. -->
 
-###### Flow/Sitemap:
+**Flow/Sitemap:**
 <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/sitemap3.jpg">
 
-###### Design Element Inspiration:
-Taking inspiration from <a href="https://hince.co.kr/" target="_blank">Hince</a>'s website, I decided to adopt the rounded navbar on my website.
+**Design Element Inspiration:**
+Taking inspiration from <a href="https://hince.co.kr/" target="_blank">Hince</a>'s website, I decided to adopt the rounded navbar design.
 
 
-###### Wireframes:
+**Wireframes:**
 
-Here are the selected wireframes/mockups I've done up, some of which have been omitted along the way as I worked on the codes:
+Here are the selected wireframes/mockups I've done up, some of which have been omitted along the way as I worked on the codes.  Design for tablet view is not included as it's similar to mobile view. To view full set of wireframes, you may click <a href="https://xd.adobe.com/view/154ab4c9-fc0d-4a62-b14c-7f24e534c6ee-4019/">here</a>.
 
 <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/mockups.jpg">
 
-Design for tab view is not included because it's similar to mobile view. To view full set of wireframes, you can click <a href="https://xd.adobe.com/view/154ab4c9-fc0d-4a62-b14c-7f24e534c6ee-4019/">here</a>.
 
+**Responsive design features**
+1. Mobile:
+- Hamburger menu at the top right hand corner
+- A collapsible discover box due to the lack of screen real estate
 
-###### Responsive design features
-1. Mobile & Tab:
-    - Hamburger menu for mobile & tablet views
-    - A collapsible discover box due to the lack of screen real estate
+2. Tab
+- Similar to mobile view with the exception of a full navigation bar instead of a hamburger menu
 
 2. Desktop:
-    - Full nav bar for desktop view
-    - Due to the design, only footer is visible on desktop
-    - the curved navbar design is removed, but is implemented in the background
-    - implementation of :hover styling in the css
+- Full navigation bar
+- Due to the design, only footer is visible on desktop
+- the curved navbar design is removed, but implemented in the background
+- addition of hover styling in the css for buttons & interactive items
 
 
 ## Colours
 My choice of colours is very self-explanatory:
-- Mainly hues of brown and beige to represent coffee and cream
-- A tinge of desaturated green for my fellow matcha lovers out there
-- and red to represent the dissatisfactory button/function
-- The edges of the boxes have a border-radius of 15px, which is neither too rounded or sharp, to imitate the roundness of a coffee bean/cup
+- Mainly hues of brown and beige to represent coffee, cream and milk
+- A tinge of desaturated green and red to represent a yes/no situation
+- The boxes have a border-radius of 15px, which is neither too rounded or sharp, to imitate the roundness of a coffee bean/cup
 
 ## Font choice
-- Again, the key visual of my moodboard is roundedness. I wanted a font that portrays this well to match the overall look and feel
+- As mentioned, the key word for my design is 'round'. I wanted a font that the overall look and feel but at the same legible on smaller body text
 - Some fonts that were shortlisted:
-    1. Inter
+<img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/fonts.jpg">
+    1. Poppins
     2. Nunito
-    3. Rubik - Decided to go with this because it's the perfect in between – not too sharp or rounded
+    3. Rubik - Decided to go with this. It's not too wide, rounded but has a slight sharpness to it, and the font weight makes it the most legible of the bunch 
 
 ## Icons
-- Rather than using realistic images, I chose to use icons as they're simpler, and don't clash with the intricateness of the map
-- Icons were either made on Illustrator or sourced from Flaticons and Fontawesome
+- Rather than using realistic images, I chose to use icons as they're simpler, and won't clash with the intricateness of the map
+- Icons were either made on Adobe Illustrator or sourced from Flaticon and Font Awesome
 
 
 
