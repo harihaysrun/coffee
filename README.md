@@ -5,9 +5,7 @@
 <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/main.png">
 
 <!-- # Project name and summary -->
-"What coffee should I drink today?" is a question I find myself asking rather frequently. I tend to stick to the same order (cold brew) at the same two shops (Starbucks / Coffee Bean). Life won't be interesting if we keep drinking the same coffee every day for the rest of our lives.
-
-This inspired me to start "Where's my coffee?", a coffee shop explorer and randomiser that recommends users a type of coffee and shop, so that they can go on to explore the shop's menu and perhaps even make an order with them.
+"What coffee should I drink today?" is a question I find myself asking rather frequently. I tend to stick to the same coffee type (cold brew) when I'm at home or outside. The repetitiveness of drinking the same coffee every day has inspired me to start "Where's my coffee?", a coffee shop explorer and randomiser that recommends users a type of coffee and shop, so that they can go on to explore the shop's menu and perhaps even make an order with them.
 
 If you find yourself asking the same question like I do, then this is for you.
 
@@ -15,16 +13,16 @@ If you find yourself asking the same question like I do, then this is for you.
 
 **As the site owner, I want to:**
 - Allow users to discover coffee shops
-- decide type of coffee to drink for the user
-- introduce user to different types of coffee
+- Suggest type of coffee and shop to the user
+- Introduce user to different types of coffee
 
-**Putting myself in the shoes of the end user, I would want to:**
-- easily check out coffee shops
-- find interesting shops and add them to my bookmarks list
-- have a machine decide for me a drink I should try out
-- UI that's pleasing to look at so it won't repel me/drive me away from using it
+**Putting myself in the shoes of the end user, I want to:**
+- Easily check out coffee shops
+- Find interesting shops and note them down for future reference
+- Have a machine decide a drink for me since I'm undecisive
+- use an app that has a pleasing UI to look at so it won't repel me/drive me away from using it
 
-
+Here's the link to my project: <a href="https://harihaysrun.github.io/coffee/">Where's my coffee?</a>
 <!-- Include a URL to the deployed version of the project -->
 
 
@@ -51,7 +49,7 @@ Here are the selected wireframes/mockups I've done up, some of which have been o
 <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/mockups.jpg">
 
 
-**Responsive design features**
+## Responsive design features
 
 1. Mobile:
     - Hamburger menu at the top right hand corner
@@ -78,6 +76,7 @@ My choice of colours is very self-explanatory:
 - Some fonts that were shortlisted:
 
     <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/fonts.jpg">
+    <br>
     1. Poppins
     2. Nunito
     3. Rubik - Decided to go with this. It's not too wide, rounded but has a slight sharpness to it, and the font weight makes it the most legible of the bunch 
@@ -94,7 +93,7 @@ My choice of colours is very self-explanatory:
 ## Features
 - Coffee shop map explorer
     - explore by regions (dropdown)
-    - Pre-set some search terms in the code so the users won't have to do so (in this case, 'coffee', 'cafe', 'bistro')
+    <!-- - Pre-set some search terms in the code so the users won't have to do so (in this case, 'coffee', 'cafe', 'bistro') -->
 - Randomiser (for both coffee type & shop)
 - Bookmarks function
 
@@ -141,8 +140,11 @@ My choice of colours is very self-explanatory:
 9. Google Fonts
     - Font used for this project: <a href="">Rubik</a>
 
-10. FontAwesome
+10. Font Awesome
     - Search & Reset icons in the bookmarks popup
+
+10. Flaticon
+    - Coffee bean icon for the markers
 
 
 ## Project Complexity Matrix
@@ -153,7 +155,7 @@ My choice of colours is very self-explanatory:
 | 3 | Modifying the CSS of DOM elements based on the user's actions | Yes |
 | 4 | Use of 1D traversal of array | Yes |
 | 5 | Each use of a unique functional mapping method (map, reduce, filter) | - |
-| 6 | Each use of CSS layout technique (Bootstrap columns, flex box, grid) | Yes <br> flex box |
+| 6 | Each use of CSS layout technique (Bootstrap columns, flex box, grid) | Yes <br> Flex box |
 | 7 | Each possible search or filtering criteria in the user interface | Yes <br> Search box in bookmarks tab | 
 | 8 | Each case of the map updating base on the user's actions | Yes <br> Map & markers reset when user changes regions |
 | 9 | Each group of layers in the Leaflet map | - |
@@ -172,6 +174,8 @@ examiner must be able to follow your test case -->
 
 ## Test Case 1: "Wow shops"
 
+If user is only interested in exploring shops
+
 <!-- | Image here | -->
 
 | Step No. | Description | Expected result |
@@ -186,6 +190,8 @@ examiner must be able to follow your test case -->
 
 
 ## Test Case 2A: "I'm just here for the coffee, not the shops"
+
+If user is not interested in the map, only the coffee randomiser
 
 <!-- | Image here | -->
 
@@ -206,17 +212,19 @@ examiner must be able to follow your test case -->
 | 1. | Click on the "Coffee Randomiser" button on the top right hand corner of the nav bar | Popup window will appear and suggest a random coffee & shop |
 | 2. | If you're not interested in the recommendation, click on "Give me another one" | Content in the box refreshes to generate another suggestion |
 | 3. | Once satisfied, click on "Take Me There" | Popup disappears and map shows up, zooming in to the location of the shop |
-| 4. | If not satisfied, click on the close (X) at the top right hand corner | Popup closes, yoy may resume exploring the map |
+| 4. | If not satisfied, click on the close button (X) at the top right hand corner | Popup closes, you may resume exploring the map |
 
 
 
 ## Test Case 3: "What was the name of that shop again...?"
 
+Search function in the bookmarks popup
+
 <!-- | Image here | -->
 
 | Step No. | Description | Expected result |
 | --------- | ---------- | --------------- |
-| 1. | **On mobile & tab:** <br> 1. Click on the hamburger menu icon at the top right <br> 2. Click on "Bookmarks" tab <br> **On desktop:** Click on the "Bookmarks" button in the navbar  | **On mobile & tab:** <br> Hamburger menu drops down, bookmarks window will pop up <br> **On desktop:** <br> Bookmarks window will pop up| 
+| 1. | **On mobile & tab:** <br> 1. Click on the hamburger menu icon at the top right <br> 2. Click on "Bookmarks" tab <br><br> **On desktop:**<br>Click on the "Bookmarks" button in the navbar  | **On mobile & tab:** <br> Hamburger menu drops down, bookmarks window will pop up <br><br> **On desktop:** <br> Bookmarks window will pop up| 
 | 2. | Scroll through whole list | Listing is not clickable |
 | 3. | In the case that there's an interesting name that stays on your mind (but you can't remember its full name), type what you remember in the search bar | Search results won't automatically appear |
 | 4. | Click on the search icon button | Relevant results will appear |
@@ -250,12 +258,12 @@ examiner must be able to follow your test case -->
     - couldn't get the markers to open automatically when clicking on the shop in the discover box
     - added some instructions so that they'll have to click on the icons first
 
-2. For the bookmarks feature to work seamlessly, user is advised either
+2. For the bookmarks feature to work seamlessly, user is advised either:
     - not to immediately click on other shop markers while one is opened
-    - or click on the 'close' or anywhere on the map before clicking on others (bookmark button has to "reset" before it works on another marker)
+    - or click on the 'close' button or anywhere on the map before clicking on others (bookmark button has to "reset" before it works on another marker)
 
-3. Even though a specific region is chosen, shops from other areas (and even countries – Malaysia & Indonesia) show up
-    - setting a radius in the parameters of the API call helped to narrow it down
+3. Even though a specific region is chosen, shops from other areas (and even countries – Malaysia & Indonesia) showed up
+    - setting a radius in the parameters of the API call helped to narrow the search down
 
 5. UI not appearing as intended on iOS 15
     - The bottom position of the search bar in Safari causes issues with the UI
