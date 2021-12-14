@@ -233,9 +233,9 @@ Search function in the bookmarks popup
 | 5. | Click on the reset icon next to the search button | View all bookmarks again |
 | 6. | Click on the close button to go back to the map | Popup closes |
 
+<br>
 
-
-**Rationale for adding a search bar in the bookmarks and not in the discover box**
+**Rationale for adding a search bar in the bookmarks and not in the discover box:**
 - I, the site owner, assume that users are here to look for new shops
 - If they don't know that a certain shop exists, they won't know or have any keywords to search up in the discover box
 - I would want the users to click on the shop markers and not rely heavily on the discover box
