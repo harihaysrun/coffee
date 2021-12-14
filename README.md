@@ -76,7 +76,7 @@ My choice of colours is very self-explanatory:
 ## Font choice
 - As mentioned, the key word for my design is 'round'. I wanted a font that matches the overall look and feel but at the same be legible on smaller body text
 - Some fonts that were shortlisted:
-    <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/fonts.jpg">
+<img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/fonts.jpg">
     1. Poppins
     2. Nunito
     3. Rubik - Decided to go with this. It's not too wide, rounded but has a slight sharpness to it, and the font weight makes it the most legible of the bunch 
@@ -169,60 +169,59 @@ examiner must be able to follow your test case -->
 
 ## Test Case 1: "Wow shops"
 
-| Image here |
-| ---------- |
-| Step No. | Description | Expected result
-| --------- | ---------- | ---------------
-| 1. | From the main page, click on "Check out coffee places" | Popup disappears and map shows up
-| 2. | On mobile, click on the arrow at the top of the discover box | discover box moves upwards and unveils itself
-| 3. | Sift through the listings in the discover box & click on them | (mobile: discover box collapses downwards and) Map zooms in to the store's location
-| 4. | Click on the coffee beans | You will see the shop name, address & bookmarks button
-| 5. | Click on "Add to bookmarks" if the shop intrigues you | "Add to bookmarks" changes to "Added to bookmarks!"
-| 6. | Change regions to see shops in specific locations | A dialog box will popup to indicate that you're changing regions, and the map will refresh & plant new markers
+<!-- | Image here | -->
+
+| Step No. | Description | Expected result |
+| --------- | ---------- | --------------- |
+| 1. | From the main page, click on "Check out coffee places" | Popup disappears and map shows up |
+| 2. | On mobile, click on the arrow at the top of the discover box | discover box moves upwards and unveils itself |
+| 3. | Sift through the listings in the discover box & click on them | (mobile: discover box collapses downwards and) Map zooms in to the store's location |
+| 4. | Click on the coffee beans | You will see the shop name, address & bookmarks button |
+| 5. | Click on "Add to bookmarks" if the shop intrigues you | "Add to bookmarks" changes to "Added to bookmarks!" |
+| 6. | Change regions to see shops in specific locations | A dialog box will popup to indicate that you're changing regions, and the map will refresh & plant new markers |
 
 
 
 ## Test Case 2A: "I'm just here for the coffee, not the shops"
 
-| Image here |
-| ---------- |
-| Step No. | Description | Expected result
-| --------- | ---------- | ---------------
-| 1. | From the main page, click on the "Coffee Randomiser" button | A coffee type and shop will be generated
-| 2. | If you're not interested in the recommendation, click on "Give me another one" | Content in the box refreshes to generate another suggestion
-| 3. | Once satisfied, click on "Take Me There" | Popup disappears and map shows up, zooming in to the location of the shop
+<!-- | Image here | -->
+
+| Step No. | Description | Expected result |
+| --------- | ---------- | --------------- |
+| 1. | From the main page, click on the "Coffee Randomiser" button | A coffee type and shop will be generated |
+| 2. | If you're not interested in the recommendation, click on "Give me another one" | Content in the box refreshes to generate another suggestion |
+| 3. | Once satisfied, click on "Take Me There" | Popup disappears and map shows up, zooming in to the location of the shop |
 
 
 
 ## Test Case 2B: "Cool shops, now what should I drink?"
 
-| Image here |
-| ---------- |
-| Step No. | Description | Expected result
-| --------- | ---------- | ---------------
-| 1. | Click on the "Coffee Randomiser" button on the top right hand corner of the nav bar | Popup window will appear and suggest a random coffee & shop
-| 2. | If you're not interested in the recommendation, click on "Give me another one" | Content in the box refreshes to generate another suggestion
-| 3. | Once satisfied, click on "Take Me There" | Popup disappears and map shows up, zooming in to the location of the shop
-| 4. | If not satisfied, click on the close (X) at the top right hand corner | Popup closes, yoy may resume exploring the map
+<!-- | Image here | -->
+
+| Step No. | Description | Expected result |
+| --------- | ---------- | --------------- |
+| 1. | Click on the "Coffee Randomiser" button on the top right hand corner of the nav bar | Popup window will appear and suggest a random coffee & shop |
+| 2. | If you're not interested in the recommendation, click on "Give me another one" | Content in the box refreshes to generate another suggestion |
+| 3. | Once satisfied, click on "Take Me There" | Popup disappears and map shows up, zooming in to the location of the shop |
+| 4. | If not satisfied, click on the close (X) at the top right hand corner | Popup closes, yoy may resume exploring the map |
 
 
 
 ## Test Case 3: "What was the name of that shop again...?"
 
-| Image here |
-| ---------- |
-| Step No. | Description | Expected result
-| --------- | ---------- | ---------------
-| 1. | **On mobile & tab:** |                                       **On mobile & tab:**
-        1. Click on the hamburger menu icon at the top right            hamburger menu drops down, bookmarks window will popup
-        2. Click on "Bookmarks" tab
-       **On desktop**
-        1. Click on the "Bookmarks" button in the navbar
-| 2. | Scroll through whole list | Listing is not clickable
-| 3. | In the case that there's an interesting name that stays on your mind (but you can't remember its full name), type what you remember in the search bar | Search results won't automatically appear
-| 4. | Click on the search icon button | Relevant results will appear
-| 5. | Click on the reset icon next to the search button | View all bookmarks again
-| 6. | Click on the close button to go back to the map | Popup closes
+<!-- | Image here | -->
+
+| Step No. | Description | Expected result |
+| --------- | ---------- | --------------- |
+| 1. | **On mobile & tab:** |                                       **On mobile & tab:** |
+|    |  1. Click on the hamburger menu icon at the top right           | hamburger menu drops down, bookmarks window will popup
+|    |  2. Click on "Bookmarks" tab                                    |
+|    | **On desktop:** Click on the "Bookmarks" button in the navbar   |
+| 2. | Scroll through whole list | Listing is not clickable |
+| 3. | In the case that there's an interesting name that stays on your mind (but you can't remember its full name), type what you remember in the search bar | Search results won't automatically appear |
+| 4. | Click on the search icon button | Relevant results will appear |
+| 5. | Click on the reset icon next to the search button | View all bookmarks again |
+| 6. | Click on the close button to go back to the map | Popup closes |
 
 
 
@@ -298,14 +297,14 @@ examiner must be able to follow your test case -->
 
 
 # This project has been tested on:
-| Mac OS:             | Windows 10        
-| ------------------- | ----------------
-| - Google Chrome     | - Google Chrome
-  - Safari              - Microsoft Edge 
-  - Microsoft Edge
-  - Mozilla Firefox
-|-------------------------------------------
-| iPhone 12 Mini (ios 15) | Samsung ??? | 11" iPad Pro 2018
+| Mac OS:             | Windows 10       |
+| ------------------- | ---------------- |
+| Google Chrome       | Google Chrome    |
+| Safari              | Microsoft Edge   |
+| Microsoft Edge      |                  |
+| Mozilla Firefox     |                  |
+|----------------------------------------|
+| iPhone 12 Mini (ios 15) | Samsung ??? | 11" iPad Pro 2018 |
 
 
 
