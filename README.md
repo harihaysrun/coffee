@@ -72,7 +72,7 @@ My choice of colours is very self-explanatory:
 
 
 ## Font choice
-- As mentioned, the key word for my design is 'round'. I wanted a font that matches the overall look and feel but at the same be legible on smaller body text
+- I wanted a font that is round, and legible when used on smaller body text
 - Some fonts that were shortlisted:
 
     <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/fonts.jpg">
@@ -81,7 +81,7 @@ My choice of colours is very self-explanatory:
     <br>
     2. Nunito
     <br>
-    3. Rubik - Decided to go with this. It's not too wide, rounded but has a slight sharpness to it, and the font weight makes it the most legible of the bunch 
+    3. Rubik - Decided to go with this. It's not too wide. It's rounded but has a slight sharpness to it, and the font weight makes it the most legible of the bunch
 
 ## Icons
 - Rather than using realistic images, I chose to use icons as they're simpler, and won't clash with the intricateness of the map
@@ -174,7 +174,7 @@ any assumptions or prerequisites
 
 examiner must be able to follow your test case -->
 
-## Test Case 1: "Wow shops"
+## Test Case 1: "Wow, shops"
 
 If user is only interested in exploring shops
 
