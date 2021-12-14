@@ -46,7 +46,7 @@ It's important to start with the wireframes before moving on with the developmen
 **Flow/Sitemap**
 <!-- sitemap pic here -->
 
-<img src="images/readme/sitemap.jpg">
+<img src="../../images/readme/sitemap.jpg">
 
 **Inspiration**
 Taking inspiration from <a href="">Hince</a>'s website, I decided to adopt the rounded navbar design.
