@@ -25,6 +25,7 @@ If you find yourself asking the same question like I do, then this is for you.
 Here's the link to my project: <a href="https://harihaysrun.github.io/coffee/">Where's my coffee?</a>
 <!-- Include a URL to the deployed version of the project -->
 
+<br>
 
 # UX/UI
 <!-- User stories & acceptance criteria -->
@@ -87,7 +88,7 @@ My choice of colours is very self-explanatory:
 - Rather than using realistic images, I chose to use icons as they're simpler, and won't clash with the intricateness of the map
 - Icons were either made on Adobe Illustrator or sourced from Flaticon and Font Awesome
 
-
+<br>
 
 # Main features of the website
 <!-- list down major features of the application, and also the algorithms you have used to implement those features. if there are any limitations or bugs, please describe them as well. if you have any features pending implementation, you can also take the opportunity to discuss them here -->
@@ -165,7 +166,7 @@ My choice of colours is very self-explanatory:
 | 10 | Each group of marker clustering | Yes <br> 1 marker clustering |
 | 11 | Each type of custom marker (using images or custom behaviour) | Yes <br> Used coffee bean image, added a functional bookmark button inside of popup |
 
-
+<br>
 
 # Test Cases
 <!-- provide description of test case
@@ -176,32 +177,34 @@ any assumptions or prerequisites
 examiner must be able to follow your test case -->
 
 <br>
+
 ## Test Case 1: "Wow, shops"
 
-If user is only interested in exploring shops
+Explore coffee shops
 
-<!-- | Image here | -->
+<img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/testcase1.jpg">
 
 | Step No. | Description | Expected result |
 | --------- | --------------- | --------------- |
 | 1 | From the main page, click on "Check out coffee places" | Popup disappears and map shows up |
 | 2 | On mobile, click on the arrow at the top of the discover box | Discover box moves upwards and unveils itself |
-| 3 | Sift through the listings in the discover box & click on them | (mobile: discover box collapses downwards and) Map zooms in to the store's location |
-| 4 | Click on the coffee beans | You will see the shop name, address & bookmarks button |
+| 3 | Click on a shop listing | **On mobile:**<br>Discover box collapses downwards <br><br> Map zooms in to the store's location |
+| 4 | Click on the coffee bean marker | You will see the shop name, address & bookmarks button in the popup |
 | 5 | Click on "Add to bookmarks" if the shop intrigues you | "Add to bookmarks" changes to "Added to bookmarks!" |
-| 6 | Change regions to see shops in specific locations | A dialog box will popup to indicate that you're changing regions, and the map will refresh & plant new markers |
+| 6 | Change regions to see shops in specific locations | A dialog box will slide in from the top to indicate that you're changing regions, and the map will refresh & plant new markers |
 
 
 <br>
+
 ## Test Case 2: "What should I drink?"
 
 Check that the coffee randomiser is working
 
-<!-- | Image here | -->
+<img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/testcase2.jpg">
 
 | Step No. | Description | Expected result |
-| --------- | --------------- | --------------- |
-| 1 | From the landing page, click on the "Coffee Randomiser" button <br><br> **Or** <br><br> Click on the "Coffee Randomiser" button on the top right hand corner in the nav bar | Popup window will appear and suggest a random coffee type & shop |
+| --------- | ---------- | --------------- |
+| 1 | From the landing page, click on the "Coffee Randomiser" button <br><br> **Or** <br><br> Click on the "Coffee Randomiser" button at the top right hand corner in the nav bar | Popup window will appear and suggest a random coffee type & shop |
 | 2 | If you're not interested in the recommendation, click on "Give me another one" | Content in the popup refreshes to generate another suggestion |
 | 3 | Once satisfied, click on "Take Me There" | Popup disappears to reveal map, zooming in to the location of the shop |
 | 4 | If not satisfied, click on the close button (X) at the top right hand corner | Popup closes, you may resume exploring the map |
@@ -235,7 +238,7 @@ If user is not interested in the map, only the coffee randomiser
 
 Search function in the bookmarks popup
 
-<!-- | Image here | -->
+<img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/testcase3.jpg">
 
 | Step No. | Description | Expected result |
 | --------- | ---------- | --------------- |
