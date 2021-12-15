@@ -36,21 +36,14 @@ let coffeeShopClusterLayer = L.markerClusterGroup();
 
 function resetMap(){
 
-    map.flyTo(singapore, 12.5)
-
-    // console.log("generateMap: " + coffeePlacesList.length)
+    map.flyTo(singapore, 12.5);
 
     // clear markers from the map for every region selection
     coffeeShopClusterLayer.clearLayers();
-    
-    // console.log("coffeeShopClusterLayer: " + coffeeShopClusterLayer)
-    // let coffeeShopArray = [];
 
     for (let eachshop of coffeePlacesList) {
-        // eachshop of coffeePlacesList
-        // eachshop = coffeePlacesList[i];
+
         shopCoordinates = eachshop.location;
-        // console.log(shopCoordinates.latitude, shopCoordinates.longitude)
         marker = L.marker([shopCoordinates.lat, shopCoordinates.lng], {
             icon: L.icon({
                 iconUrl: 'images/coffee-beans.png',
@@ -58,10 +51,11 @@ function resetMap(){
             })
         });
 
-
-
+        // change arrangement of postal code to come after "Singapore"
+        // address[1] is the postal code, address[2] is "Singapore"
+        // remove address[2] after combining Singapore + Postal Code
         let address = eachshop.location.formattedAddress;
-        // console.log("address.length: " + address[2])
+
         if(address.length == 3){
             address[1] = address[2] + ' ' + address[1];
             address.splice(2);
@@ -77,8 +71,8 @@ function resetMap(){
 
 
         marker.on('popupopen', function(){
+
             let bookmarkBtn = document.getElementsByClassName("bookmark-btn")[0];
-            // console.log("line 89: " + eachshop.name)
 
             bookmarkBtn.addEventListener("click", function(){
                      
@@ -102,42 +96,32 @@ function resetMap(){
 
         });
 
-        // marker.on('popupclose', function(){
-        //     console.log("bye")
-        // })
-
         marker.addTo(coffeeShopClusterLayer);
 
 
         // discover box results
         let shopListing = document.createElement("div");
         shopListing.className = "indiv-result";
-        // console.log("address is a: " + address)
         shopListing.innerHTML = `<h4>${eachshop.name}</h4>
                                 <span>${address}</span>`;
 
         shopListing.addEventListener("click", function(){
 
-            // console.log("clicked on " + shopListing.innerText)
-
             shopCoordinatesLt = eachshop.location.lat;
             shopCoordinatesLg = eachshop.location.lng;
-            // console.log(shopCoordinatesLt,shopCoordinatesLg)
-
-            // map.closePopup();
-            map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 20);
+            
+            map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 23);
             
             discoverBox.classList.remove("box-slideup")
             discoverBox.style.transition = "all 0.5s ease-in";
 
         })
         indivShopList.appendChild(shopListing);
-        // }
         
     }
 
-    map.addLayer(coffeeShopClusterLayer);
-    // coffeeShopClusterLayer.addTo(map);
+    // map.addLayer(coffeeShopClusterLayer);
+    coffeeShopClusterLayer.addTo(map);
 
 }
 

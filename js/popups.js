@@ -1,7 +1,7 @@
 const mainPopup_OuterContainer = document.getElementById("main-popup");
 const mainPopup_InnerContainer = document.getElementById("main-popup-container");
 
-// used to check if API call has already been made (from line 218) so that the loader animation won't appear when user clicks 'back'
+// used to check if API call has already been made (from line 208) so that the loader animation won't appear when user clicks 'back'
 let coffeeLoaded = 0;
 
 mainPopup();
@@ -24,7 +24,7 @@ async function mainPopup(){
                                         <img class="cup-shadow" src="images/cup-shadow.png">
                                         <img class="coffee-cup" src="images/cup.svg">
                                     </div>
-                                        Brewing some coffee...`
+                                        Brewing some coffee...`;
 
         setTimeout(function(){
             loadChoices();
@@ -124,16 +124,18 @@ function mainPopup_randomiser(){
     }, 0);
 }
 
+let coffeeTypeNumber;
 let shopNumber;
 
 // get a random coffee & shop to recommend to user
 async function randomise(){
 
-    let coffeeTypeResponse = await axios.get("js/coffee-type.json");
-    let coffeeType = coffeeTypeResponse.data.coffee_type;
+    let coffeeType = await getCoffeeType();
+    // console.log(coffeeType.length)
 
     // random coffee
-    let coffeeTypeNumber = Math.floor(Math.random() * 34);
+    // console.log("number of coffee types: " + coffeeType.length)
+    coffeeTypeNumber = Math.floor(Math.random() * coffeeType.length);
 
     const coffeeImg = document.querySelector("#random-coffee img");
     const coffeeName = document.querySelector("#random-coffee h4");
@@ -144,7 +146,8 @@ async function randomise(){
     coffeeDescription.innerText = coffeeType[coffeeTypeNumber].description;
     
     // random coffee shop
-    shopNumber = Math.floor(Math.random() * 50);
+    // console.log(coffeePlacesList.length)
+    shopNumber = Math.floor(Math.random() * coffeePlacesList.length);
 
     const shopName = document.getElementById("shopName");
     const shopAddress = document.getElementById("shopAddress");
@@ -166,7 +169,7 @@ function goToShopLocation(){
         shopCoordinatesLg = shopID.location.lng;
         // console.log(shopCoordinatesLt,shopCoordinatesLg)
 
-        map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 20)
+        map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 23);
 
         mainPopup_OuterContainer.style.display = "none";
         instructions();

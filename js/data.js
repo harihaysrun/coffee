@@ -1,7 +1,7 @@
 let coffeePlacesList;
 
 async function generate(query, near){
-    // fsq3pYjput0x4EnKxsOzkX0RCtfoOdMDOGRK2FU+ZGgoROc=
+
     let response = await axios.get('https://api.foursquare.com/v2/venues/search', {
         params: {
             'll': '1.3521,103.8198',
@@ -24,16 +24,20 @@ async function generateList(near){
     let randomQuery;
     let query;
     for(let i=0; i<queries.length; i++){
-        randomQuery = Math.floor(Math.random() * 4);
+        randomQuery = Math.floor(Math.random() * queries.length);
     }
+    // console.log("queries.length: " + queries.length)
     query = queries[randomQuery];
 
-    // console.log(query)
-    // console.log('near: '+ near)
-
     coffeePlacesList = await generate(query, near);
-
-    // console.log(coffeePlacesList)
     
     return coffeePlacesList;
+}
+
+async function getCoffeeType(){
+
+    let coffeeTypeResponse = await axios.get("js/coffee-type.json");
+    let coffeeType = coffeeTypeResponse.data.coffee_type;
+
+    return coffeeType;
 }

@@ -3,6 +3,7 @@ const discoverBox = document.getElementById("discover-box");
 const arrowIcon = document.getElementById("arrow-icon");
 const regionDropdown = document.getElementById("change-region");
 
+// make discover box on mobile
 arrowUpBtn.addEventListener("click", function(){
     discoverBox.classList.toggle("box-slideup")
     discoverBox.style.transition = "all 0.5s ease-in";
@@ -30,7 +31,6 @@ let regions = [
     'Pasir Ris',
     'Paya Lebar',
     'Tampines',
-    'Lim Chu Kang',
     'Sembawang',
     'Woodlands',
     'Yishun',
@@ -51,7 +51,6 @@ let regions = [
     'Tengah',
     'Tuas'
 ]
-// console.log("regions.length: " + regions.length);
 
 for(let i=0; i < regions.length; i++){
     let option = document.createElement("option");
@@ -61,8 +60,7 @@ for(let i=0; i < regions.length; i++){
 }
 
 regionDropdown.addEventListener("change", async function(){
-    // console.log("clicked on " + regionDropdown.value)
-    // location = regionDropdown.value;
+    
     const dialogBox = document.createElement("div");
     dialogBox.className = "change-success";
     dialogBox.innerHTML = `Changing to <b>${regionDropdown.value}...</b>`
