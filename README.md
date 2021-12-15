@@ -282,6 +282,7 @@ Search function in the bookmarks popup
 
 3. Even though a specific region is chosen, shops from other areas (and even countries – Malaysia & Indonesia) showed up
     - setting a radius in the parameters of the API call helped to narrow the search down
+    <!-- - by specifying if (!coffeePlacesList.country == Singapore) { return } -->
 
 5. UI not appearing as intended on iOS 15
     - The bottom position of the search bar in Safari causes issues with the UI
