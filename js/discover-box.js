@@ -51,9 +51,7 @@ let regions = [
     'Tengah',
     'Tuas'
 ]
-console.log("regions.length: " + regions.length)
-
-// <option value="1">One</option>
+// console.log("regions.length: " + regions.length);
 
 for(let i=0; i < regions.length; i++){
     let option = document.createElement("option");
@@ -63,7 +61,7 @@ for(let i=0; i < regions.length; i++){
 }
 
 regionDropdown.addEventListener("change", async function(){
-    console.log("clicked on " + regionDropdown.value)
+    // console.log("clicked on " + regionDropdown.value)
     // location = regionDropdown.value;
     const dialogBox = document.createElement("div");
     dialogBox.className = "change-success";
@@ -79,14 +77,11 @@ regionDropdown.addEventListener("change", async function(){
 
 
     setTimeout(function(){
-        // dialogBox.classList.add("dialog-box-slideout")
-        // dialogBox.style.display = "none";
+
         dialogBox.style = "transform:translateY(-200px); transition: all 0.3s ease-out";
         setTimeout(function(){
             document.body.removeChild(dialogBox);
         }, 100)
     }, 2500)
 
-    // discoverBox.classList.remove("box-slideup")
-    // discoverBox.style.transition = "all 0.5s ease-in";
 })

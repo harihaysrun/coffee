@@ -149,6 +149,11 @@ nav>#nav-container{
     nav{
         height:200px;
     }
+    
+    nav>#nav-container{
+        /* background-color: bisque; */
+        display:flex;
+    }
 
     #hamburger-menu, #hm-dropdown, .mobile-menu-appear{
         display:none !important;
@@ -157,6 +162,7 @@ nav>#nav-container{
     #desktop-menu{
         display:block;
         /* background-color:pink; */
+        margin-top:3px;
         margin-left:auto;
         list-style-type: none;
         padding:0;

@@ -1,21 +1,16 @@
-// function initMap(){
-    let singapore = [1.34,103.81]; // #1 Singapore latlng
-    let map = L.map('map-container').setView(singapore, 12.5); // #2 Set the center point
 
-    // setup the tile layers
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
-        maxZoom: 25,
-        id: 'mapbox/streets-v11',
-        tileSize: 512,
-        zoomOffset: -1,
-        accessToken: 'pk.eyJ1Ijoic3k0aGlyNGgiLCJhIjoiY2t4NHI2aTNlMmVnczJvcDg0NzdlMWR6ZyJ9.FNxiyWC8GR1yEf04rcC_-A'
-    }).addTo(map);
+let singapore = [1.34,103.81];
+let map = L.map('map-container').setView(singapore, 12.5);
 
-//     return map;
-// }
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 25,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1Ijoic3k0aGlyNGgiLCJhIjoiY2t4NHI2aTNlMmVnczJvcDg0NzdlMWR6ZyJ9.FNxiyWC8GR1yEf04rcC_-A'
+}).addTo(map);
 
-// initMap();
 
 let bookmarksList = [];
 let bookmarksList_indiv;
@@ -43,12 +38,12 @@ function resetMap(){
 
     map.flyTo(singapore, 12.5)
 
-    console.log("generateMap: " + coffeePlacesList.length)
+    // console.log("generateMap: " + coffeePlacesList.length)
 
     // clear markers from the map for every region selection
     coffeeShopClusterLayer.clearLayers();
     
-    console.log("coffeeShopClusterLayer: " + coffeeShopClusterLayer)
+    // console.log("coffeeShopClusterLayer: " + coffeeShopClusterLayer)
     // let coffeeShopArray = [];
 
     for (let eachshop of coffeePlacesList) {
@@ -83,7 +78,7 @@ function resetMap(){
 
         marker.on('popupopen', function(){
             let bookmarkBtn = document.getElementsByClassName("bookmark-btn")[0];
-            console.log("line 89: " + eachshop.name)
+            // console.log("line 89: " + eachshop.name)
 
             bookmarkBtn.addEventListener("click", function(){
                      
@@ -107,9 +102,9 @@ function resetMap(){
 
         });
 
-        marker.on('popupclose', function(){
-            console.log("bye")
-        })
+        // marker.on('popupclose', function(){
+        //     console.log("bye")
+        // })
 
         marker.addTo(coffeeShopClusterLayer);
 
@@ -119,11 +114,11 @@ function resetMap(){
         shopListing.className = "indiv-result";
         // console.log("address is a: " + address)
         shopListing.innerHTML = `<h4>${eachshop.name}</h4>
-                                <small>${address}</small>`;
+                                <span>${address}</span>`;
 
         shopListing.addEventListener("click", function(){
 
-            console.log("clicked on " + shopListing.innerText)
+            // console.log("clicked on " + shopListing.innerText)
 
             shopCoordinatesLt = eachshop.location.lat;
             shopCoordinatesLg = eachshop.location.lng;
@@ -147,6 +142,6 @@ function resetMap(){
 }
 
 function updateBooksmarksList(){
-    console.log(bookmarksList_indiv)
+    // console.log(bookmarksList_indiv)
     bookmarksList.push(bookmarksList_indiv);
 }

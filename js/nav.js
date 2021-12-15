@@ -17,18 +17,18 @@ hamburgerMenu.addEventListener("click", function(){
     document.getElementsByClassName("hm")[1].classList.toggle('hm-close');
     document.getElementsByClassName("hm")[2].classList.toggle('hm-close');
 
-    console.log(indivNav.length)
+    // console.log(indivNav.length)
 })
 
 // user clicks on the link in the mobile hamburger menu
 mobileCoffeeRandomiser.addEventListener("click", function(){
-    console.log("clicked on mobileCoffeeRandomiser");
+    // console.log("clicked on mobileCoffeeRandomiser");
     randomiserPopup();
 })
 
 // user clicks on the link in the desktop nav menu
 desktopCoffeeRandomiser.addEventListener("click", function(){
-    console.log("clicked on desktopCoffeeRandomiser");
+    // console.log("clicked on desktopCoffeeRandomiser");
     randomiserPopup();
 })
 
@@ -108,7 +108,7 @@ function bookmarksPopup(){
                                             <div id="bookmarks-list-box"></div>
                                         </div>`
 
-    console.log("height of bookmarks header" + document.getElementsByClassName("bookmarks-header")[0].offsetHeight);
+    // console.log("height of bookmarks header" + document.getElementsByClassName("bookmarks-header")[0].offsetHeight);
     const bookmarksHeaderHeight = document.getElementsByClassName("bookmarks-header")[0].offsetHeight;
 
     const bookmarksListHeight = document.getElementById("bookmarks-list");
@@ -122,12 +122,12 @@ function bookmarksPopup(){
         mainPopup_OuterContainer.style.transition = "all 0.2s ease-in";
     }, 0)
     // 
-    console.log("bookmarksList.length: " + bookmarksList.length)
+    // console.log("bookmarksList.length: " + bookmarksList.length)
     for(let i=0; i<bookmarksList.length; i++){
-        console.log(bookmarksList[i])
+        // console.log(bookmarksList[i])
         document.getElementById("bookmarks-list-box").innerHTML += `<div class="indiv-result bookmarked">
                                                                 <h4>${bookmarksList[i].shopName}</h4>
-                                                                <small>${bookmarksList[i].shopAddress}</small>
+                                                                <span>${bookmarksList[i].shopAddress}</span>
                                                                 </div>`;
 
     }
@@ -137,32 +137,25 @@ function bookmarksPopup(){
     document.getElementById("search-bookmarks").addEventListener("click", function(){
         let searchingFor = document.getElementById("search-bar").value;
         document.getElementById("search-bar").value = '';
-        console.log("search for ... " + searchingFor);
+        // console.log("search for ... " + searchingFor);
         document.getElementById("bookmarks-list-box").innerHTML = "";
 
         for(let i=0;i<bookmarksList.length; i++){
 
-            console.log(bookmarksList[i].shopName)
-            console.log(searchingFor)
-
-            // let shopName = bookmarksList[i].shopName;
-            // let lowerCase = shopName.toLowercase();
-
-            console.log("lowercase " + bookmarksList[i].shopName.toLowerCase());
+            // console.log("lowercase " + bookmarksList[i].shopName.toLowerCase());
 
             if(bookmarksList[i].shopName.toLowerCase().includes(searchingFor.toLowerCase())){
-                console.log("bookmarksList[i].shopName: " + bookmarksList[i].shopName)
+                // console.log("bookmarksList[i].shopName: " + bookmarksList[i].shopName)
                 document.getElementById("bookmarks-list-box").innerHTML += `<div class="indiv-result bookmarked">
                                                                             <h4>${bookmarksList[i].shopName}</h4>
-                                                                            <small>${bookmarksList[i].shopAddress}</small>
+                                                                            <span>${bookmarksList[i].shopAddress}</span>
                                                                             </div>`;
 
-                                                                            console.log("results found")
+                // console.log("results found")
                                                             
             }
         }
 
-        // document.getElementById("bookmarks-list-box").innerHTML += "";
     })
 
     // reset search
@@ -173,7 +166,7 @@ function bookmarksPopup(){
         for(let i=0; i<bookmarksList.length; i++){
             document.getElementById("bookmarks-list-box").innerHTML += `<div class="indiv-result bookmarked">
                                                                     <h4>${bookmarksList[i].shopName}</h4>
-                                                                    <small>${bookmarksList[i].shopAddress}</small>
+                                                                    <span>${bookmarksList[i].shopAddress}</span>
                                                                     </div>`;
 
         }

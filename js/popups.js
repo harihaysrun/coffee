@@ -10,7 +10,7 @@ mainPopup();
 async function mainPopup(){
 
     await generateList('Singapore');
-    console.log(coffeePlacesList);
+    // console.log(coffeePlacesList);
     
     mainPopup_InnerContainer.innerHTML = '';
     const mainPopupLanding = document.createElement("div");
@@ -74,6 +74,7 @@ function chooseOne(){
     coffeePlaces.addEventListener('click', function(){
         mainPopup_OuterContainer.style.display = "none";
         generateMap();
+        instructions();
     })
     
 }
@@ -104,7 +105,7 @@ function mainPopup_randomiser(){
                                                 </div>
                                                 <span>from</span>
                                                 <div id="random-shop">
-                                                    <h3 id="shopName">Shop Name</h3>
+                                                    <h4 id="shopName">Shop Name</h4>
                                                     <p id="shopAddress">Shop Address</p>
                                                 </div>
                                             </div>
@@ -163,22 +164,12 @@ function goToShopLocation(){
         let shopID =  coffeePlacesList[shopNumber];
         shopCoordinatesLt = shopID.location.lat;
         shopCoordinatesLg = shopID.location.lng;
-        console.log(shopCoordinatesLt,shopCoordinatesLg)
+        // console.log(shopCoordinatesLt,shopCoordinatesLg)
 
-        map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 20);
-        // marker.openPopup([shopCoordinatesLt, shopCoordinatesLg]);
-        
-        // setTimeout(function(){
-        //     marker.openPopup();
-        // },2000);
-
-        // const shopLocation = document.createElement("div");
-        // shopLocation.className = "indiv-result";
-        // shopLocation.innerHTML = `${coffeePlacesList[shopNumber].name}
-        //                             <br>
-        //                             <small style="color:hotpink;">${coffeePlacesList[shopNumber].location.formattedAddress}</small>`;
+        map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 20)
 
         mainPopup_OuterContainer.style.display = "none";
+        instructions();
 
     })
 }
@@ -221,4 +212,21 @@ function backToMain_btn(){
     } else{
         return;
     }
+}
+
+// mobile instructions to click on coffee bean markers
+function instructions(){
+
+    const dialogBox = document.createElement("div");
+    dialogBox.className = "mobile-instructions";
+    dialogBox.innerHTML = `<img src="images/coffee-beans.png">Click on the coffee beans to add location to bookmarks`;
+    document.body.appendChild(dialogBox);
+
+    setTimeout(function(){
+        dialogBox.style = "transform:translateY(-200px); transition: all 0.3s ease-out";
+        setTimeout(function(){
+            document.body.removeChild(dialogBox);
+        }, 100)
+    }, 3000);
+
 }

@@ -52,6 +52,8 @@
     flex:8;
     margin-right:10px;
     color:#b08f5f;
+    font-family: 'Rubik', sans-serif !important;
+    font-size:16px;
 }
 
 #search-bar-container input::placeholder{

@@ -28,12 +28,12 @@ async function generateList(near){
     }
     query = queries[randomQuery];
 
-    console.log(query)
-    console.log('near: '+ near)
+    // console.log(query)
+    // console.log('near: '+ near)
 
     coffeePlacesList = await generate(query, near);
 
-    console.log(coffeePlacesList)
+    // console.log(coffeePlacesList)
     
     return coffeePlacesList;
 }

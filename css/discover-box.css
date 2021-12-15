@@ -1,6 +1,6 @@
 #discover-box{
     position:absolute;
-    bottom: calc(-90vh + 192px);
+    bottom: calc(-90vh + 186px);
     background-color:#ffffff;
     width:100%;
     height:90vh;
@@ -13,7 +13,7 @@
 
 .box-slideup{
     transform: translateY(-67vh);
-    transform: translateY(calc(-90vh + 192px));
+    transform: translateY(calc(-90vh + 186px));
 }
 
 #arrow-up:hover #arrow-icon{
@@ -81,7 +81,7 @@
 .discover-results{
     background-color:white;
     position:relative;
-    height:calc(100% - 192px);
+    height:calc(100% - 182px);
     overflow:auto;
 }
 
@@ -107,7 +107,9 @@
     color:#482C05;
 }
 
-.indiv-result small{
+.indiv-result span{
+    font-size:15px;
+    line-height:20px;
     color:#B5B5B5;
 }
 
@@ -115,12 +117,13 @@
     border:0;
 }
 
-.change-success{
+.change-success, .mobile-instructions{
     position:absolute;
     background-color:rgb(120, 147, 97, 0.9);
     border:1px solid #789361;
     border-radius:15px;
     width: 90%;
+    box-sizing: border-box;
     padding:20px 25px;
     color:#ffffff;
     z-index:10;
@@ -131,6 +134,20 @@
     animation-name: slideIn;
     animation-duration: 0.2s;
     animation-direction: forwards;
+}
+
+.mobile-instructions{
+    background-color: #ffffff;
+    border:0;
+    color:#482C05;
+    box-shadow: 0 -2px 10px rgb(72, 44, 5, 0.15);
+    display:flex;
+    align-items: center;
+}
+
+.mobile-instructions img{
+    height:25px;
+    margin-right:15px;
 }
 
 @keyframes slideIn{
@@ -201,6 +218,10 @@
     .change-success{
         width: 500px;
         z-index:10;
+    }
+
+    .mobile-instructions{
+        display:none;
     }
 
 }

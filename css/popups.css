@@ -122,7 +122,7 @@ h2{
 }
 
 #choose-one>div:hover{
-    background-color:#F0E3D0;
+    background-color:#D5BB94;
     color:#482C05;
     cursor:pointer;
 }
@@ -146,6 +146,10 @@ h2{
 
 #random-coffee h4{
     margin:0;
+}
+
+#random-shop h4{
+    margin:0 0 10px 0;
 }
 
 #random-coffee>div>img{
@@ -181,7 +185,7 @@ h2{
 
 button{
     width:100%;
-    padding: 15px;
+    padding: 20px;
     margin: 5px 0;
     border:0;
     border-radius:15px;
@@ -229,8 +233,8 @@ button{
 
 #close-popup{
     position:absolute;
-    top:12px;
-    right:5%;
+    top:10px;
+    right:10px;
     font-size:25px;
     /* color:#F0E3D0; */
     color:#D5BB94;
@@ -248,6 +252,11 @@ button{
     #main-popup>#main-popup-container{
         width:70vw;
     }    
+
+    #close-popup{
+        top:15px;
+        right:15px;
+    }
 
 }
 
