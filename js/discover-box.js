@@ -21,7 +21,6 @@ let regions = [
     'Newton',
     'Novena',
     'Orchard',
-    'Outram',
     'Queenstown',
     'Rochor',
     'Tanglin',
@@ -47,7 +46,6 @@ let regions = [
     'Clementi',
     'Jurong East',
     'Jurong West',
-    'Pioneer',
     'Tengah',
     'Tuas'
 ]
