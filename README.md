@@ -102,7 +102,7 @@ My choice of colours is very self-explanatory:
     - search function
 
 ## Pending Implementions
-- (If Foursquare API isn't used in this website) A form for user to submit a shop that's not on the list
+- (If Foursquare API isn't used in this website) A form for user to submit a shop that's not on the list, or allow them to add their own listing
 - Setting up a database for the bookmarks so they will be stored somewhere and won't be gone once the user refreshes the browser
 
 
