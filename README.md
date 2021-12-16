@@ -183,7 +183,6 @@ any assumptions or prerequisites
 
 examiner must be able to follow your test case -->
 
-<br>
 
 ## Test Case 1: "Wow, shops"
 
@@ -230,8 +229,8 @@ Search function in the bookmarks popup
 | 1 | **On mobile:** <br> 1. Click on the hamburger menu icon at the top right <br> 2. Click on "Bookmarks" tab <br><br> **On tab & desktop:**<br>Click on the "Bookmarks" button in the navbar  | **On mobile:** <br> Hamburger menu drops down, bookmarks window will pop up <br><br> **On tab & desktop:** <br> Bookmarks window will pop up| 
 | 2 | Scroll through whole list | Listing is not clickable |
 | 3 | Type name or keyword in the search bar | Search results won't automatically appear |
-| 4 | Click on the search icon button | Relevant results will appear |
-| 5 | Click on the reset icon next to the search button | View all bookmarks again |
+| 4 | Click on the search button | Relevant results will appear |
+| 5 | Click on the reset button next to the search button | View all bookmarks again |
 | 6 | Click on the close button to go back to the map | Popup closes |
 
 <br>
@@ -240,7 +239,7 @@ Search function in the bookmarks popup
 - I, the site owner, assume that users are here to look for new shops
 - If they don't know that a certain shop exists, they won't know or have any keywords to search up in the discover box
 - I would want the users to click on the shop markers and not rely heavily on the discover box
-- When they've already bookmarked certain shops, they would be more inclined to search for the names that intrigue them
+- When they've already bookmarked several shops, they would be more inclined to search through that bookmarks list
 
 
 
