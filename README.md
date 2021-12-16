@@ -151,7 +151,7 @@ My choice of colours is very self-explanatory:
 11. <a href="https://fontawesome.com/">Font Awesome</a>
     - Search & Reset icons in the bookmarks popup
 
-12. <a hre="https://www.flaticon.com/">Flaticon</a>
+12. <a href="https://www.flaticon.com/">Flaticon</a>
     - Coffee bean icon for the markers and iced & hot coffee icons in the randomiser
 
 13. Adobe Illustrator
