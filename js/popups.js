@@ -157,6 +157,9 @@ async function randomise(){
     shopAddress.innerText = shopID.location.formattedAddress;
 }
 
+
+const backtoMain = document.getElementsByClassName("back-to-main");
+
 // closes the popup and leads user to the shop's coordinates on the map
 function goToShopLocation(){
     const goToShop = document.getElementsByClassName("btn-green")[0];
@@ -172,7 +175,9 @@ function goToShopLocation(){
         map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 23);
 
         mainPopup_OuterContainer.style.display = "none";
-        instructions();
+        if(backtoMain.length == 1){
+            instructions();
+        }
 
     })
 }
@@ -182,8 +187,6 @@ function goToShopLocation(){
 function anotherRec(){
     const anotherOne = document.getElementsByClassName("btn-red")[0];
     anotherOne.addEventListener('click', function(){
-
-        const backtoMain = document.getElementsByClassName("back-to-main");
 
         // check if 'back' button exists, landing page has it but navbar link popup doesn't
         // if it doesn't exist, don't call the mainPopup_randomiser_backBtn() function
@@ -201,8 +204,7 @@ function anotherRec(){
 
 // 'back' button function
 function backToMain_btn(){
-
-    const backtoMain = document.getElementsByClassName("back-to-main");         
+        
     // console.log(backtoMain.length)
 
     // check if 'back' button exists, landing page has it but navbar link popup doesn't
