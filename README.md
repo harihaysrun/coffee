@@ -270,7 +270,7 @@ Search function in the bookmarks popup
     - created another array and pushed only shops in Singapore into it
     
         > if(allCoffeePlacesList[i].location.country == "Singapore"){  
-        >   coffeePlacesList.push(allCoffeePlacesList[i]);  
+        > &nbsp&nbsp&nbsp coffeePlacesList.push(allCoffeePlacesList[i]);  
         > }
 
 5. UI not appearing as intended on iOS 15
