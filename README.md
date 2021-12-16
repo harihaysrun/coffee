@@ -250,7 +250,7 @@ Search function in the bookmarks popup
 
 ## Limitations of Foursquare API
 
-- only 50 queries per second, which means that it's not possible to see the full list of coffee shops at one go
+- Only 50 queries per second, which means that it's not possible to see the full list of coffee shops at one go
 
 ## Bugs
 <!-- - While testing on various browsers, I came across an error on Mozilla Firefox saying:
