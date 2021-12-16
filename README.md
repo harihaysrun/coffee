@@ -5,9 +5,9 @@
 <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/main.png">
 
 <!-- # Project name and summary -->
-"What coffee should I drink today?" is a question I find myself asking rather frequently. I tend to stick to the same coffee type (cold brew) when I'm at home or outside. The repetitiveness of drinking the same coffee every day has inspired me to start "Where's my coffee?", a coffee shop explorer and randomiser that recommends users a type of coffee and shop, so that they can go on to explore the shop's menu and perhaps even make an order with them.
+"What coffee should I drink today?" is a question I find myself asking rather frequently. I tend to stick to the same coffee type (cold brew) when I'm at home or outside. The repetitiveness of drinking the same coffee every day has inspired me to start "Where's my coffee?", a coffee shop explorer and randomiser that recommends users a type of coffee and shop, so that they can go on to explore the shop's menu and perhaps even patronise or make an order with them.
 
-If you find yourself asking the same question like I do, then this is for you.
+If you find yourself asking the same question like me, then this is for you.
 
 <!-- Make sure to justify why the project should exist -->
 
@@ -16,11 +16,11 @@ If you find yourself asking the same question like I do, then this is for you.
 - Suggest type of coffee and shop to the user
 - Introduce user to different types of coffee
 
-**Putting myself in the shoes of the end user, I want to:**
+**As the end user, I want to:**
 - Easily check out coffee shops
 - Find interesting shops and note them down for future reference
 - Have a machine decide a drink for me since I'm undecisive
-- use an app that has a pleasing UI to look at so it won't repel me/drive me away from using it
+- Look at a website that has a pleasing UI so it won't drive me away from using it
 
 Here's the link to my project: <a href="https://harihaysrun.github.io/coffee/">Where's my coffee?</a>
 <!-- Include a URL to the deployed version of the project -->
@@ -41,9 +41,9 @@ describe the considerations for the five planes of ui/ux, such as the choice of 
 
 ## Wireframes, mockups:
 
-**Design Element Inspiration:**
+**Design Element Inspiration:** Taking inspiration from <a href="https://hince.co.kr/" target="_blank">Hince</a>'s website, I decided to adopt the rounded navbar design.
 
-Taking inspiration from <a href="https://hince.co.kr/" target="_blank">Hince</a>'s website, I decided to adopt the rounded navbar design. Additionally, the boxes have a border-radius of 15px, which is neither too rounded or sharp, to imitate the roundness of a coffee bean/cup.
+Additionally, the boxes have a border-radius of 15px, which is neither too rounded or sharp, to imitate the roundness of a coffee bean/cup.
 
 Here are the selected wireframes/mockups I've done up, some of which have been omitted along the way as I worked on the codes.  Design for tablet view is not included as it's similar to mobile view. To view full set of wireframes, you may click <a href="https://xd.adobe.com/view/154ab4c9-fc0d-4a62-b14c-7f24e534c6ee-4019/">here</a>.
 
@@ -63,7 +63,7 @@ Here are the selected wireframes/mockups I've done up, some of which have been o
     - Full navigation bar
     - Due to the design, only footer is visible on desktop
     - the curved navbar design is removed, but implemented in the background
-    - addition of hover styling in the css for buttons & interactive items
+    - Addition of hover styling in the css for buttons & interactive items
 
 
 ## Colours
@@ -73,7 +73,7 @@ My choice of colours is very self-explanatory:
 
 
 ## Font choice
-- I wanted a font that is round, and legible when used on smaller body text
+- I wanted a font that is round, yet legible when used on smaller body text
 - Some fonts that were shortlisted:
 
     <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/fonts.jpg">
@@ -161,7 +161,7 @@ My choice of colours is very self-explanatory:
 ## Project Complexity Matrix
 | No. | Description | Implemented? |
 |:---:|-------------|------------------|
-| 1 | Consume the GET endpoint of an API, or consume a CSV/JSON file | Yes <br> 1 foursquare API + 1 local JSON file |
+| 1 | Consume the GET endpoint of an API, or consume a CSV/JSON file | Yes <br> 1 Foursquare API + 1 local JSON file |
 | 2 | Adding or removing DOM elements to the display (map, DOM tree, game screen) base on user's actions | Yes |
 | 3 | Modifying the CSS of DOM elements based on the user's actions | Yes |
 | 4 | Use of 1D traversal of array | Yes |
@@ -259,11 +259,11 @@ Search function in the bookmarks popup
 
 1. Leaflet marker not popping up automatically
     - couldn't get the markers to open automatically when clicking on the shop in the discover box
-    - added some instructions so that they'll have to click on the icons first
+    - added some instructions telling users to click on the icons first
 
-2. For the bookmarks feature to work seamlessly, user is advised either:
+2. For the bookmarks feature to function properly, user is advised either:
     - not to immediately click on other shop markers while one is opened
-    - or click on the 'close' button or anywhere on the map before clicking on others (bookmark button has to "reset" before it works on another marker)
+    - or click on the 'close' button or anywhere on the map before clicking on others
 
 3. Even though a specific region is chosen, shops from other areas (and even countries – Malaysia & Indonesia) showed up
     - setting a radius in the parameters of the API call helped to narrow the search down
