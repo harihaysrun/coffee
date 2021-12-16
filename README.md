@@ -160,7 +160,7 @@ My choice of colours is very self-explanatory:
 
 ## Project Complexity Matrix
 | No. | Description | Implemented? |
-|-----|-------------|------------------|
+|:---:|-------------|------------------|
 | 1 | Consume the GET endpoint of an API, or consume a CSV/JSON file | Yes <br> 1 foursquare API + 1 local JSON file |
 | 2 | Adding or removing DOM elements to the display (map, DOM tree, game screen) base on user's actions | Yes |
 | 3 | Modifying the CSS of DOM elements based on the user's actions | Yes |
@@ -192,7 +192,7 @@ Explore coffee shops
 <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/testcase1.jpg">
 
 | Step No. | Description | Expected result |
-| --------- | --------------- | --------------- |
+| :-------: | --------------- | --------------- |
 | 1 | From the main page, click on "Check out coffee places" | Popup disappears and map shows up |
 | 2 | On mobile, click on the arrow at the top of the discover box | Discover box moves upwards and unveils itself |
 | 3 | Click on a shop listing | **On mobile:**<br>Discover box collapses downwards <br><br> Map zooms in to the store's location |
@@ -210,7 +210,7 @@ Check that the coffee randomiser is working
 <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/testcase2.jpg">
 
 | Step No. | Description | Expected result |
-| --------- | ---------- | --------------- |
+| :-------: | ---------- | --------------- |
 | 1 | From the landing page, click on the "Coffee Randomiser" button <br><br> **Or** <br><br> Click on the "Coffee Randomiser" button at the top right hand corner in the nav bar | Popup window will appear and suggest a random coffee type & shop |
 | 2 | If you're not interested in the recommendation, click on "Give me another one" | Content in the popup refreshes to generate another suggestion |
 | 3 | Once satisfied, click on "Take Me There" | Popup disappears to reveal map, zooming in to the location of the shop |
@@ -226,7 +226,7 @@ Search function in the bookmarks popup
 <img src="https://github.com/harihaysrun/coffee/blob/main/images/readme/testcase3.jpg">
 
 | Step No. | Description | Expected result |
-| --------- | ---------- | --------------- |
+| :-------: | ---------- | --------------- |
 | 1 | **On mobile:** <br> 1. Click on the hamburger menu icon at the top right <br> 2. Click on "Bookmarks" tab <br><br> **On tab & desktop:**<br>Click on the "Bookmarks" button in the navbar  | **On mobile:** <br> Hamburger menu drops down, bookmarks window will pop up <br><br> **On tab & desktop:** <br> Bookmarks window will pop up| 
 | 2 | Scroll through whole list | Listing is not clickable |
 | 3 | Type name or keyword in the search bar | Search results won't automatically appear |
@@ -267,9 +267,9 @@ Search function in the bookmarks popup
 
 3. Even though a specific region is chosen, shops from other areas (and even countries – Malaysia & Indonesia) showed up
     - setting a radius in the parameters of the API call helped to narrow the search down
-    - to exclude shops from other countries, I created another array and pushed only shops in Singapore into it
-        > if(allCoffeePlacesList[i].location.country == "Singapore"){
-            coffeePlacesList.push(allCoffeePlacesList[i]);
+    - created another array and pushed only shops in Singapore into it
+        > if(allCoffeePlacesList[i].location.country == "Singapore"){  
+                coffeePlacesList.push(allCoffeePlacesList[i]);  
             }
 
 5. UI not appearing as intended on iOS 15
