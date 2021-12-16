@@ -217,28 +217,6 @@ Check that the coffee randomiser is working
 | 4 | If not satisfied, click on the close button (X) at the top right hand corner | Popup closes, you may resume exploring the map |
 
 
-<!-- ## Test Case 2A: "I'm just here for the coffee, not the shops"
-
-If user is not interested in the map, only the coffee randomiser
-
-| Step No. | Description | Expected result |
-| --------- | --------------- | --------------- |
-| 1 | From the main page, click on the "Coffee Randomiser" button | A coffee type and shop will be generated |
-| 2 | If you're not interested in the recommendation, click on "Give me another one" | Content in the box refreshes to generate another suggestion |
-| 3 | Once satisfied, click on "Take Me There" | Popup disappears and map shows up, zooming in to the location of the shop |
-
-
-
-## Test Case 2B: "Cool shops, now what should I drink?"
-
-| Step No. | Description | Expected result |
-| --------- | ---------- | --------------- |
-| 1 | Click on the "Coffee Randomiser" button on the top right hand corner of the nav bar | Popup window will appear and suggest a random coffee & shop |
-| 2 | If you're not interested in the recommendation, click on "Give me another one" | Content in the box refreshes to generate another suggestion |
-| 3 | Once satisfied, click on "Take Me There" | Popup disappears and map shows up, zooming in to the location of the shop |
-| 4 | If not satisfied, click on the close button (X) at the top right hand corner | Popup closes, you may resume exploring the map | -->
-
-
 <br>
 
 ## Test Case 3: "What was the name of that shop again...?"
@@ -251,7 +229,7 @@ Search function in the bookmarks popup
 | --------- | ---------- | --------------- |
 | 1 | **On mobile:** <br> 1. Click on the hamburger menu icon at the top right <br> 2. Click on "Bookmarks" tab <br><br> **On tab & desktop:**<br>Click on the "Bookmarks" button in the navbar  | **On mobile:** <br> Hamburger menu drops down, bookmarks window will pop up <br><br> **On tab & desktop:** <br> Bookmarks window will pop up| 
 | 2 | Scroll through whole list | Listing is not clickable |
-| 3 | In the case that there's an interesting name that stays on your mind (but you can't remember its full name), type what you remember in the search bar | Search results won't automatically appear |
+| 3 | Type name or keyword in the search bar | Search results won't automatically appear |
 | 4 | Click on the search icon button | Relevant results will appear |
 | 5 | Click on the reset icon next to the search button | View all bookmarks again |
 | 6 | Click on the close button to go back to the map | Popup closes |
