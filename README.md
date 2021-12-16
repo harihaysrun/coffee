@@ -136,7 +136,7 @@ My choice of colours is very self-explanatory:
 7. Foursquare API
     - Contains information to be displayed on website. The ones used in this project are: shop name, address & coordinates
 
-8. <a href="https://leafletjs.com/">Leaflet & Leaflet Marker Cluster</a>
+8. <a href="https://leafletjs.com/">Leaflet</a> & <a href="https://github.com/Leaflet/Leaflet.markercluster">Leaflet Marker Cluster</a>
     - Provide markers to be placed on the map
     - Has a popup feature for each marker to make it more intuitive
     - Markers are customisable
