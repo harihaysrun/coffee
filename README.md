@@ -111,44 +111,51 @@ My choice of colours is very self-explanatory:
 
 <!-- /provide overview of the languages, frameworks, libraries or other tools you have used to produce the project. provide short description of where in the project the technology is used, and a URL to its github repository -->
 
-1. HTML
-    - to set the bare bones of the website
 
-2. CSS
-    - stylise according to my wireframes/mockups
-    - allow simple animations and transitions to happen
+1. Adobe XD
+    - Create website wireframes/mockups
 
-3. Vanilla Javascript
+2. HTML
+    - Set the bare bones of the website
+
+3. CSS
+    - Stylise according to my wireframes/mockups
+    - Allow simple animations and transitions to happen
+
+4. Vanilla Javascript
     - Make the whole website work (Effects, clicking on a button will result to e.g a box popping up)
     - Majority of the content is inserted/changed via javascript (innerHTML/innerText)
 
-4. JSON
+5. JSON
     - able to handle lots of information in one file
-    – information of types of coffees is stored here, so that it can be easily updated, added or deleted in the future if needed
+    – The types of coffee is stored here, so that it can be easily updated, added or deleted in the future if needed
 
-5. Axios
-    - used to make the GET call to the third-party Foursquare API
+6. <a href="https://github.com/axios/axios">Axios</a>
+    - Used to make the GET call & retrieve information from third-party API (Foursquare)
 
-6. Foursquare API
-    - Retrieve location information to display on the website – the ones used are: shop name, address & coordinates
+7. Foursquare API
+    - Contains information to be displayed on website. The ones used in this project are: shop name, address & coordinates
 
-7. Leaflet & Leaflet Marker Cluster
+8. <a href="https://leafletjs.com/">Leaflet & Leaflet Marker Cluster</a>
     - Provide markers to be placed on the map
     - Has a popup feature for each marker to make it more intuitive
     - Markers are customisable
 
-8. Mapbox
-    - to stylise the map tiles
-    - able to choose from ready-made styles or customise our own ones
+9. <a href="https://www.mapbox.com/">Mapbox</a>
+    - To stylise the map tiles
+    - Able to choose from ready-made styles or customise our own ones
 
-9. Google Fonts
+10. <a href="https://fonts.google.com/">Google Fonts</a>
     - Font used for this project: <a href="">Rubik</a>
 
-10. Font Awesome
+11. <a href="https://fontawesome.com/">Font Awesome</a>
     - Search & Reset icons in the bookmarks popup
 
-10. Flaticon
+12. <a hre="https://www.flaticon.com/">Flaticon</a>
     - Coffee bean icon for the markers and iced & hot coffee icons in the randomiser
+
+13. Adobe Illustrator
+    - Create loader cup icon, logo
 
 
 ## Project Complexity Matrix
@@ -282,7 +289,10 @@ Search function in the bookmarks popup
 
 3. Even though a specific region is chosen, shops from other areas (and even countries – Malaysia & Indonesia) showed up
     - setting a radius in the parameters of the API call helped to narrow the search down
-    <!-- - by specifying if (!coffeePlacesList.country == Singapore) { return } -->
+    - to exclude shops from other countries, I created another array and pushed only shops in Singapore into it
+        > if(allCoffeePlacesList[i].location.country == "Singapore"){
+            coffeePlacesList.push(allCoffeePlacesList[i]);
+            }
 
 5. UI not appearing as intended on iOS 15
     - The bottom position of the search bar in Safari causes issues with the UI

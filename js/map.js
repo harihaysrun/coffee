@@ -22,7 +22,7 @@ let shopCoordinatesLt;
 let shopCoordinatesLg;
 
 let response;
-const indivShopList = document.getElementsByClassName("discover-results")[0];
+const indivShopList = document.getElementById("discover-results");
 
 
 function generateMap(){

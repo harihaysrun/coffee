@@ -1,3 +1,4 @@
+let allCoffeePlacesList;
 let coffeePlacesList;
 
 async function generate(query, near){
@@ -18,8 +19,10 @@ async function generate(query, near){
     return response.data.response.venues;
 }
 
-let near ;
+let near;
+
 async function generateList(near){
+    
     let queries = ['kopi', 'coffee', 'cafe', 'bistro'];
     let randomQuery;
     let query;
@@ -29,7 +32,19 @@ async function generateList(near){
     // console.log("queries.length: " + queries.length)
     query = queries[randomQuery];
 
-    coffeePlacesList = await generate(query, near);
+    allCoffeePlacesList = await generate(query, near);
+    
+    // exclude shops from other Countries
+    coffeePlacesList = [];
+
+    for (let i=0; i<allCoffeePlacesList.length; i++){
+        if(allCoffeePlacesList[i].location.country == "Singapore"){
+            // console.log("This shop is in Singapore");
+            coffeePlacesList.push(allCoffeePlacesList[i]);
+        }
+    }
+
+    // console.log(coffeePlacesList)
     
     return coffeePlacesList;
 }

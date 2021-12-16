@@ -7,31 +7,28 @@
     width: 100%;
 }
 
-.bookmarks-header{
+#bookmarks-header{
     width:100%;
-    position:absolute;
-    top:0;
+    height:145px;
     background-color:#F7EFE4;
     box-sizing: border-box;
-    padding: 45px 25px 30px 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 45px 25px 30px 25px; */
 }
 
-.bookmarks-header h1{
+#bookmarks-header h1{
     color: #382102;
     margin:0 0 5px 0;
     text-align:center;
 }
 
-.bookmarks-header span{
+#bookmarks-header span{
     color: #382102;
     opacity:0.3;
     font-size:14px;
-}
-
-#bookmarks-list{
-    position:absolute;
-    width:100%;
-    overflow:auto;
 }
 
 #search-bar-container{
@@ -39,17 +36,20 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    padding:15px 20px;
+    /* box-sizing: border-box; */
+    padding:0 20px;
+    height:90px;
 }
 
 #search-bar-container input{
     height:54px;
+    width:70%;
     box-sizing: border-box;
     padding:15px 20px;
     border-radius:15px;
     border:1px solid transparent;
     background-color:#ffffff;
-    flex:8;
+    /* flex:8; */
     margin-right:10px;
     color:#b08f5f;
     font-family: 'Rubik', sans-serif !important;
@@ -70,7 +70,11 @@
     flex:1;
     background-color:#faf4ea;
     color:#9f8052;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     padding:15px;
+    height:54px;
 }
 
 #search-bar-container button:hover{
@@ -79,6 +83,13 @@
 
 #search-bookmarks{
     margin-right:10px;
+}
+
+#bookmarks-list{
+    background-color: white;
+    height: calc(100% - 235px);
+    width:100%;
+    overflow:auto;
 }
 
 .indiv-result{
