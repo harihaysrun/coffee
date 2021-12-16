@@ -203,8 +203,7 @@ function anotherRec(){
 }
 
 // 'back' button function
-function backToMain_btn(){
-        
+function backToMain_btn(){    
     // console.log(backtoMain.length)
 
     // check if 'back' button exists, landing page has it but navbar link popup doesn't
@@ -214,9 +213,8 @@ function backToMain_btn(){
         backtoMain[0].addEventListener('click', function(){
             mainPopup();
         })
-    } else{
-        return;
     }
+    
 }
 
 // mobile instructions to click on coffee bean markers
