@@ -92,7 +92,7 @@ function mainPopup_randomiser(){
 
     const mainPopupRandomiser = document.createElement("div");
     mainPopupRandomiser.id = "main-popup-randomiser";
-    setTimeout(function(){ 
+    // setTimeout(function(){ 
         mainPopupRandomiser.innerHTML = `<div id="randomiser-container">
                                             <span>How about a cup of...</span>
                                             <div id="coffee-and-shop">
@@ -121,7 +121,7 @@ function mainPopup_randomiser(){
         goToShopLocation();
         anotherRec();
         backToMain_btn();
-    }, 0);
+    // }, 0);
 }
 
 let coffeeTypeNumber;
@@ -163,7 +163,6 @@ const backtoMain = document.getElementsByClassName("back-to-main");
 // closes the popup and leads user to the shop's coordinates on the map
 function goToShopLocation(){
     const goToShop = document.getElementsByClassName("btn-green")[0];
-    marker.closePopup();
 
     goToShop.addEventListener('click', function(){
 
@@ -172,7 +171,7 @@ function goToShopLocation(){
         shopCoordinatesLg = shopID.location.lng;
         // console.log(shopCoordinatesLt,shopCoordinatesLg)
 
-        map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 23);
+        map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 21);
 
         mainPopup_OuterContainer.style.display = "none";
         if(backtoMain.length == 1){

@@ -110,7 +110,7 @@ function resetMap(){
             shopCoordinatesLt = eachshop.location.lat;
             shopCoordinatesLg = eachshop.location.lng;
             
-            map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 23);
+            map.flyTo([shopCoordinatesLt, shopCoordinatesLg], 21);
             
             discoverBox.classList.remove("box-slideup")
             discoverBox.style.transition = "all 0.5s ease-in";
